@@ -10,7 +10,7 @@ const Founder = () => {
           centered={false}
         />
 
-        <div className="flex flex-col md:flex-row gap-12 md:items-stretch">
+        <div className="flex flex-col md:flex-row gap-12 md:items-start">
           <ScrollAnimation animation="fade-in" className="md:flex-1 flex justify-center">
             <div className="relative flex justify-center">
               <img
@@ -23,8 +23,8 @@ const Founder = () => {
             </div>
           </ScrollAnimation>
 
-          <ScrollAnimation animation="slide-up" className="md:flex-1 flex">
-            <div className="flex flex-col justify-between h-full">
+          <ScrollAnimation animation="slide-up" className="md:flex-1 flex items-start">
+            <div className="flex flex-col items-start">
               <h3 className="text-2xl font-bold mb-4 text-navy-950">Alexandru Buruiana</h3>
               <p className="text-gray-600 mb-6">
                 Alexandru Buruiana has over five years of international negotiation experience. He began his career in the procurement department of a major Italian multinational, where he led critical supplier negotiations and cost-saving initiatives.
