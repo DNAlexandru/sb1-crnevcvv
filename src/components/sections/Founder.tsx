@@ -10,8 +10,8 @@ const Founder = () => {
           centered={false}
         />
 
-        <div className="flex flex-col md:flex-row gap-12 md:items-start">
-          <ScrollAnimation animation="fade-in" className="md:flex-1 flex justify-center">
+        <div className="flex flex-col md:flex-row items-start gap-8">
+          <ScrollAnimation animation="fade-in" className="md:flex-none flex justify-center">
             <div className="relative flex justify-center">
               <img
                 src="/Profile_Photo.jpg"
@@ -23,7 +23,7 @@ const Founder = () => {
             </div>
           </ScrollAnimation>
 
-          <ScrollAnimation animation="slide-up" className="md:flex-1 flex items-start">
+          <ScrollAnimation animation="slide-up" className="flex-1 flex items-start">
             <div className="flex flex-col items-start">
               <h3 className="text-2xl font-bold mb-4 text-navy-950">Alexandru Buruiana</h3>
               <p className="text-gray-600 mb-6">
