@@ -10,12 +10,12 @@ const Founder = () => {
           centered={false}
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <ScrollAnimation animation="fade-in">
+        <div className="flex flex-col md:flex-row gap-12 md:items-stretch">
+          <ScrollAnimation animation="fade-in" className="md:flex-1 flex justify-center">
             <div className="relative flex justify-center">
-              <img 
-                src="/Profile_Photo.jpg" 
-                alt="Alexandru Buruiana, Founder of Nego" 
+              <img
+                src="/Profile_Photo.jpg"
+                alt="Alexandru Buruiana, Founder of Nego"
                 className="max-w-md w-full h-auto" />
               <div className="absolute -bottom-6 -right-6 bg-blue-700 text-white py-2 px-4 rounded-lg shadow-md font-medium">
                 Alexandru Buruiana, Founder
@@ -23,8 +23,8 @@ const Founder = () => {
             </div>
           </ScrollAnimation>
 
-          <ScrollAnimation animation="slide-up">
-            <div>
+          <ScrollAnimation animation="slide-up" className="md:flex-1 flex">
+            <div className="flex flex-col justify-between h-full">
               <h3 className="text-2xl font-bold mb-4 text-navy-950">Alexandru Buruiana</h3>
               <p className="text-gray-600 mb-6">
                 Alexandru Buruiana has over five years of international negotiation experience. He began his career in the procurement department of a major Italian multinational, where he led critical supplier negotiations and cost-saving initiatives.
