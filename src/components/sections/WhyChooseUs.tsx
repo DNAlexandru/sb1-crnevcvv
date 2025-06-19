@@ -1,4 +1,4 @@
-import { CreditCard, TrendingUp, Shield, Users, Target, Calendar } from 'lucide-react';
+import { CreditCard, Shield, Target } from 'lucide-react';
 import SectionHeading from '../ui/SectionHeading';
 import ScrollAnimation from '../utils/ScrollAnimation';
 
@@ -9,29 +9,14 @@ const features = [
     description: 'We only succeed when you succeed. You pay nothing unless we reduce your costs (we earn 50% of the savings we negotiate).',
   },
   {
-    icon: TrendingUp,
-    title: 'Proven Results',
-    description: 'Our work delivers tangible ROI – increased profit, reduced costs, and improved efficiency.',
-  },
-  {
     icon: Shield,
     title: 'Trust & Transparency',
     description: 'We build trust through clear, ethical processes. Transparency is a cornerstone of our professionalism, so you always know how and why we make decisions.',
   },
   {
-    icon: Users,
-    title: 'Expert Negotiators',
-    description: 'Led by founder Alexandru Buruiana, our team brings both corporate and freelance expertise to the table. We craft tailored strategies for win-win agreements.',
-  },
-  {
     icon: Target,
     title: 'Customized Strategies',
     description: 'Every negotiation is unique. We design personalized plans focused on your goals, backed by proven methodologies that deliver measurable outcomes.',
-  },
-  {
-    icon: Calendar,
-    title: 'Free Initial Consultation',
-    description: 'Get started with an in-depth analysis at no cost. We\'ll review your situation and outline potential savings before any commitment is made.',
   },
 ];
 
