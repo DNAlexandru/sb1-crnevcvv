@@ -27,10 +27,13 @@ const Founder = () => {
             <div>
               <h3 className="text-2xl font-bold mb-4 text-navy-950">Alexandru Buruiana</h3>
               <p className="text-gray-600 mb-6">
-                Alexandru Buruiana has over a decade of international negotiation experience. He began his career in the procurement department of a major Italian multinational, where he led critical supplier negotiations and cost-saving initiatives.
+                Alexandru Buruiana has over five years of international negotiation experience. He began his career in the procurement department of a major Italian multinational, where he led critical supplier negotiations and cost-saving initiatives.
               </p>
               <p className="text-gray-600 mb-6">
-                After a successful corporate tenure, he founded his own consulting practice, helping clients worldwide achieve better deals and significant savings. Alexandru has years of specialized experience in business negotiation and combines analytical rigor with a personal touch to guide clients to success.
+                After a successful corporate tenure, he founded his own consulting practice to help clients secure better deals and meaningful savings. Alexandru applies his specialized knowledge to craft tailored strategies and blends analytical rigor with a personal touch to guide clients to success.
+              </p>
+              <p className="text-gray-600 mb-6">
+                Nego was born from the idea that expert negotiation skills should be available to everyone. Most people negotiate only a handful of high-value agreements in their lifetime, so mistakes can be costly. By leaving those negotiations to a professional—with no upfront cost—you safeguard your interests when it matters most.
               </p>
               <p className="text-gray-700 font-medium">
                 His commitment to integrity and client success means you always get straightforward advice and honest negotiations.
@@ -39,7 +42,7 @@ const Founder = () => {
               <div className="mt-8 flex flex-wrap gap-4">
                 <div className="bg-gray-100 px-4 py-2 rounded-lg">
                   <span className="text-sm text-gray-500">Experience</span>
-                  <p className="text-navy-900 font-bold">10+ Years</p>
+                  <p className="text-navy-900 font-bold">5+ Years</p>
                 </div>
                 <div className="bg-gray-100 px-4 py-2 rounded-lg">
                   <span className="text-sm text-gray-500">Specialization</span>
