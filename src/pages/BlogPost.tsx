@@ -11,33 +11,6 @@ const BlogPost: React.FC = () => {
 
   if (!post) return <Navigate to="/blog" replace />
 
-  const renderContent = (content: string) =>
-    content
-      .trim()
-      .split('\n\n')
-      .map((p, i) => {
-        if (/^(Introduction|Conclusion)$/i.test(p)) {
-          return (
-            <h2 key={i} className="text-2xl font-bold mt-6 mb-3">
-              {p}
-            </h2>
-          )
-        }
-
-        if (/^\d+\.\s/.test(p)) {
-          return (
-            <h3 key={i} className="text-lg font-semibold mt-4 mb-2">
-              {p}
-            </h3>
-          )
-        }
-
-        return (
-          <p key={i} className="mb-2">
-            {p}
-          </p>
-        )
-      })
 
   return (
     <article className="container mx-auto px-4 py-16 bg-white">
@@ -48,9 +21,10 @@ const BlogPost: React.FC = () => {
         <span className="flex items-center"><Tag className="w-5 h-5 mr-1" />{post.category}</span>
       </div>
       <img src={post.image} alt={post.title} className="w-full rounded-lg mb-8" />
-      <div className="prose prose-lg text-gray-800">
-        {renderContent(post.content)}
-      </div>
+      <div
+        className="prose prose-lg text-gray-800"
+        dangerouslySetInnerHTML={{ __html: post.content }}
+      />
       <div className="mt-12">
         <Button href="/blog" variant="outline">← Back to Blog</Button>
       </div>
