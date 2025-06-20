@@ -11,6 +11,26 @@ const BlogPost: React.FC = () => {
 
   if (!post) return <Navigate to="/blog" replace />
 
+  const renderContent = (content: string) =>
+    content
+      .trim()
+      .split('\n\n')
+      .map((p, i) => {
+        const heading = p.match(/^\*\*(.+)\*\*$/)
+        if (heading) {
+          return (
+            <h3 key={i} className="text-lg font-semibold mt-4 mb-2">
+              {heading[1]}
+            </h3>
+          )
+        }
+        return (
+          <p key={i} className="mb-2">
+            {p}
+          </p>
+        )
+      })
+
   return (
     <article className="container mx-auto px-4 py-16 bg-white">
       <h1 className="text-4xl font-bold text-navy-950 mb-4">{post.title}</h1>
@@ -21,9 +41,7 @@ const BlogPost: React.FC = () => {
       </div>
       <img src={post.image} alt={post.title} className="w-full rounded-lg mb-8" />
       <div className="prose prose-lg text-gray-800">
-        {post.content.trim().split('\n\n').map((p, i) => (
-          <p key={i}>{p}</p>
-        ))}
+        {renderContent(post.content)}
       </div>
       <div className="mt-12">
         <Button href="/blog" variant="outline">← Back to Blog</Button>

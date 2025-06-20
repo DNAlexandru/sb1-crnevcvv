@@ -11,6 +11,26 @@ const Blog: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
 
+  const renderContent = (content: string) =>
+    content
+      .trim()
+      .split('\n\n')
+      .map((p, i) => {
+        const heading = p.match(/^\*\*(.+)\*\*$/)
+        if (heading) {
+          return (
+            <h3 key={i} className="text-lg font-semibold mt-4 mb-2">
+              {heading[1]}
+            </h3>
+          )
+        }
+        return (
+          <p key={i} className="mb-2">
+            {p}
+          </p>
+        )
+      })
+
   return (
     <section className="section">
       <div className="container">
@@ -39,7 +59,9 @@ const Blog: React.FC = () => {
                       <span>{post.readTime}</span>
                     </div>
                     <h3 className="text-xl font-bold mb-2 text-navy-950">{post.title}</h3>
-                    <p className="text-gray-600 mb-4">{post.excerpt}</p>
+                    <div className="text-gray-600 mb-4 space-y-2">
+                      {renderContent(post.content)}
+                    </div>
                   </div>
                   <div className="mt-auto">
                     <Button
