@@ -16,14 +16,22 @@ const BlogPost: React.FC = () => {
       .trim()
       .split('\n\n')
       .map((p, i) => {
-        const heading = p.match(/^\*\*(.+)\*\*$/)
-        if (heading) {
+        if (/^(Introduction|Conclusion)$/i.test(p)) {
+          return (
+            <h2 key={i} className="text-2xl font-bold mt-6 mb-3">
+              {p}
+            </h2>
+          )
+        }
+
+        if (/^\d+\.\s/.test(p)) {
           return (
             <h3 key={i} className="text-lg font-semibold mt-4 mb-2">
-              {heading[1]}
+              {p}
             </h3>
           )
         }
+
         return (
           <p key={i} className="mb-2">
             {p}
