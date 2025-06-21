@@ -1,55 +1,46 @@
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'framer-motion';
 import { useEffect, useRef, ReactNode } from 'react';
 
 interface ScrollAnimationProps {
   children: ReactNode;
   animation?: 'fade-in' | 'slide-up';
   delay?: number;
-  threshold?: number;
   className?: string;
 }
+
+const variants = {
+  'fade-in': { initial: { opacity: 0 }, animate: { opacity: 1 } },
+  'slide-up': { initial: { opacity: 0, y: 40 }, animate: { opacity: 1, y: 0 } },
+};
 
 const ScrollAnimation = ({
   children,
   animation = 'fade-in',
   delay = 0,
-  threshold = 0.1,
   className = '',
 }: ScrollAnimationProps) => {
+  const controls = useAnimation();
   const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, { once: true, margin: '0px 0px -100px' });
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setTimeout(() => {
-              entry.target.classList.add('appear');
-            }, delay);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold,
-      }
-    );
-
-    const current = ref.current;
-    if (current) {
-      observer.observe(current);
+    if (inView) {
+      controls.start('animate');
     }
-
-    return () => {
-      if (current) {
-        observer.unobserve(current);
-      }
-    };
-  }, [delay, threshold]);
+  }, [inView, controls]);
 
   return (
-    <div ref={ref} className={`${animation} ${className}`}>
+    <motion.div
+      ref={ref}
+      initial="initial"
+      animate={controls}
+      variants={variants[animation]}
+      transition={{ duration: 0.6, delay: delay / 1000 }}
+      className={className}
+    >
       {children}
-    </div>
+    </motion.div>
   );
 };
 

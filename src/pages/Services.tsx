@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { Home, DollarSign, Handshake, ArrowRight, CheckCircle } from 'lucide-react';
 import SectionHeading from '../components/ui/SectionHeading';
 import ScrollAnimation from '../components/utils/ScrollAnimation';
-import Button from '../components/ui/Button';
+import { Button } from '../components/ui/button';
 
 const services = [
   {
