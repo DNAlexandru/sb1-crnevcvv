@@ -3,7 +3,7 @@ import React from 'react'
 import { useParams, Navigate } from 'react-router-dom'
 import posts, { Post } from '../data/posts'
 import { Calendar, Clock, Tag } from 'lucide-react'
-import { Button } from '../components/ui/button'
+import Button from '../components/ui/Button'
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()

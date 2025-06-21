@@ -1,40 +1,51 @@
 import { ArrowRight } from 'lucide-react';
-import { Button } from '../ui/button';
+import Button from '../ui/Button';
 import ScrollAnimation from '../utils/ScrollAnimation';
 
 const Hero: React.FC = () => {
   return (
     <section
-      className="relative flex items-center h-screen bg-cover bg-center bg-no-repeat"
+      className="relative bg-cover bg-center bg-no-repeat h-screen flex items-center"
       style={{ backgroundImage: "url('/hero.jpg')" }}
     >
       {/* Overlay gradient meno sfumato */}
       <div
-        className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-white/0"
+        className="absolute inset-0"
+        style={{
+          background:
+            'linear-gradient(to right, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.5) 40%, rgba(255,255,255,0) 100%)',
+        }}
       />
 
       {/* Contenuto centrato verticalmente */}
-      <div className="relative container grid grid-cols-1 md:grid-cols-2 items-center px-6">
-        <div className="max-w-xl">
+      <div className="relative container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center">
+        <div className="max-w-lg">
           <ScrollAnimation animation="fade-in">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy-950 mb-6">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-navy-950 mb-4">
               The art of negotiation at your service, for a fair deal
             </h1>
           </ScrollAnimation>
 
           <ScrollAnimation animation="slide-up" delay={200}>
-            <hr className="w-20 border-t-2 border-navy-950 mb-8" />
+            <hr className="w-16 border-t-2 border-navy-950 mb-6" />
           </ScrollAnimation>
 
           <ScrollAnimation animation="slide-up" delay={300}>
-            <p className="text-base md:text-lg text-gray-700 mb-8">
+            <p className="text-sm md:text-base text-gray-700 mb-8">
               Trust our expertise&nbsp;—&nbsp;our compensation is solely a share of the savings we deliver.
             </p>
           </ScrollAnimation>
 
           <ScrollAnimation animation="slide-up" delay={400}>
             <div className="flex flex-wrap gap-4">
-              <Button variant="default" size="lg" href="/contact" className="bg-navy-950 hover:bg-navy-900" >
+              <Button
+                variant="primary"
+                size="lg"
+                href="/contact"
+                icon={ArrowRight}
+                iconPosition="right"
+                className="bg-navy-950 hover:bg-navy-900"
+              >
                 Free Consultation
               </Button>
               <Button

@@ -2,9 +2,9 @@
 import React from 'react'
 import { Calendar, Clock } from 'lucide-react'
 import SectionHeading from '../ui/SectionHeading'
-import { Card, CardBody } from '../ui/card'
+import { Card, CardBody } from '../ui/Card'
 import ScrollAnimation from '../utils/ScrollAnimation'
-import { Button } from '../ui/button'
+import Button from '../ui/Button'
 import posts from '../../data/posts'
 
 const BlogSection: React.FC = () => {
@@ -18,10 +18,10 @@ const BlogSection: React.FC = () => {
           subtitle="Stay informed with Nego's expert insights. Our blog offers practical articles and tips on negotiation and value creation."
         />
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {previewPosts.map((post, i) => (
             <ScrollAnimation key={i} animation="slide-up" delay={i * 100}>
-              <Card className="flex flex-col h-full hover:shadow-lg transition-shadow">
+              <Card hover className="flex flex-col h-full">
                 <div className="relative h-48 overflow-hidden">
                   <img
                     src={post.image}
@@ -57,7 +57,7 @@ const BlogSection: React.FC = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <Button variant="default" href="/blog">
+          <Button variant="primary" href="/blog">
             View All Articles
           </Button>
         </div>
