@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import SectionHeading from '../ui/SectionHeading';
-import Button from '../ui/Button';
+import { Button } from '../ui/button';
+import { Input } from '../ui/input';
+import { Textarea } from '../ui/textarea';
 import ScrollAnimation from '../utils/ScrollAnimation';
 
 const Contact = () => {
@@ -108,13 +110,12 @@ const Contact = () => {
                   <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
                     Full Name
                   </label>
-                  <input
+                  <Input
                     type="text"
                     id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
                     placeholder="Your name"
                     required
                   />
@@ -124,13 +125,12 @@ const Contact = () => {
                   <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
                     Email Address
                   </label>
-                  <input
+                  <Input
                     type="email"
                     id="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
                     placeholder="your.email@example.com"
                     required
                   />
@@ -140,13 +140,12 @@ const Contact = () => {
                   <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">
                     Phone Number (optional)
                   </label>
-                  <input
+                  <Input
                     type="tel"
                     id="phone"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
                     placeholder="Your phone number"
                   />
                 </div>
@@ -155,26 +154,23 @@ const Contact = () => {
                   <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
                     Your Message
                   </label>
-                  <textarea
+                  <Textarea
                     id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
                     placeholder="How can we help you?"
                     required
                   />
                 </div>
                 
                 <Button
-                  variant="primary"
+                  variant="default"
                   size="lg"
                   className="w-full"
                   type="submit"
                   disabled={isSubmitting}
-                  icon={ArrowRight}
-                  iconPosition="right"
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>

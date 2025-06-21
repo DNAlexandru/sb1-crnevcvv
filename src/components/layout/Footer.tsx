@@ -21,16 +21,16 @@ const Footer = () => {
               Expert negotiation services with a no-risk, performance-based model. We only succeed when you save money.
             </p>
             <div className="flex space-x-4">
-              <a href="#" aria-label="Facebook" className="text-gray-300 hover:text-blue-400 transition-colors">
+              <a href="#" aria-label="Facebook" className="text-gray-300 hover:text-blue-400 transition-transform transform hover:-translate-y-1">
                 <Facebook size={20} />
               </a>
-              <a href="#" aria-label="Twitter" className="text-gray-300 hover:text-blue-400 transition-colors">
+              <a href="#" aria-label="Twitter" className="text-gray-300 hover:text-blue-400 transition-transform transform hover:-translate-y-1">
                 <Twitter size={20} />
               </a>
-              <a href="#" aria-label="LinkedIn" className="text-gray-300 hover:text-blue-400 transition-colors">
+              <a href="#" aria-label="LinkedIn" className="text-gray-300 hover:text-blue-400 transition-transform transform hover:-translate-y-1">
                 <Linkedin size={20} />
               </a>
-              <a href="#" aria-label="Instagram" className="text-gray-300 hover:text-blue-400 transition-colors">
+              <a href="#" aria-label="Instagram" className="text-gray-300 hover:text-blue-400 transition-transform transform hover:-translate-y-1">
                 <Instagram size={20} />
               </a>
             </div>

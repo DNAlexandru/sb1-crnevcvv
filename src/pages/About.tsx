@@ -1,6 +1,6 @@
 import SectionHeading from '../components/ui/SectionHeading';
 import ScrollAnimation from '../components/utils/ScrollAnimation';
-import Button from '../components/ui/Button';
+import { Button } from '../components/ui/button';
 
 const About = () => {
   return (
