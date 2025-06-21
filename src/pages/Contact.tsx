@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import SectionHeading from '../components/ui/SectionHeading';
-import { Button } from '../components/ui/button';
+import Button from '../components/ui/Button';
 import ScrollAnimation from '../components/utils/ScrollAnimation';
 
 const Contact = () => {

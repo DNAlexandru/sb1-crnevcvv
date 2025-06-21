@@ -1,7 +1,7 @@
 import { Home, DollarSign, Handshake, ArrowRight } from 'lucide-react';
 import SectionHeading from '../ui/SectionHeading';
 import ScrollAnimation from '../utils/ScrollAnimation';
-import { Button } from '../ui/button';
+import Button from '../ui/Button';
 
 const services = [
   {

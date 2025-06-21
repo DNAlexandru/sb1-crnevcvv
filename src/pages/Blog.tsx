@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import posts from '../data/posts'
 import { Calendar, Clock } from 'lucide-react'
-import { Card, CardBody } from '../components/ui/card'
-import { Button } from '../components/ui/button'
+import { Card, CardBody } from '../components/ui/Card'
+import Button from '../components/ui/Button'
 import SectionHeading from '../components/ui/SectionHeading'
 import ScrollAnimation from '../components/utils/ScrollAnimation'
 
