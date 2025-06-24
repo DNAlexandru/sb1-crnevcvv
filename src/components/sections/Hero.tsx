@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
         className="absolute inset-0"
         style={{
           background:
-            'linear-gradient(to right, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.5) 40%, rgba(255,255,255,0) 100%)',
+            'linear-gradient(to right, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.6) 25%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.05) 75%, rgba(255,255,255,0) 100%)',
         }}
       />
 
