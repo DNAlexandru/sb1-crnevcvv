@@ -13,8 +13,9 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center gap-3 text-white font-bold text-2xl mb-4">
               <div className="flex items-center">
-                <span className="text-white font-serif">DNEGO</span>
-                <div className="w-2 h-2 bg-blue-400 rounded-full ml-2"></div>
+                <span className="text-white font-serif">DNego</span>
+                <span className="text-blue-400 mx-1">●</span>
+                <span className="text-white font-serif">com</span>
               </div>
             </Link>
             <p className="text-gray-300 mb-6">
@@ -113,7 +114,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 py-6 text-center text-gray-400 text-sm">
-          <p>&copy; {currentYear} DNego. All rights reserved.</p>
+          <p>&copy; {currentYear} DNego<span className="text-blue-400 mx-1">●</span>com. All rights reserved.</p>
         </div>
       </div>
     </footer>
