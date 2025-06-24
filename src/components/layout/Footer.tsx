@@ -13,7 +13,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center gap-3 text-white font-bold text-2xl mb-4">
               <div className="flex items-center">
-                <span className="text-white font-serif">DNEGO</span>
+                <span className="text-white font-serif">DNego</span>
                 <div className="w-2 h-2 bg-blue-400 rounded-full ml-2"></div>
               </div>
             </Link>
