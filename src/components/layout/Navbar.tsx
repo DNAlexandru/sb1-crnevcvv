@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
           onClick={() => handleNavClick('/')}
           className="cursor-pointer text-2xl md:text-3xl font-serif font-bold text-navy-950"
         >
-          DNego<span className="text-blue-700">●</span>com
+          DNego<span className="text-blue-700">●</span>
         </span>
 
         {/* Menu desktop */}
