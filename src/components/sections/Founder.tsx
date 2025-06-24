@@ -15,7 +15,7 @@ const Founder = () => {
             <div className="relative flex justify-center">
               <img
                 src="/Profile_Photo.jpg"
-                alt="Alexandru Buruiana, Founder of Nego"
+                alt="Alexandru Buruiana, Founder of DNego"
                 className="max-w-md w-full h-auto object-cover md:max-h-[20rem]" />
               <div className="absolute -bottom-6 -right-6 bg-blue-700 text-white py-2 px-4 rounded-lg shadow-md font-medium">
                 Alexandru Buruiana, Founder
@@ -33,7 +33,7 @@ const Founder = () => {
                 After a successful corporate tenure, he founded his own consulting practice to help clients secure better deals and meaningful savings. Alexandru applies his specialized knowledge to craft tailored strategies and blends analytical rigor with a personal touch to guide clients to success.
               </p>
               <p className="text-gray-600 mb-6">
-                Nego was born from the idea that expert negotiation skills should be available to everyone. Most people negotiate only a handful of high-value agreements in their lifetime, so mistakes can be costly. By leaving those negotiations to a professional—with no upfront cost—you safeguard your interests when it matters most.
+                DNego was born from the idea that expert negotiation skills should be available to everyone. Most people negotiate only a handful of high-value agreements in their lifetime, so mistakes can be costly. By leaving those negotiations to a professional—with no upfront cost—you safeguard your interests when it matters most.
               </p>
               <p className="text-gray-700 font-medium">
                 His commitment to integrity and client success means you always get straightforward advice and honest negotiations.

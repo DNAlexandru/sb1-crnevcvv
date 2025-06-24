@@ -15,7 +15,7 @@ const BlogSection: React.FC = () => {
       <div className="container">
         <SectionHeading
           title="Blog & Academy"
-          subtitle="Stay informed with Nego's expert insights. Our blog offers practical articles and tips on negotiation and value creation."
+          subtitle="Stay informed with DNego's expert insights. Our blog offers practical articles and tips on negotiation and value creation."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

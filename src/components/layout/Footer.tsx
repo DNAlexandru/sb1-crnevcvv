@@ -13,7 +13,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center gap-3 text-white font-bold text-2xl mb-4">
               <div className="flex items-center">
-                <span className="text-white font-serif">NEGO</span>
+                <span className="text-white font-serif">DNEGO</span>
                 <div className="w-2 h-2 bg-blue-400 rounded-full ml-2"></div>
               </div>
             </Link>
@@ -98,7 +98,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-blue-400 mr-3 mt-0.5" />
-                <span className="text-gray-300">alexandru.buruiana@outlook.it</span>
+                <span className="text-gray-300">negotiation@dnego.com</span>
               </li>
               <li className="flex items-start">
                 <Phone className="h-5 w-5 text-blue-400 mr-3 mt-0.5" />
@@ -113,7 +113,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 py-6 text-center text-gray-400 text-sm">
-          <p>&copy; {currentYear} Nego Consulting. All rights reserved.</p>
+          <p>&copy; {currentYear} DNego. All rights reserved.</p>
         </div>
       </div>
     </footer>

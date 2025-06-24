@@ -26,7 +26,7 @@ const Terms = () => {
             <article className="prose lg:prose-lg text-gray-700">
               <h2>1. Acceptance of Terms</h2>
               <p>
-                By accessing or using Nego Consulting&apos;s website or services, you
+                By accessing or using DNego&apos;s website or services, you
                 agree to be bound by these Terms of Service. If you do not agree
                 with any part of the terms, you should not use our site or
                 engage our services.
@@ -34,7 +34,7 @@ const Terms = () => {
 
               <h2>2. Services Provided</h2>
               <p>
-                Nego Consulting offers professional negotiation and consulting
+                DNego offers professional negotiation and consulting
                 services. Specific deliverables and timelines will be outlined in
                 our written agreement or proposal.
               </p>
@@ -56,14 +56,14 @@ const Terms = () => {
               <h2>5. Intellectual Property</h2>
               <p>
                 All content on this site, including text, images, and graphics,
-                is the property of Nego Consulting. You may not reproduce or
+                is the property of DNego. You may not reproduce or
                 distribute any materials without prior written consent.
               </p>
 
               <h2>6. Limitation of Liability</h2>
               <p>
                 We strive to provide accurate advice, but we cannot guarantee any
-                specific outcome. To the fullest extent permitted by law, Nego
+                specific outcome. To the fullest extent permitted by law, DNego
                 Consulting shall not be liable for indirect or consequential
                 damages arising from the use of our services or website.
               </p>
@@ -84,7 +84,7 @@ const Terms = () => {
               <h2>9. Contact Us</h2>
               <p>
                 For questions about these Terms of Service, please email us at
-                alexandru.buruiana@outlook.it.
+                negotiation@dnego.com.
               </p>
             </article>
           </ScrollAnimation>

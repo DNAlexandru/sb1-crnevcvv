@@ -10,7 +10,7 @@ const About = () => {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <ScrollAnimation animation="slide-up">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">About Nego</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">About DNego</h1>
               <p className="text-xl text-gray-300 mb-6">
                 We are expert negotiators with a mission to help clients achieve better deals and significant savings with absolutely no risk.
               </p>
@@ -33,7 +33,7 @@ const About = () => {
             <ScrollAnimation animation="fade-in">
               <img 
                 src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
-                alt="Nego team discussing strategy" 
+                alt="DNego team discussing strategy" 
                 className="rounded-lg shadow-xl"
               />
             </ScrollAnimation>
@@ -41,10 +41,10 @@ const About = () => {
             <ScrollAnimation animation="slide-up">
               <h2 className="text-3xl font-bold mb-6 text-navy-950">Our Story</h2>
               <p className="text-gray-600 mb-4">
-                Nego was founded in 2020 by Alexandru Buruiana after a decade of corporate procurement experience. Having witnessed countless negotiations where businesses overpaid due to lack of expertise or resources, Alexandru saw an opportunity to help.
+                DNego was founded in 2020 by Alexandru Buruiana after a decade of corporate procurement experience. Having witnessed countless negotiations where businesses overpaid due to lack of expertise or resources, Alexandru saw an opportunity to help.
               </p>
               <p className="text-gray-600 mb-4">
-                What began as a solo consulting practice quickly grew as clients experienced the power of professional negotiation. Today, Nego works with organizations across industries, delivering measurable savings with our unique performance-based model.
+                What began as a solo consulting practice quickly grew as clients experienced the power of professional negotiation. Today, DNego works with organizations across industries, delivering measurable savings with our unique performance-based model.
               </p>
               <p className="text-gray-700 font-medium">
                 We've helped clients save millions through better negotiation, earning our fee only from actual results. Our growing team combines corporate experience with specialized industry knowledge to deliver exceptional outcomes.
