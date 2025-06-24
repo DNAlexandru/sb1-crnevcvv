@@ -27,7 +27,7 @@ const Privacy = () => {
             <article className="prose lg:prose-lg text-gray-700">
               <h2>1. Introduction</h2>
               <p>
-                Nego Consulting collects and processes personal data in
+                DNego collects and processes personal data in
                 accordance with this Privacy Policy and applicable laws. By
                 using our website or services, you consent to this processing.
               </p>
@@ -77,7 +77,7 @@ const Privacy = () => {
               <h2>8. Contact Us</h2>
               <p>
                 For questions about this Privacy Policy, please email
-                alexandru.buruiana@outlook.it.
+                negotiation@dnego.com.
               </p>
             </article>
           </ScrollAnimation>
