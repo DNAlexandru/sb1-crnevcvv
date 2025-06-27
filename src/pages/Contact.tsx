@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import SectionHeading from '../components/ui/SectionHeading';
 import Button from '../components/ui/Button';
@@ -6,36 +7,46 @@ import ScrollAnimation from '../components/utils/ScrollAnimation';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+    user_name: '',
+    user_email: '',
     phone: '',
     company: '',
-    message: '',
+    user_message: '',
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+
+    try {
+      if (formRef.current) {
+        await emailjs.sendForm(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          formRef.current,
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        );
+      }
+
       setSubmitted(true);
-      setFormData({ name: '', email: '', phone: '', company: '', message: '' });
-      
-      // Reset success message after a few seconds
-      setTimeout(() => {
-        setSubmitted(false);
-      }, 5000);
-    }, 1500);
+      setFormData({ user_name: '', user_email: '', phone: '', company: '', user_message: '' });
+
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch (err) {
+      console.error('EmailJS error:', err);
+      alert('Failed to send message. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -111,7 +122,7 @@ const Contact = () => {
                   </div>
                 ) : null}
                 
-                <form onSubmit={handleSubmit}>
+                <form ref={formRef} onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
                       <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
@@ -120,8 +131,8 @@ const Contact = () => {
                       <input
                         type="text"
                         id="name"
-                        name="name"
-                        value={formData.name}
+                        name="user_name"
+                        value={formData.user_name}
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
                         placeholder="Your name"
@@ -136,8 +147,8 @@ const Contact = () => {
                       <input
                         type="email"
                         id="email"
-                        name="email"
-                        value={formData.email}
+                        name="user_email"
+                        value={formData.user_email}
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
                         placeholder="your.email@example.com"
@@ -184,8 +195,8 @@ const Contact = () => {
                     </label>
                     <textarea
                       id="message"
-                      name="message"
-                      value={formData.message}
+                      name="user_message"
+                      value={formData.user_message}
                       onChange={handleChange}
                       rows={5}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
