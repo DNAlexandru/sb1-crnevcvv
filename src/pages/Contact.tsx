@@ -29,12 +29,22 @@ const Contact = () => {
 
     try {
       if (formRef.current) {
-        await emailjs.sendForm(
+        console.log(
           import.meta.env.VITE_EMAILJS_SERVICE_ID,
           import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-          formRef.current,
-          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+          formRef.current
         );
+        try {
+          await emailjs.sendForm(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            formRef.current,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+          );
+        } catch (error) {
+          console.error(error);
+        }
       }
 
       setSubmitted(true);
