@@ -35,6 +35,7 @@ const Contact = () => {
           import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
           formRef.current
         );
+        console.log(new FormData(formRef.current));
         try {
           await emailjs.sendForm(
             import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -180,7 +181,7 @@ const Contact = () => {
                       </label>
                       {/* Verified: this input is within the formRef and will be sent via emailjs.sendForm */}
                       <input
-                        type="tel"
+                        type="text"
                         id="phone"
                         name="user_phone"
                         value={formData.user_phone}
