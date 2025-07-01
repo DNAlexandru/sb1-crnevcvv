@@ -178,6 +178,7 @@ const Contact = () => {
                       <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">
                         Phone Number
                       </label>
+                      {/* Verified: this input is within the formRef and will be sent via emailjs.sendForm */}
                       <input
                         type="tel"
                         id="phone"
