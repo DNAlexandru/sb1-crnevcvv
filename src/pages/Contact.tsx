@@ -172,22 +172,6 @@ const Contact = () => {
                         placeholder="Your phone number"
                       />
                     </div>
-                    
-                    <div>
-                      <label htmlFor="company" className="block text-gray-700 font-medium mb-2">
-                        Company/Organization
-                      </label>
-                      <input
-                        type="text"
-                        id="company"
-                        name="company"
-                        value={formData.company}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
-                        placeholder="Your company"
-                      />
-                    </div>
-                  </div>
                   
                   <div className="mb-6">
                     <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
