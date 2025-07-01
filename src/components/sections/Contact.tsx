@@ -9,7 +9,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     user_name: '',
     user_email: '',
-    phone: '',
+    user_phone: '',
     user_message: '',
   });
 
@@ -47,7 +47,12 @@ const Contact = () => {
       }
 
       setSubmitted(true);
-      setFormData({ user_name: '', user_email: '', phone: '', user_message: '' });
+      setFormData({
+        user_name: '',
+        user_email: '',
+        user_phone: '',
+        user_message: '',
+      });
 
       setTimeout(() => setSubmitted(false), 5000);
     } catch (err) {
@@ -164,8 +169,8 @@ const Contact = () => {
                   <input
                     type="tel"
                     id="phone"
-                    name="phone"
-                    value={formData.phone}
+                    name="user_phone"
+                    value={formData.user_phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
                     placeholder="Your phone number"
