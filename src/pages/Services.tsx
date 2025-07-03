@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Home, DollarSign, Handshake, ArrowRight, CheckCircle } from 'lucide-react';
-import SectionHeading from '../components/ui/SectionHeading';
+import HowItWorks from '../components/sections/HowItWorks';
 import ScrollAnimation from '../components/utils/ScrollAnimation';
 import Button from '../components/ui/Button';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -231,33 +231,7 @@ const Services = () => {
       </section>
 
       {/* Process Overview */}
-      <section className="section bg-gray-50">
-        <div className="container">
-          <SectionHeading
-            title="How We Work"
-            subtitle="Our proven process ensures you get results with zero risk"
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              { step: '1', title: 'Free Consultation', desc: 'We analyze your situation at no cost' },
-              { step: '2', title: 'Strategy Development', desc: 'Create a tailored negotiation plan' },
-              { step: '3', title: 'Expert Negotiation', desc: 'We handle the negotiation process' },
-              { step: '4', title: 'Results & Payment', desc: 'You pay 50% of verified savings only' }
-            ].map((item, index) => (
-              <ScrollAnimation key={index} animation="slide-up" delay={index * 100}>
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-blue-700 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
-                    {item.step}
-                  </div>
-                  <h3 className="text-lg font-bold mb-2 text-navy-950">{item.title}</h3>
-                  <p className="text-gray-600">{item.desc}</p>
-                </div>
-              </ScrollAnimation>
-            ))}
-          </div>
-        </div>
-      </section>
+      <HowItWorks />
 
       {/* CTA */}
       <section className="py-16 bg-navy-950 text-white">
