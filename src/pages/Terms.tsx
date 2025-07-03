@@ -1,6 +1,8 @@
 import ScrollAnimation from '../components/utils/ScrollAnimation';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Terms = () => {
+  const { t } = useLanguage();
   return (
     <div className="pt-24 bg-white">
       {/* Hero */}
@@ -9,10 +11,10 @@ const Terms = () => {
           <div className="max-w-3xl mx-auto text-center">
             <ScrollAnimation animation="slide-up">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-                Terms of Service
+                {t('terms.title', 'Terms of Service')}
               </h1>
               <p className="text-xl text-gray-300 mb-6">
-                Please read these terms carefully before using our services.
+                {t('terms.subtitle', 'Please read these terms carefully before using our services.')}
               </p>
             </ScrollAnimation>
           </div>

@@ -1,6 +1,8 @@
 import ScrollAnimation from '../components/utils/ScrollAnimation';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Privacy = () => {
+  const { t } = useLanguage();
   return (
     <div className="pt-24 bg-white">
       {/* Hero */}
@@ -9,9 +11,11 @@ const Privacy = () => {
           <div className="max-w-3xl mx-auto text-center">
             <ScrollAnimation animation="slide-up">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-                Privacy Policy
+                {t('privacy.title', 'Privacy Policy')}
               </h1>
-              <p className="text-xl text-gray-300 mb-6">Effective Date: 3 luglio 2025</p>
+              <p className="text-xl text-gray-300 mb-6">
+                {t('privacy.subtitle', 'Effective Date: 3 luglio 2025')}
+              </p>
             </ScrollAnimation>
           </div>
         </div>

@@ -31,11 +31,23 @@ const LanguageSwitcher = () => {
       </button>
       {open && (
         <div className="absolute right-0 mt-1 bg-white border rounded shadow-lg text-sm">
-          <div className={optionClass('it')} onClick={() => setLanguage('it')}>
+          <div
+            className={optionClass('it')}
+            onClick={() => {
+              setLanguage('it');
+              setOpen(false);
+            }}
+          >
             <span>🇮🇹</span>
             <span>IT</span>
           </div>
-          <div className={optionClass('en')} onClick={() => setLanguage('en')}>
+          <div
+            className={optionClass('en')}
+            onClick={() => {
+              setLanguage('en');
+              setOpen(false);
+            }}
+          >
             <span>🇬🇧</span>
             <span>EN</span>
           </div>

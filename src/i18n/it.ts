@@ -63,6 +63,86 @@ const it = {
   'founder.section': 'Il Fondatore',
   'founder.about': 'Riguardo al Fondatore',
   'founder.bio1': 'Alexandru Buruiana vanta oltre cinque anni di esperienza internazionale nella negoziazione...',
+
+  // Contact
+  'contact.title': 'Contatti e Prenotazioni',
+  'contact.subtitle': 'Pronto a iniziare a risparmiare? Contattaci per una consulenza gratuita',
+  'contact.getInTouch': 'Contattaci',
+  'contact.email': 'Email',
+  'contact.phone': 'Telefono',
+  'contact.location': 'Località',
+  'contact.locationNote': '(Consulenze disponibili in tutto il mondo)',
+  'contact.upcoming': 'Prossimi Corsi',
+  'contact.upcomingDesc': 'DNego sta sviluppando corsi online per formarti all\'eccellenza nella negoziazione. Inserisci la tua email nel form per ricevere aggiornamenti e accesso anticipato.',
+  'contact.course1': 'Tecniche Avanzate di Negoziazione',
+  'contact.course2': 'Negoziare per Project Manager',
+  'contact.course3': 'Gestione e Strategia dei Fornitori',
+  'contact.formTitle': 'Invia un Messaggio',
+  'contact.success': 'Grazie per il messaggio! Ti ricontatteremo a breve.',
+  'contact.nameLabel': 'Nome Completo',
+  'contact.nameInvalid': 'Inserisci il tuo nome completo',
+  'contact.namePlaceholder': 'Il tuo nome',
+  'contact.emailLabel': 'Indirizzo Email',
+  'contact.emailInvalid': 'Inserisci un indirizzo email valido',
+  'contact.emailPlaceholder': 'tuo.email@example.com',
+  'contact.messageLabel': 'Il tuo Messaggio',
+  'contact.messageInvalid': 'Inserisci il messaggio',
+  'contact.messagePlaceholder': 'Come possiamo aiutarti?',
+  'contact.privacyInvalid': 'Devi accettare la privacy policy',
+  'contact.privacyText': 'Accetto la',
+  'contact.privacyPolicy': 'privacy policy',
+  'contact.privacyContinue': 'e acconsento a essere contattato per la mia richiesta.',
+  'contact.submit': 'Invia Messaggio',
+  'contact.sending': 'Invio...',
+
+  // About
+  'about.heroTitle': 'Chi è DNego',
+  'about.heroSubtitle': 'Siamo negoziatori esperti con la missione di aiutare i clienti a ottenere accordi migliori e risparmi significativi senza alcun rischio.',
+  'about.heroCta': 'Inizia Ora',
+  'about.storyTitle': 'La Nostra Storia',
+  'about.storyP1': 'DNego è stata fondata nel 2020 da Alexandru Buruiana dopo un decennio di esperienza negli acquisti aziendali. Dopo aver visto molte aziende pagare troppo per mancanza di competenze, Alexandru ha deciso di aiutare.',
+  'about.storyP2': 'Quella che era una consulenza individuale è cresciuta rapidamente grazie ai risultati. Oggi DNego collabora con organizzazioni di diversi settori offrendo risparmi misurabili con il nostro modello a performance.',
+  'about.storyP3': 'Abbiamo aiutato i clienti a risparmiare milioni tramite negoziazioni migliori, guadagnando solo dai risultati. Il nostro team unisce esperienza aziendale e competenze specialistiche per risultati eccezionali.',
+  'about.missionTitle': 'La Nostra Missione',
+  'about.missionSubtitle': "Democratizzare l'accesso alla negoziazione professionale eliminando il rischio finanziario",
+  'about.mission1Title': 'Rendere Accessibile la Negoziazione Esperta',
+  'about.mission1Desc': 'Crediamo che tutti meritino supporto professionale nelle trattative, indipendentemente da dimensioni o budget.',
+  'about.mission2Title': 'Allineare Perfettamente gli Incentivi',
+  'about.mission2Desc': 'Il nostro successo è legato al tuo: vinciamo solo quando risparmi denaro, creando un perfetto allineamento.',
+  'about.mission3Title': 'Mantenere i Massimi Standard Etici',
+  'about.mission3Desc': 'Negotiamo con determinazione ma in modo etico, costruendo relazioni anziché bruciare ponti.',
+  'about.valuesTitle': 'I Nostri Valori',
+  'about.valuesSubtitle': 'I principi che guidano ogni nostra azione',
+  'about.value1Title': 'Trasparenza',
+  'about.value1Desc': 'Crediamo nella piena apertura di approccio, metodi e compensi. Saprai sempre come procediamo.',
+  'about.value2Title': 'Orientamento ai Risultati',
+  'about.value2Desc': 'Siamo ossessionati dai risultati misurabili. Tutto ciò che facciamo mira a massimizzare i risparmi e migliorare i termini.',
+  'about.value3Title': 'Integrità',
+  'about.value3Desc': 'Manteniamo i più alti standard etici in ogni trattativa. La nostra reputazione e la tua sono ugualmente importanti.',
+  'about.value4Title': 'Apprendimento Continuo',
+  'about.value4Desc': 'Ci impegniamo a migliorare costantemente conoscenze e competenze per offrire risultati sempre migliori.',
+  'about.ctaTitle': 'Pronto a Iniziare a Risparmiare?',
+  'about.ctaSubtitle': 'Contattaci oggi per una consulenza gratuita e scopri quanto puoi risparmiare.',
+  'about.ctaButton': 'Prenota la Tua Consulenza Gratuita',
+
+  // Services
+  'services.heroTitle': 'I Nostri Servizi',
+  'services.heroSubtitle': 'Competenza di negoziazione specializzata in ambito immobiliare, carriera e consulenza aziendale. Abbiamo successo solo quando risparmi.',
+  'services.heroCta': 'Ottieni la tua consulenza gratuita',
+
+  // Blog
+  'blog.title': 'Tutti gli Articoli del Blog',
+  'blog.subtitle': 'Scopri tutti i nostri ultimi approfondimenti su negoziazione, strategia e creazione di valore.',
+  'blog.readArticle': 'Leggi l\'articolo',
+  'blog.back': 'Torna al Blog',
+
+  // Terms
+  'terms.title': 'Termini di Servizio',
+  'terms.subtitle': 'Leggi attentamente questi termini prima di utilizzare i nostri servizi.',
+
+  // Privacy
+  'privacy.title': 'Informativa sulla Privacy',
+  'privacy.subtitle': 'Data di efficacia: 3 luglio 2025'
 };
 
 export default it;
