@@ -6,16 +6,21 @@ import { Card, CardBody } from '../ui/Card'
 import ScrollAnimation from '../utils/ScrollAnimation'
 import Button from '../ui/Button'
 import posts from '../../data/posts'
+import { useLanguage } from '../../contexts/LanguageContext'
 
 const BlogSection: React.FC = () => {
+  const { t } = useLanguage()
   const previewPosts = posts.slice(0, 3)
 
   return (
     <section className="section">
       <div className="container">
         <SectionHeading
-          title="Blog & Academy"
-          subtitle="Stay informed with DNego's expert insights. Our blog offers practical articles and tips on negotiation and value creation."
+          title={t('blog.sectionTitle', 'Blog & Academy')}
+          subtitle={t(
+            'blog.sectionSubtitle',
+            "Stay informed with DNego's expert insights. Our blog offers practical articles and tips on negotiation and value creation."
+          )}
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -47,7 +52,7 @@ const BlogSection: React.FC = () => {
                       size="sm"
                       className="mt-2"
                     >
-                      Read Article
+                      {t('blog.readArticle', 'Read Article')}
                     </Button>
                   </div>
                 </CardBody>
@@ -58,7 +63,7 @@ const BlogSection: React.FC = () => {
 
         <div className="mt-12 text-center">
           <Button variant="primary" href="/blog">
-            View All Articles
+            {t('blog.viewAll', 'View All Articles')}
           </Button>
         </div>
       </div>
