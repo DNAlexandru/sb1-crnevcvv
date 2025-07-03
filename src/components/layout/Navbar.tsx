@@ -41,36 +41,39 @@ const Navbar: React.FC = () => {
           DNego<span className="text-blue-700">●</span>
         </span>
 
-        {/* Menu desktop */}
-        <nav className="hidden md:flex space-x-6">
-          {['home', 'about', 'services', 'blog', 'contact'].map((key) => {
-            const path = key === 'home' ? '/' : `/${key}`;
-            return (
-              <NavLink
-                key={key}
-                to={path}
-                onClick={(e) => {
-                  e.preventDefault(); // evita navigazione doppia
-                  handleNavClick(path);
-                }}
-                className={({ isActive }) =>
-                  `cursor-pointer text-base md:text-lg font-medium transition-colors ${
-                    isActive
-                      ? 'text-blue-700'
-                      : 'text-navy-950 hover:text-blue-700'
-                  }`
-                }
-              >
-                {t(`nav.${key}`, key)}
-              </NavLink>
-            );
-          })}
-        </nav>
-
-        <div className="flex items-center space-x-4">
+        {/* Right side: links and language */}
+        <div className="hidden md:flex items-center space-x-6">
+          <nav className="flex space-x-6">
+            {['home', 'about', 'services', 'blog', 'contact'].map((key) => {
+              const path = key === 'home' ? '/' : `/${key}`;
+              return (
+                <NavLink
+                  key={key}
+                  to={path}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavClick(path);
+                  }}
+                  className={({ isActive }) =>
+                    `cursor-pointer text-base md:text-lg font-medium transition-colors ${
+                      isActive
+                        ? 'text-blue-700'
+                        : 'text-navy-950 hover:text-blue-700'
+                    }`
+                  }
+                >
+                  {t(`nav.${key}`, key.charAt(0).toUpperCase() + key.slice(1))}
+                </NavLink>
+              );
+            })}
+          </nav>
           <LanguageSwitcher />
-          {/* Mobile menu toggle */}
-          <div className="md:hidden">{/* ...burger menu... */}</div>
+        </div>
+
+        {/* Mobile: language and menu toggle */}
+        <div className="flex items-center space-x-4 md:hidden">
+          <LanguageSwitcher />
+          <div>{/* ...burger menu... */}</div>
         </div>
       </div>
     </header>
