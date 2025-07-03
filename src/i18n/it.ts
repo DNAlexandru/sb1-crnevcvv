@@ -62,7 +62,19 @@ const it = {
   // Founder
   'founder.section': 'Il Fondatore',
   'founder.about': 'Riguardo al Fondatore',
-  'founder.bio1': 'Alexandru Buruiana vanta oltre cinque anni di esperienza internazionale nella negoziazione...',
+  'founder.tagline': 'Alexandru Buruiana, Fondatore',
+  'founder.bio1': 'Alexandru Buruiana ha oltre cinque anni di esperienza internazionale nella negoziazione. Ha iniziato la sua carriera nel reparto acquisti di una grande multinazionale italiana guidando negoziazioni cruciali con i fornitori e iniziative di riduzione dei costi.',
+  'founder.bio2': 'Dopo una brillante carriera aziendale ha fondato la propria consulenza per aiutare i clienti a ottenere condizioni migliori e risparmi tangibili. Unisce conoscenze specialistiche e rigore analitico a un tocco personale per accompagnare i clienti al successo.',
+  'founder.bio3': "DNego è nata dall'idea che le competenze di negoziazione professionale debbano essere accessibili a tutti. Poiché la maggior parte delle persone affronta poche trattative di alto valore nella vita, gli errori possono risultare molto costosi. Affidarsi a un professionista – senza costi iniziali – tutela i tuoi interessi quando conta di più.",
+  'founder.bio4': "Il suo impegno per l'integrità e il successo dei clienti assicura sempre consigli diretti e negoziazioni oneste.",
+  'founder.experienceLabel': 'Esperienza',
+  'founder.experienceValue': '5+ Anni',
+  'founder.specializationLabel': 'Specializzazione',
+  'founder.specializationValue': 'Negoziazione aziendale',
+  'founder.languagesLabel': 'Lingue',
+  'founder.languagesValue': 'Inglese, Italiano',
+  'founder.industriesLabel': 'Settori',
+  'founder.industriesValue': 'Diversi',
 
   // Contact
   'contact.title': 'Contatti e Prenotazioni',
@@ -96,7 +108,7 @@ const it = {
   'contact.sending': 'Invio...',
 
   // About
-  'about.heroTitle': 'Chi è DNego',
+  'about.heroTitle': 'Cosa è DNego',
   'about.heroSubtitle': 'Siamo negoziatori esperti con la missione di aiutare i clienti a ottenere accordi migliori e risparmi significativi senza alcun rischio.',
   'about.heroCta': 'Inizia Ora',
   'about.storyTitle': 'La Nostra Storia',
@@ -135,6 +147,43 @@ const it = {
   'blog.subtitle': 'Scopri tutti i nostri ultimi approfondimenti su negoziazione, strategia e creazione di valore.',
   'blog.readArticle': 'Leggi l\'articolo',
   'blog.back': 'Torna al Blog',
+  'blog.sectionTitle': 'Blog & Academy',
+  'blog.sectionSubtitle': "Rimani aggiornato con gli approfondimenti di DNego. Il nostro blog offre articoli pratici e consigli su negoziazione e creazione di valore.",
+  'blog.viewAll': 'Vedi tutti gli articoli',
+
+  // FAQ
+  'faq.title': 'Domande Frequenti',
+  'faq.subtitle': 'Trova risposta alle domande più comuni sui nostri servizi e sul nostro metodo',
+  'faq.q1': 'Cosa significa "nessun rischio, paghi dai risultati"?',
+  'faq.a1': 'Significa che non paghi mai costi iniziali. Ci facciamo pagare solo il 50% dei soldi che effettivamente ti facciamo risparmiare. Se non otteniamo risparmi, non ci devi nulla.',
+  'faq.q2': 'Cosa succede durante la consulenza gratuita?',
+  'faq.a2': 'Discuteremo nel dettaglio le tue esigenze e analizzeremo eventuali contratti o problematiche. Individueremo le opportunità e delineeremo una strategia: tutto a costo zero. Avrai un quadro chiaro dei potenziali risparmi prima di decidere se procedere.',
+  'faq.q3': 'Quali settori servite?',
+  'faq.a3': 'Assistiamo organizzazioni e privati di ogni settore, dalla manifattura e tecnologia alla sanità e al real estate. Ogni situazione in cui la negoziazione può migliorare i risultati rientra nel nostro ambito.',
+  'faq.q4': 'Come calcolate i risparmi?',
+  'faq.a4': 'Confrontiamo costi o termini prima e dopo la nostra negoziazione. La tua quota di risparmio è pari al 50% del miglioramento ottenuto.',
+  'faq.q5': 'Cosa succede se una trattativa fallisce o richiede troppo tempo?',
+  'faq.a5': 'Stabiliamo fin da subito tempistiche e metriche chiare. Se non riusciamo a migliorare i termini o le trattative si bloccano, non paghi nulla: la nostra tariffa è interamente basata sui risultati.',
+  'faq.q6': 'Come posso iniziare?',
+  'faq.a6': "È semplice: compila il modulo di contatto qui sotto o prenota un incontro sulla nostra pagina Calendly. Fisseremo la consulenza gratuita e daremo il via al processo.",
+
+  // Contact Page Extras
+  'contact.heroTitle': 'Contattaci',
+  'contact.heroSubtitle': 'Pronto a iniziare a risparmiare? Contattaci per una consulenza gratuita',
+  'contact.ourPromiseTitle': 'La Nostra Promessa',
+  'contact.ourPromiseText': 'Ricorda, la consulenza è completamente gratuita e senza impegno. Ti addebiteremo solo il 50% dei risparmi verificati.',
+
+  // Contact FAQs
+  'contactFaq.title': 'Domande sui Contatti',
+  'contactFaq.subtitle': 'Domande comuni su come contattarci e fissare le consulenze',
+  'contactFaq.q1': 'In quanto tempo risponderete alla mia richiesta?',
+  'contactFaq.a1': 'Solitamente rispondiamo entro 24 ore lavorative. Per questioni urgenti chiama direttamente il nostro ufficio.',
+  'contactFaq.q2': 'Cosa succede durante la consulenza iniziale?',
+  'contactFaq.a2': 'Durante i 30 minuti gratuiti discuteremo delle tue esigenze di negoziazione, esamineremo eventuali contratti e individueremo le possibili aree di risparmio. Il tutto è senza impegno e gratuito.',
+  'contactFaq.q3': 'Devo preparare qualcosa per la prima chiamata?',
+  'contactFaq.a3': 'Non è obbligatorio, ma avere a portata di mano documenti o contratti rilevanti ci aiuterà a fornirti indicazioni più precise. In ogni caso possiamo iniziare semplicemente con una chiacchierata.',
+  'contactFaq.q4': 'Lavorate anche con clienti internazionali in fusi orari diversi?',
+  'contactFaq.a4': 'Assolutamente sì! Collaboriamo con clienti in tutto il mondo e pianifichiamo gli incontri in base al tuo fuso orario. Il nostro sistema di prenotazione online mostra la disponibilità nella tua ora locale.',
 
   // Terms
   'terms.title': 'Termini di Servizio',
