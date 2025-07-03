@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const Footer = () => {
+  const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
   
   return (
@@ -19,7 +21,7 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-gray-300 mb-6">
-              Expert negotiation services with a no-risk, performance-based model. We only succeed when you save money.
+              {t('footer.companyInfo', 'Expert negotiation services with a no-risk, performance-based model. We only succeed when you save money.')}
             </p>
             <div className="flex space-x-4">
               <a href="#" aria-label="Facebook" className="text-gray-300 hover:text-blue-400 transition-colors">
@@ -39,7 +41,7 @@ const Footer = () => {
           
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white">Quick Links</h3>
+            <h3 className="text-lg font-bold mb-4 text-white">{t('footer.quickLinks', 'Quick Links')}</h3>
             <ul className="space-y-3">
               {[
                 { name: 'Home', path: '/' },
@@ -55,7 +57,7 @@ const Footer = () => {
                     to={item.path}
                     className="text-gray-300 hover:text-blue-400 transition-colors"
                   >
-                    {item.name}
+                {t(`nav.${item.name.toLowerCase().replace(/\s/g,'')}`, item.name)}
                   </Link>
                 </li>
               ))}
@@ -64,14 +66,14 @@ const Footer = () => {
           
           {/* Our Services */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white">Our Services</h3>
+            <h3 className="text-lg font-bold mb-4 text-white">{t('footer.ourServices', 'Our Services')}</h3>
             <ul className="space-y-3">
               <li>
                 <a
                   href="/services#real-estate"
                   className="text-gray-300 hover:text-blue-400 transition-colors"
                 >
-                  Real Estate Negotiation
+                  {t('servicesPreview.realEstate.title', 'Real Estate Negotiation')}
                 </a>
               </li>
               <li>
@@ -79,7 +81,7 @@ const Footer = () => {
                   href="/services#salary-benefits"
                   className="text-gray-300 hover:text-blue-400 transition-colors"
                 >
-                  Salary & Benefits Negotiation
+                  {t('servicesPreview.salary.title', 'Salary & Benefits Negotiation')}
                 </a>
               </li>
               <li>
@@ -87,7 +89,7 @@ const Footer = () => {
                   href="/services#consultation"
                   className="text-gray-300 hover:text-blue-400 transition-colors"
                 >
-                  Business Consultation Services
+                  {t('servicesPreview.consulting.title', 'Business Consultation Services')}
                 </a>
               </li>
             </ul>
@@ -95,7 +97,7 @@ const Footer = () => {
           
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white">Contact Us</h3>
+            <h3 className="text-lg font-bold mb-4 text-white">{t('footer.contactUs', 'Contact Us')}</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-blue-400 mr-3 mt-0.5" />
@@ -114,7 +116,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 py-6 text-center text-gray-400 text-sm">
-          <p>&copy; {currentYear} DNego<span className="text-blue-400 mx-1">●</span>. All rights reserved.</p>
+          <p>&copy; {currentYear} DNego<span className="text-blue-400 mx-1">●</span>. {t('footer.rights', 'All rights reserved.')}</p>
         </div>
       </div>
     </footer>

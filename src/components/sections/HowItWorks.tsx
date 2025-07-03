@@ -1,6 +1,7 @@
 import { MessageCircle, PieChart, Users, CheckCircle } from 'lucide-react';
 import SectionHeading from '../ui/SectionHeading';
 import ScrollAnimation from '../utils/ScrollAnimation';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const steps = [
   {
@@ -26,12 +27,13 @@ const steps = [
 ];
 
 const HowItWorks = () => {
+  const { t } = useLanguage();
   return (
     <section className="section bg-white">
       <div className="container">
         <SectionHeading
-          title="How It Works"
-          subtitle="Our proven four-step process delivers measurable results with no upfront costs"
+          title={t('how.title', 'How It Works')}
+          subtitle={t('how.subtitle', 'Our proven four-step process delivers measurable results with no upfront costs')}
         />
         
         <div className="relative">
@@ -62,9 +64,9 @@ const HowItWorks = () => {
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border">
                       <div className={`flex items-center mb-4 md:${index % 2 === 0 ? 'justify-end' : ''}`}>
                         <step.icon className={`h-8 w-8 text-blue-700 ${index % 2 === 0 ? 'md:order-2 md:ml-4' : 'mr-4'}`} />
-                        <h3 className="text-xl font-bold text-navy-950">{step.title}</h3>
+                        <h3 className="text-xl font-bold text-navy-950">{t(`how.step${index+1}.title`, step.title)}</h3>
                       </div>
-                      <p className="text-gray-600">{step.description}</p>
+                      <p className="text-gray-600">{t(`how.step${index+1}.desc`, step.description)}</p>
                     </div>
                   </div>
                 </div>

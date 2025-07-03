@@ -1,8 +1,10 @@
 import { ArrowRight } from 'lucide-react';
 import Button from '../ui/Button';
 import ScrollAnimation from '../utils/ScrollAnimation';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const Hero: React.FC = () => {
+  const { t } = useLanguage();
   return (
     <section
       className="relative bg-cover bg-center bg-no-repeat h-screen flex items-center"
@@ -22,7 +24,7 @@ const Hero: React.FC = () => {
         <div className="max-w-lg">
           <ScrollAnimation animation="fade-in">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-navy-950 mb-4">
-              The art of negotiation at your service, for a fair deal
+              {t('hero.title', 'The art of negotiation at your service, for a fair deal')}
             </h1>
           </ScrollAnimation>
 
@@ -32,7 +34,7 @@ const Hero: React.FC = () => {
 
           <ScrollAnimation animation="slide-up" delay={300}>
             <p className="text-sm md:text-base text-gray-700 mb-8">
-              Trust our expertise&nbsp;—&nbsp;our compensation is solely a share of the savings we deliver.
+              {t('hero.subtitle', 'Trust our expertise — our compensation is solely a share of the savings we deliver.')}
             </p>
           </ScrollAnimation>
 
@@ -46,7 +48,7 @@ const Hero: React.FC = () => {
                 iconPosition="right"
                 className="bg-navy-950 hover:bg-navy-900"
               >
-                Free Consultation
+                {t('hero.cta', 'Free Consultation')}
               </Button>
               <Button
                 variant="outline"
@@ -54,7 +56,7 @@ const Hero: React.FC = () => {
                 href="/services"
                 className="border-navy-950 text-navy-950 hover:bg-navy-950 hover:text-white"
               >
-                View Services
+                {t('hero.secondary', 'View Services')}
               </Button>
             </div>
           </ScrollAnimation>
@@ -68,7 +70,7 @@ const Hero: React.FC = () => {
           href="#why-choose-us"
           className="flex flex-col items-center text-navy-950 hover:opacity-80 transition-opacity"
         >
-          <span className="text-sm mb-1">Scroll</span>
+          <span className="text-sm mb-1">{t('hero.scroll', 'Scroll')}</span>
           <svg
             className="w-6 h-6"
             fill="none"
