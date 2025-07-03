@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import LanguageSwitcher from './LanguageSwitcher';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -40,11 +43,11 @@ const Navbar: React.FC = () => {
 
         {/* Menu desktop */}
         <nav className="hidden md:flex space-x-6">
-          {['Home', 'About', 'Services', 'Blog', 'Contact'].map((name) => {
-            const path = name === 'Home' ? '/' : `/${name.toLowerCase()}`;
+          {['home', 'about', 'services', 'blog', 'contact'].map((key) => {
+            const path = key === 'home' ? '/' : `/${key}`;
             return (
               <NavLink
-                key={name}
+                key={key}
                 to={path}
                 onClick={(e) => {
                   e.preventDefault(); // evita navigazione doppia
@@ -58,15 +61,16 @@ const Navbar: React.FC = () => {
                   }`
                 }
               >
-                {name}
+                {t(`nav.${key}`, key)}
               </NavLink>
             );
           })}
         </nav>
 
-        {/* Mobile menu toggle */}
-        <div className="md:hidden">
-          {/* ...burger menu... */}
+        <div className="flex items-center space-x-4">
+          <LanguageSwitcher />
+          {/* Mobile menu toggle */}
+          <div className="md:hidden">{/* ...burger menu... */}</div>
         </div>
       </div>
     </header>

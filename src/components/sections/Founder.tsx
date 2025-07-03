@@ -1,12 +1,14 @@
 import SectionHeading from '../ui/SectionHeading';
 import ScrollAnimation from '../utils/ScrollAnimation';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const Founder = () => {
+  const { t } = useLanguage();
   return (
     <section className="section bg-white">
       <div className="container">
         <SectionHeading
-          title="About the Founder"
+          title={t('founder.about', 'About the Founder')}
           centered={false}
         />
 

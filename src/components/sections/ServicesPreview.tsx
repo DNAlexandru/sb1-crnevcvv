@@ -2,19 +2,23 @@ import { Home, DollarSign, Handshake, ArrowRight } from 'lucide-react';
 import SectionHeading from '../ui/SectionHeading';
 import ScrollAnimation from '../utils/ScrollAnimation';
 import Button from '../ui/Button';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const services = [
   {
+    key: "realEstate",
     icon: Home,
     title: 'Real Estate Negotiation',
     description: 'Expert support for property purchases, mortgage optimization, and rental agreements to secure the best terms and pricing.',
   },
   {
+    key: "salary",
     icon: DollarSign,
     title: 'Salary & Benefits Negotiation',
     description: 'Maximize your earning potential through strategic compensation negotiations and comprehensive benefits package optimization.',
   },
   {
+    key: "consulting",
     icon: Handshake,
     title: 'Business Consultation Services',
     description: 'Strategic negotiation consulting and training to enhance your business deals and commercial agreements.',
@@ -22,12 +26,13 @@ const services = [
 ];
 
 const ServicesPreview = () => {
+  const { t } = useLanguage();
   return (
     <section className="section bg-gray-50">
       <div className="container">
         <SectionHeading
-          title="Our Core Services"
-          subtitle="Specialized negotiation expertise where you need it most"
+          title={t('servicesPreview.title', 'Our Core Services')}
+          subtitle={t('servicesPreview.subtitle', 'Specialized negotiation expertise where you need it most')}
         />
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -42,8 +47,8 @@ const ServicesPreview = () => {
                 <div className="flex items-center justify-center w-16 h-16 bg-blue-100 text-blue-700 rounded-full mb-6 group-hover:bg-blue-700 group-hover:text-white transition-colors duration-300">
                   <service.icon className="h-8 w-8" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-navy-950">{service.title}</h3>
-                <p className="text-gray-600 mb-6 flex-grow">{service.description}</p>
+                <h3 className="text-xl font-bold mb-4 text-navy-950">{t(`servicesPreview.${service.key}.title`, service.title)}</h3>
+                <p className="text-gray-600 mb-6 flex-grow">{t(`servicesPreview.${service.key}.desc`, service.description)}</p>
                 <Button 
                   variant="outline" 
                   href="/services"
@@ -52,7 +57,7 @@ const ServicesPreview = () => {
                   iconPosition="right"
                   className="w-full"
                 >
-                  Learn More
+                  {t('servicesPreview.more', 'Learn More')}
                 </Button>
               </div>
             </ScrollAnimation>
@@ -62,14 +67,14 @@ const ServicesPreview = () => {
         <div className="mt-12 text-center">
           <ScrollAnimation animation="fade-in" delay={400}>
             <p className="text-gray-600 mb-6">
-              Ready to start saving? We only get paid when you save money.
+              {t('servicesPreview.ready', 'Ready to start saving? We only get paid when you save money.')}
             </p>
-            <Button 
-              variant="primary" 
+            <Button
+              variant="primary"
               size="lg"
               href="/contact"
             >
-              Schedule Your Free Consultation
+              {t('servicesPreview.contact', 'Schedule Your Free Consultation')}
             </Button>
           </ScrollAnimation>
         </div>
