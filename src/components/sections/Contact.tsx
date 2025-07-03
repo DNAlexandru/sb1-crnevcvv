@@ -164,6 +164,10 @@ const Contact = () => {
                     name="user_name"
                     value={formData.user_name}
                     onChange={handleChange}
+                    onInvalid={(e) =>
+                      e.currentTarget.setCustomValidity("Please enter your full name")
+                    }
+                    onInput={(e) => e.currentTarget.setCustomValidity("")}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
                     placeholder="Your name"
                     required
@@ -183,6 +187,12 @@ const Contact = () => {
                     name="user_email"
                     value={formData.user_email}
                     onChange={handleChange}
+                    onInvalid={(e) =>
+                      e.currentTarget.setCustomValidity(
+                        "Please enter a valid email address"
+                      )
+                    }
+                    onInput={(e) => e.currentTarget.setCustomValidity("")}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
                     placeholder="your.email@example.com"
                     required
@@ -201,6 +211,12 @@ const Contact = () => {
                     name="user_message"
                     value={formData.user_message}
                     onChange={handleChange}
+                    onInvalid={(e) =>
+                      e.currentTarget.setCustomValidity(
+                        "Please enter your message"
+                      )
+                    }
+                    onInput={(e) => e.currentTarget.setCustomValidity("")}
                     rows={5}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
                     placeholder="How can we help you?"
@@ -213,6 +229,12 @@ const Contact = () => {
                     type="checkbox"
                     id="privacy"
                     className="h-4 w-4 text-blue-700 border-gray-300 rounded focus:ring-blue-700"
+                    onInvalid={(e) =>
+                      e.currentTarget.setCustomValidity(
+                        "You must agree to the privacy policy"
+                      )
+                    }
+                    onInput={(e) => e.currentTarget.setCustomValidity("")}
                     required
                   />
                   <label
