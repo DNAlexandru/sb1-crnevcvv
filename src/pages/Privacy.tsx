@@ -11,7 +11,7 @@ const Privacy = () => {
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
                 Privacy Policy
               </h1>
-              <p className="text-xl text-gray-300 mb-6">Effective Date: 3 luglio 2025</p>
+              <p className="text-xl text-gray-300 mb-6">Effective Date: 3 July 2025</p>
             </ScrollAnimation>
           </div>
         </div>
