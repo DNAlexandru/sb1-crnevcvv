@@ -4,8 +4,10 @@ import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 import SectionHeading from "../ui/SectionHeading";
 import Button from "../ui/Button";
 import ScrollAnimation from "../utils/ScrollAnimation";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const Contact = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     user_name: "",
     user_email: "",
@@ -68,8 +70,11 @@ const Contact = () => {
     <section className="section bg-white">
       <div className="container">
         <SectionHeading
-          title="Contact & Booking"
-          subtitle="Ready to start saving? Get in touch for your free consultation"
+          title={t('contact.title', 'Contact & Booking')}
+          subtitle={t(
+            'contact.subtitle',
+            'Ready to start saving? Get in touch for your free consultation'
+          )}
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -77,14 +82,16 @@ const Contact = () => {
           <ScrollAnimation animation="slide-up">
             <div className="bg-navy-950 text-white p-8 lg:p-12 rounded-lg shadow-xl">
               <h3 className="text-2xl font-bold mb-8 text-white">
-                Get In Touch
+                {t('contact.getInTouch', 'Get In Touch')}
               </h3>
 
               <div className="space-y-6">
                 <div className="flex items-start">
                   <Mail className="h-6 w-6 text-blue-400 mr-4 mt-1" />
                   <div>
-                    <h4 className="font-bold mb-1 text-white">Email</h4>
+                    <h4 className="font-bold mb-1 text-white">
+                      {t('contact.email', 'Email')}
+                    </h4>
                     <a
                       href="mailto:negotiation@dnego.com"
                       className="text-gray-300 hover:text-blue-400 transition-colors"
@@ -97,7 +104,9 @@ const Contact = () => {
                 <div className="flex items-start">
                   <Phone className="h-6 w-6 text-blue-400 mr-4 mt-1" />
                   <div>
-                    <h4 className="font-bold mb-1 text-white">Phone</h4>
+                    <h4 className="font-bold mb-1 text-white">
+                      {t('contact.phone', 'Phone')}
+                    </h4>
                     <a
                       href="tel:+393275859000"
                       className="text-gray-300 hover:text-blue-400 transition-colors"
@@ -110,10 +119,12 @@ const Contact = () => {
                 <div className="flex items-start">
                   <MapPin className="h-6 w-6 text-blue-400 mr-4 mt-1" />
                   <div>
-                    <h4 className="font-bold mb-1 text-white">Location</h4>
+                    <h4 className="font-bold mb-1 text-white">
+                      {t('contact.location', 'Location')}
+                    </h4>
                     <p className="text-gray-300">Parma, Italy</p>
                     <p className="text-gray-400">
-                      (Consultations available globally)
+                      {t('contact.locationNote', '(Consultations available globally)')}
                     </p>
                   </div>
                 </div>
@@ -121,17 +132,18 @@ const Contact = () => {
 
               <div className="mt-12">
                 <h4 className="text-xl font-bold mb-4 text-white">
-                  Upcoming Courses
+                  {t('contact.upcoming', 'Upcoming Courses')}
                 </h4>
                 <p className="text-gray-300 mb-4">
-                  DNego is developing online courses to train you in negotiation
-                  excellence. Enter your email in the form to receive updates
-                  and early access.
+                  {t(
+                    'contact.upcomingDesc',
+                    'DNego is developing online courses to train you in negotiation excellence. Enter your email in the form to receive updates and early access.'
+                  )}
                 </p>
                 <ul className="list-disc list-inside text-gray-300">
-                  <li>Advanced Negotiation Techniques</li>
-                  <li>Negotiation for Project Managers</li>
-                  <li>Supplier Management & Strategy</li>
+                  <li>{t('contact.course1', 'Advanced Negotiation Techniques')}</li>
+                  <li>{t('contact.course2', 'Negotiation for Project Managers')}</li>
+                  <li>{t('contact.course3', 'Supplier Management & Strategy')}</li>
                 </ul>
               </div>
             </div>
@@ -141,12 +153,12 @@ const Contact = () => {
           <ScrollAnimation animation="slide-up" delay={200}>
             <div className="bg-white p-8 lg:p-12 rounded-lg shadow-lg border">
               <h3 className="text-2xl font-bold mb-6 text-navy-950">
-                Send us a Message
+                {t('contact.formTitle', 'Send us a Message')}
               </h3>
 
               {submitted ? (
                 <div className="bg-green-100 border border-green-500 text-green-700 p-4 rounded-lg mb-4">
-                  Thank you for your message! We'll be in touch shortly.
+                  {t('contact.success', "Thank you for your message! We'll be in touch shortly.")}
                 </div>
               ) : null}
 
@@ -156,7 +168,7 @@ const Contact = () => {
                     htmlFor="name"
                     className="block text-gray-700 font-medium mb-2"
                   >
-                    Full Name
+                    {t('contact.nameLabel', 'Full Name')}
                   </label>
                   <input
                     type="text"
@@ -165,11 +177,13 @@ const Contact = () => {
                     value={formData.user_name}
                     onChange={handleChange}
                     onInvalid={(e) =>
-                      e.currentTarget.setCustomValidity("Please enter your full name")
+                      e.currentTarget.setCustomValidity(
+                        t('contact.nameInvalid', 'Please enter your full name')
+                      )
                     }
                     onInput={(e) => e.currentTarget.setCustomValidity("")}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
-                    placeholder="Your name"
+                    placeholder={t('contact.namePlaceholder', 'Your name')}
                     required
                   />
                 </div>
@@ -179,7 +193,7 @@ const Contact = () => {
                     htmlFor="email"
                     className="block text-gray-700 font-medium mb-2"
                   >
-                    Email Address
+                    {t('contact.emailLabel', 'Email Address')}
                   </label>
                   <input
                     type="email"
@@ -189,12 +203,12 @@ const Contact = () => {
                     onChange={handleChange}
                     onInvalid={(e) =>
                       e.currentTarget.setCustomValidity(
-                        "Please enter a valid email address"
+                        t('contact.emailInvalid', 'Please enter a valid email address')
                       )
                     }
                     onInput={(e) => e.currentTarget.setCustomValidity("")}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
-                    placeholder="your.email@example.com"
+                    placeholder={t('contact.emailPlaceholder', 'your.email@example.com')}
                     required
                   />
                 </div>
@@ -204,7 +218,7 @@ const Contact = () => {
                     htmlFor="message"
                     className="block text-gray-700 font-medium mb-2"
                   >
-                    Your Message
+                    {t('contact.messageLabel', 'Your Message')}
                   </label>
                   <textarea
                     id="message"
@@ -213,13 +227,13 @@ const Contact = () => {
                     onChange={handleChange}
                     onInvalid={(e) =>
                       e.currentTarget.setCustomValidity(
-                        "Please enter your message"
+                        t('contact.messageInvalid', 'Please enter your message')
                       )
                     }
                     onInput={(e) => e.currentTarget.setCustomValidity("")}
                     rows={5}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
-                    placeholder="How can we help you?"
+                    placeholder={t('contact.messagePlaceholder', 'How can we help you?')}
                     required
                   />
                 </div>
@@ -231,7 +245,7 @@ const Contact = () => {
                     className="h-4 w-4 text-blue-700 border-gray-300 rounded focus:ring-blue-700"
                     onInvalid={(e) =>
                       e.currentTarget.setCustomValidity(
-                        "You must agree to the privacy policy"
+                        t('contact.privacyInvalid', 'You must agree to the privacy policy')
                       )
                     }
                     onInput={(e) => e.currentTarget.setCustomValidity("")}
@@ -241,11 +255,11 @@ const Contact = () => {
                     htmlFor="privacy"
                     className="ml-2 block text-sm text-gray-700"
                   >
-                    I agree to the{" "}
+                    {t('contact.privacyText', 'I agree to the ')}{" "}
                     <a href="/privacy" className="text-blue-700 underline">
-                      privacy policy
+                      {t('contact.privacyPolicy', 'privacy policy')}
                     </a>{" "}
-                    and consent to being contacted regarding my inquiry.
+                    {t('contact.privacyContinue', 'and consent to being contacted regarding my inquiry.')}
                   </label>
                 </div>
 
@@ -258,7 +272,9 @@ const Contact = () => {
                   icon={ArrowRight}
                   iconPosition="right"
                 >
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                  {isSubmitting
+                    ? t('contact.sending', 'Sending...')
+                    : t('contact.submit', 'Send Message')}
                 </Button>
               </form>
             </div>

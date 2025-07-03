@@ -4,6 +4,7 @@ import { Home, DollarSign, Handshake, ArrowRight, CheckCircle } from 'lucide-rea
 import SectionHeading from '../components/ui/SectionHeading';
 import ScrollAnimation from '../components/utils/ScrollAnimation';
 import Button from '../components/ui/Button';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const services = [
   {
@@ -84,6 +85,7 @@ const services = [
 ];
 
 const Services = () => {
+  const { t } = useLanguage();
   const location = useLocation();
 
   useEffect(() => {
@@ -107,16 +109,17 @@ const Services = () => {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <ScrollAnimation animation="slide-up">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Our Services</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                {t('services.heroTitle', 'Our Services')}
+              </h1>
               <p className="text-xl text-gray-300 mb-6">
-                Specialized negotiation expertise across real estate, career advancement, and business consulting. We only succeed when you save money.
+                {t(
+                  'services.heroSubtitle',
+                  'Specialized negotiation expertise across real estate, career advancement, and business consulting. We only succeed when you save money.'
+                )}
               </p>
-              <Button 
-                variant="primary" 
-                size="lg" 
-                href="/contact"
-              >
-                Get Your Free Consultation
+              <Button variant="primary" size="lg" href="/contact">
+                {t('services.heroCta', 'Get Your Free Consultation')}
               </Button>
             </ScrollAnimation>
           </div>

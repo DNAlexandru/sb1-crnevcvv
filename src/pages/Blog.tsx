@@ -5,8 +5,10 @@ import { Card, CardBody } from '../components/ui/Card'
 import Button from '../components/ui/Button'
 import SectionHeading from '../components/ui/SectionHeading'
 import ScrollAnimation from '../components/utils/ScrollAnimation'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const Blog: React.FC = () => {
+  const { t } = useLanguage()
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
@@ -16,8 +18,8 @@ const Blog: React.FC = () => {
     <section className="section">
       <div className="container">
         <SectionHeading
-          title="All Blog Articles"
-          subtitle="Explore all our latest insights on negotiation, strategy, and value creation."
+          title={t('blog.title', 'All Blog Articles')}
+          subtitle={t('blog.subtitle', 'Explore all our latest insights on negotiation, strategy, and value creation.')}
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -49,7 +51,7 @@ const Blog: React.FC = () => {
                       size="sm"
                       className="mt-2"
                     >
-                      Read Article
+                      {t('blog.readArticle', 'Read Article')}
                     </Button>
                   </div>
                 </CardBody>

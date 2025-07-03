@@ -4,8 +4,10 @@ import { useParams, Navigate } from 'react-router-dom'
 import posts, { Post } from '../data/posts'
 import { Calendar, Clock, Tag } from 'lucide-react'
 import Button from '../components/ui/Button'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const BlogPost: React.FC = () => {
+  const { t } = useLanguage()
   const { slug } = useParams<{ slug: string }>()
   const post: Post | undefined = posts.find(p => p.slug === slug)
 
@@ -26,7 +28,9 @@ const BlogPost: React.FC = () => {
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
       <div className="mt-12">
-        <Button href="/blog" variant="outline">← Back to Blog</Button>
+        <Button href="/blog" variant="outline">
+          ← {t('blog.back', 'Back to Blog')}
+        </Button>
       </div>
     </article>
   )
