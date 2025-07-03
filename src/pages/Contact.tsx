@@ -234,7 +234,7 @@ const Contact = () => {
                       className="ml-2 block text-sm text-gray-700"
                     >
                       I agree to the{" "}
-                      <a href="#" className="text-blue-700 underline">
+                      <a href="/privacy" className="text-blue-700 underline">
                         privacy policy
                       </a>{" "}
                       and consent to being contacted regarding my inquiry.
