@@ -208,6 +208,25 @@ const Contact = () => {
                   />
                 </div>
 
+                <div className="flex items-center mb-8">
+                  <input
+                    type="checkbox"
+                    id="privacy"
+                    className="h-4 w-4 text-blue-700 border-gray-300 rounded focus:ring-blue-700"
+                    required
+                  />
+                  <label
+                    htmlFor="privacy"
+                    className="ml-2 block text-sm text-gray-700"
+                  >
+                    I agree to the{" "}
+                    <a href="/privacy" className="text-blue-700 underline">
+                      privacy policy
+                    </a>{" "}
+                    and consent to being contacted regarding my inquiry.
+                  </label>
+                </div>
+
                 <Button
                   variant="primary"
                   size="lg"
