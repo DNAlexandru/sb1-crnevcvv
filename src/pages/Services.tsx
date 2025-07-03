@@ -148,21 +148,37 @@ const Services = () => {
                       <div className="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-700 mr-4">
                         <service.icon className="h-8 w-8" />
                       </div>
-                      <h2 className="text-2xl md:text-3xl font-bold text-navy-950">{service.title}</h2>
+                      <h2 className="text-2xl md:text-3xl font-bold text-navy-950">
+                        {t(`services.${service.id}.title`, service.title)}
+                      </h2>
                     </div>
 
-                    <p className="text-lg text-gray-600 mb-8">{service.description}</p>
+                    <p className="text-lg text-gray-600 mb-8">
+                      {t(`services.${service.id}.desc`, service.description)}
+                    </p>
 
                     <div className="mb-8">
-                      <h3 className="text-xl font-bold mb-6 text-navy-950">Specific Services:</h3>
+                      <h3 className="text-xl font-bold mb-6 text-navy-950">
+                        {t('services.specificServices', 'Specific Services:')}
+                      </h3>
                       <div className="space-y-4">
                         {service.detailedServices.map((detailService, serviceIndex) => (
                           <div key={serviceIndex} className="bg-gray-50 rounded-lg p-4">
                             <div className="flex items-start">
                               <CheckCircle className="h-5 w-5 text-blue-700 mr-3 mt-0.5 flex-shrink-0" />
                               <div>
-                                <h4 className="font-bold text-navy-950 mb-1">{detailService.title}</h4>
-                                <p className="text-gray-600">{detailService.description}</p>
+                                <h4 className="font-bold text-navy-950 mb-1">
+                                  {t(
+                                    `services.${service.id}.detailed.${serviceIndex}.title`,
+                                    detailService.title
+                                  )}
+                                </h4>
+                                <p className="text-gray-600">
+                                  {t(
+                                    `services.${service.id}.detailed.${serviceIndex}.desc`,
+                                    detailService.description
+                                  )}
+                                </p>
                               </div>
                             </div>
                           </div>
@@ -170,51 +186,71 @@ const Services = () => {
                       </div>
                     </div>
 
-                    <Button 
-                      variant="primary" 
+                    <Button
+                      variant="primary"
                       href="/contact"
                       icon={ArrowRight}
                       iconPosition="right"
                       className="mb-8"
                     >
-                      Get Free Consultation
+                      {t('services.freeConsultation', 'Get Free Consultation')}
                     </Button>
                   </div>
 
                   {/* Case Study */}
                   <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
                     <div className="bg-white rounded-lg shadow-lg border p-8 sticky top-8">
-                      <h3 className="text-xl font-bold mb-6 text-navy-950">Success Story</h3>
+                      <h3 className="text-xl font-bold mb-6 text-navy-950">
+                        {t('services.successStory', 'Success Story')}
+                      </h3>
 
                       <div className="space-y-6">
                         <div>
                           <h4 className="font-bold text-red-700 mb-2 flex items-center">
                             <span className="w-6 h-6 bg-red-100 text-red-700 rounded-full flex items-center justify-center text-sm font-bold mr-2">1</span>
-                            Challenge:
+                            {t('services.challengeLabel', 'Challenge:')}
                           </h4>
-                          <p className="text-gray-600 ml-8">{service.caseStudy.challenge}</p>
+                          <p className="text-gray-600 ml-8">
+                            {t(
+                              `services.${service.id}.case.challenge`,
+                              service.caseStudy.challenge
+                            )}
+                          </p>
                         </div>
 
                         <div>
                           <h4 className="font-bold text-blue-700 mb-2 flex items-center">
                             <span className="w-6 h-6 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center text-sm font-bold mr-2">2</span>
-                            Solution:
+                            {t('services.solutionLabel', 'Solution:')}
                           </h4>
-                          <p className="text-gray-600 ml-8">{service.caseStudy.solution}</p>
+                          <p className="text-gray-600 ml-8">
+                            {t(
+                              `services.${service.id}.case.solution`,
+                              service.caseStudy.solution
+                            )}
+                          </p>
                         </div>
 
                         <div>
                           <h4 className="font-bold text-green-700 mb-2 flex items-center">
                             <span className="w-6 h-6 bg-green-100 text-green-700 rounded-full flex items-center justify-center text-sm font-bold mr-2">3</span>
-                            Result:
+                            {t('services.resultLabel', 'Result:')}
                           </h4>
-                          <p className="text-gray-600 ml-8">{service.caseStudy.result}</p>
+                          <p className="text-gray-600 ml-8">
+                            {t(
+                              `services.${service.id}.case.result`,
+                              service.caseStudy.result
+                            )}
+                          </p>
                         </div>
                       </div>
 
                       <div className="mt-6 p-4 bg-blue-50 rounded-lg">
                         <p className="text-sm text-blue-800 font-medium">
-                          💡 Remember: We only get paid 50% of your verified savings. No savings = no fee.
+                          {t(
+                            'services.remember',
+                            '💡 Remember: We only get paid 50% of your verified savings. No savings = no fee.'
+                          )}
                         </p>
                       </div>
                     </div>
@@ -238,9 +274,14 @@ const Services = () => {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <ScrollAnimation animation="fade-in">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to Start Saving?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+                {t('services.ctaTitle', 'Ready to Start Saving?')}
+              </h2>
               <p className="text-xl text-gray-300 mb-8">
-                Contact us today for your free consultation. We only get paid when you save money.
+                {t(
+                  'services.ctaSubtitle',
+                  'Contact us today for your free consultation. We only get paid when you save money.'
+                )}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
@@ -248,7 +289,10 @@ const Services = () => {
                   size="lg" 
                   href="/contact"
                 >
-                  Schedule Your Free Consultation
+                  {t(
+                    'services.ctaSchedule',
+                    'Schedule Your Free Consultation'
+                  )}
                 </Button>
                 <Button 
                   variant="outline" 
@@ -256,7 +300,7 @@ const Services = () => {
                   href="/"
                   className="border-white text-white hover:bg-white hover:text-navy-950"
                 >
-                  Back to Home
+                  {t('services.backHome', 'Back to Home')}
                 </Button>
               </div>
             </ScrollAnimation>

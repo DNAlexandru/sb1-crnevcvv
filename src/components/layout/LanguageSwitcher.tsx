@@ -26,7 +26,20 @@ const LanguageSwitcher = () => {
         className="flex items-center space-x-1 text-sm border px-2 py-1 rounded hover:bg-gray-100"
         onClick={() => setOpen((o) => !o)}
       >
-        <span>{language === 'it' ? '🇮🇹 IT' : '🇬🇧 EN'}</span>
+        {language === 'it' ? (
+          <img
+            src="/Flag IT.jpg"
+            alt="Italian flag"
+            className="h-4 w-auto"
+          />
+        ) : (
+          <img
+            src="/Flag GB.png"
+            alt="British flag"
+            className="h-4 w-auto"
+          />
+        )}
+        <span>{language === 'it' ? 'IT' : 'EN'}</span>
         <ChevronDown className="w-4 h-4" />
       </button>
       {open && (
@@ -38,7 +51,11 @@ const LanguageSwitcher = () => {
               setOpen(false);
             }}
           >
-            <span>🇮🇹</span>
+            <img
+              src="/Flag IT.jpg"
+              alt="Italian flag"
+              className="h-4 w-auto"
+            />
             <span>IT</span>
           </div>
           <div
@@ -48,7 +65,11 @@ const LanguageSwitcher = () => {
               setOpen(false);
             }}
           >
-            <span>🇬🇧</span>
+            <img
+              src="/Flag GB.png"
+              alt="British flag"
+              className="h-4 w-auto"
+            />
             <span>EN</span>
           </div>
         </div>
