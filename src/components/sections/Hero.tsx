@@ -14,7 +14,8 @@ const Hero: React.FC = () => {
 
       {/* Contenuto centrato verticalmente */}
       <div className="relative container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center">
-        <div className="max-w-lg inline-block text-shadow bg-blue-900/40 p-4 rounded-lg">
+        <div className="max-w-lg">
+          <div className="hero-text-wrapper">
           <ScrollAnimation animation="fade-in">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-4">
               {t('hero.title', 'The art of negotiation at your service, for a fair deal')}
@@ -53,6 +54,7 @@ const Hero: React.FC = () => {
               </Button>
             </div>
           </ScrollAnimation>
+          </div>
         </div>
         <div /> {/* Vuoto per mantenere due colonne */}
       </div>
