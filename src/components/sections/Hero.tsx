@@ -12,24 +12,24 @@ const Hero: React.FC = () => {
     >
       {/* Overlay per migliorare la leggibilità del testo */}
       <div
-        className="absolute inset-y-0 left-0 w-2/3 pointer-events-none bg-white"
+        className="absolute inset-y-0 left-0 w-2/3 pointer-events-none bg-gradient-to-r from-white/95 via-white/10 to-transparent"
       />
 
       {/* Contenuto centrato verticalmente */}
       <div className="relative container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center">
         <div className="max-w-lg text-shadow">
           <ScrollAnimation animation="fade-in">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-4">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-navy-950 mb-4">
               {t('hero.title', 'The art of negotiation at your service, for a fair deal')}
             </h1>
           </ScrollAnimation>
 
           <ScrollAnimation animation="slide-up" delay={200}>
-            <hr className="w-16 border-t-2 border-white mb-6" />
+            <hr className="w-16 border-t-2 border-navy-950 mb-6" />
           </ScrollAnimation>
 
           <ScrollAnimation animation="slide-up" delay={300}>
-            <p className="text-sm md:text-base text-white mb-8">
+            <p className="text-sm md:text-base text-black mb-8">
               {t('hero.subtitle', 'Our compensation is solely a share of the savings we deliver')}
             </p>
           </ScrollAnimation>
@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
                 variant="outline"
                 size="lg"
                 href="/services"
-                className="border-white text-white hover:bg-white hover:text-navy-950"
+                className="border-black text-black hover:bg-black hover:text-white"
               >
                 {t('hero.secondary', 'View Services')}
               </Button>
