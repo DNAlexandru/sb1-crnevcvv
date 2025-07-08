@@ -14,7 +14,8 @@ const Hero: React.FC = () => {
       <div
         className="absolute inset-y-0 left-0 w-1/2 pointer-events-none"
         style={{
-          background: 'linear-gradient(to right, rgba(0,0,0,0.15), rgba(0,0,0,0))',
+          background:
+            'linear-gradient(to right, rgba(255,255,255,0.6), rgba(255,255,255,0))',
         }}
       />
 
