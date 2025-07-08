@@ -1,86 +1,107 @@
-import { ArrowRight } from 'lucide-react';
-import Button from '../ui/Button';
-import ScrollAnimation from '../utils/ScrollAnimation';
-import { useLanguage } from '../../contexts/LanguageContext';
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
-const Hero: React.FC = () => {
-  const { t } = useLanguage();
-  return (
-    <section
-      className="relative bg-cover bg-center bg-no-repeat h-screen flex items-center"
-      style={{ backgroundImage: "url('/hero.jpg')" }}
-    >
-      {/* Contenuto centrato verticalmente */}
-      <div className="relative container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center">
-        <div className="max-w-lg">
-          {/* Wrapper sfondo elegante */}
-          <div className="bg-black/50 rounded-lg p-4 inline-block">
-            <ScrollAnimation animation="fade-in">
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-4">
-                {t('hero.title', 'The art of negotiation at your service, for a fair deal')}
-              </h1>
-            </ScrollAnimation>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-            <ScrollAnimation animation="slide-up" delay={200}>
-              <hr className="w-16 border-t-2 border-navy-950 mb-6" />
-            </ScrollAnimation>
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-            <ScrollAnimation animation="slide-up" delay={300}>
-              <p className="text-sm md:text-base text-white mb-8">
-                {t('hero.subtitle', 'Our compensation is solely a share of the savings we deliver')}
-              </p>
-            </ScrollAnimation>
+  :root {
+    scroll-padding-top: 100px; /* aggiunto per evitare che la navbar copra il titolo */
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    @apply text-gray-900 bg-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    @apply text-navy-950 font-medium leading-tight;
+  }
+  
+  .text-white h1,
+  .text-white h2,
+  .text-white h3,
+  .text-white h4,
+  .text-white h5,
+  .text-white h6 {
+    color: #fff !important;
+  }
+  
+  main {
+    @apply text-gray-900;
+  }
+  
+  main h1,
+  main h2,
+  main h3,
+  main h4,
+  main h5,
+  main h6 {
+    @apply text-navy-950;
+  }
+  
+  main p {
+    @apply text-gray-700;
+  }
+}
 
-            <ScrollAnimation animation="slide-up" delay={400}>
-              <div className="flex flex-wrap gap-4">
-                <Button
-                  variant="primary"
-                  size="lg"
-                  href="/contact"
-                  icon={ArrowRight}
-                  iconPosition="right"
-                  className="bg-navy-950 hover:bg-navy-900"
-                >
-                  {t('hero.cta', 'Free Consultation')}
-                </Button>
-                <Button
-                  variant="primary"
-                  size="lg"
-                  href="/services"
-                  className="bg-blue-900/40 hover:bg-blue-900/60"
-                >
-                  {t('hero.secondary', 'View Services')}
-                </Button>
-              </div>
-            </ScrollAnimation>
-          </div>
-        </div>
+@layer components {
+  .container {
+    @apply px-4 mx-auto;
+    max-width: 1280px;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md px-6 py-3 text-base font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-700 text-white hover:bg-blue-800 focus:ring-blue-700;
+  }
+  
+  .btn-secondary {
+    @apply bg-navy-900 text-white hover:bg-navy-800 focus:ring-navy-900;
+  }
+  
+  .btn-outline {
+    @apply border border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white focus:ring-blue-700;
+  }
+  
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl mb-4 font-bold text-navy-950;
+  }
+  
+  .section-subtitle {
+    @apply text-xl text-gray-600 mb-12 max-w-2xl mx-auto;
+  }
+  
+  .fade-in {
+    @apply opacity-0 transition-opacity duration-1000;
+  }
+  
+  .fade-in.appear {
+    @apply opacity-100;
+  }
+  
+  .slide-up {
+    @apply translate-y-8 opacity-0 transition-all duration-700;
+  }
+  
+  .slide-up.appear {
+    @apply translate-y-0 opacity-100;
+  }
 
-        <div /> {/* Vuoto per mantenere due colonne */}
-      </div>
-
-      {/* Scroll indicator sempre visibile in basso */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <a
-          href="#why-choose-us"
-          className="flex flex-col items-center text-black hover:opacity-80 transition-opacity"
-        >
-          <span className="text-sm mb-1">{t('hero.scroll', 'Scroll')}</span>
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M12 5v14M5 12l7 7 7-7" />
-          </svg>
-        </a>
-      </div>
-    </section>
-  );
-};
-
-export default Hero;
+  .text-shadow {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+}
