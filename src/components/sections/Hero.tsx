@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
     >
       {/* Overlay per migliorare la leggibilità del testo */}
       <div
-        className="absolute inset-y-0 left-0 w-2/3 pointer-events-none bg-gradient-to-r from-white/95 via-white/75 to-transparent"
+        className="absolute inset-y-0 left-0 w-2/3 pointer-events-none bg-gradient-to-r from-white/95 via-white/60 to-transparent"
       />
 
       {/* Contenuto centrato verticalmente */}
