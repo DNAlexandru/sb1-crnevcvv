@@ -14,45 +14,47 @@ const Hero: React.FC = () => {
 
       {/* Contenuto centrato verticalmente */}
       <div className="relative container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center">
-        <div className="max-w-lg text-shadow">
-          <ScrollAnimation animation="fade-in">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-4 bg-blue-900/40 p-2 rounded">
-              {t('hero.title', 'The art of negotiation at your service, for a fair deal')}
-            </h1>
-          </ScrollAnimation>
+        <div className="max-w-lg">
+          <div className="hero-text-block text-white text-shadow">
+            <ScrollAnimation animation="fade-in">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">
+                {t('hero.title', 'The art of negotiation at your service, for a fair deal')}
+              </h1>
+            </ScrollAnimation>
 
-          <ScrollAnimation animation="slide-up" delay={200}>
-            <hr className="w-16 border-t-2 border-navy-950 mb-6" />
-          </ScrollAnimation>
+            <ScrollAnimation animation="slide-up" delay={200}>
+              <hr className="w-16 border-t-2 border-navy-950 mb-6" />
+            </ScrollAnimation>
 
-          <ScrollAnimation animation="slide-up" delay={300}>
-            <p className="text-sm md:text-base text-white mb-8 bg-blue-900/40 p-2 rounded">
-              {t('hero.subtitle', 'Our compensation is solely a share of the savings we deliver')}
-            </p>
-          </ScrollAnimation>
+            <ScrollAnimation animation="slide-up" delay={300}>
+              <p className="text-sm md:text-base mb-8">
+                {t('hero.subtitle', 'Our compensation is solely a share of the savings we deliver')}
+              </p>
+            </ScrollAnimation>
 
-          <ScrollAnimation animation="slide-up" delay={400}>
-            <div className="flex flex-wrap gap-4">
-              <Button
-                variant="primary"
-                size="lg"
-                href="/contact"
-                icon={ArrowRight}
-                iconPosition="right"
-                className="bg-navy-950 hover:bg-navy-900"
-              >
-                {t('hero.cta', 'Free Consultation')}
-              </Button>
-              <Button
-                variant="primary"
-                size="lg"
-                href="/services"
-                className="bg-blue-900/40 hover:bg-blue-900/60"
-              >
-                {t('hero.secondary', 'View Services')}
-              </Button>
-            </div>
-          </ScrollAnimation>
+            <ScrollAnimation animation="slide-up" delay={400}>
+              <div className="flex flex-wrap gap-4">
+                <Button
+                  variant="primary"
+                  size="lg"
+                  href="/contact"
+                  icon={ArrowRight}
+                  iconPosition="right"
+                  className="bg-navy-950 hover:bg-navy-900"
+                >
+                  {t('hero.cta', 'Free Consultation')}
+                </Button>
+                <Button
+                  variant="primary"
+                  size="lg"
+                  href="/services"
+                  className="bg-blue-900/40 hover:bg-blue-900/60"
+                >
+                  {t('hero.secondary', 'View Services')}
+                </Button>
+              </div>
+            </ScrollAnimation>
+          </div>
         </div>
         <div /> {/* Vuoto per mantenere due colonne */}
       </div>
