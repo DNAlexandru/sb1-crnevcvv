@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
 
           <ScrollAnimation animation="slide-up" delay={300}>
             <p className="text-sm md:text-base text-gray-700 mb-8">
-              {t('hero.subtitle', 'Trust our expertise — our compensation is solely a share of the savings we deliver.')}
+              {t('hero.subtitle', 'Our compensation is solely a share of the savings we deliver.')}
             </p>
           </ScrollAnimation>
 
