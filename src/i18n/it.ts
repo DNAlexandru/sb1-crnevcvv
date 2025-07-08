@@ -19,7 +19,7 @@ const it = {
 
   // Hero
   'hero.title': 'L\'arte della negoziazione al tuo servizio, per un accordo equo',
-  'hero.subtitle': 'Il nostro compenso è solo una percentuale dei risparmi che ottieni.',
+  'hero.subtitle': 'Il nostro compenso è una percentuale dei risparmi che ti facciamo guadagnare',
   'hero.cta': 'Consulenza Gratuita',
   'hero.secondary': 'Scopri i Servizi',
   'hero.scroll': 'Scorri',
