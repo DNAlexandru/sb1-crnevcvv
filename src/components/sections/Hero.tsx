@@ -14,13 +14,13 @@ const Hero: React.FC = () => {
       <div
         className="absolute inset-y-0 left-0 w-1/2 pointer-events-none"
         style={{
-          background: 'linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0))',
+          background: 'linear-gradient(to right, rgba(0,0,0,0.15), rgba(0,0,0,0))',
         }}
       />
 
       {/* Contenuto centrato verticalmente */}
       <div className="relative container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center">
-        <div className="max-w-lg">
+        <div className="max-w-lg text-shadow">
           <ScrollAnimation animation="fade-in">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-navy-950 mb-4">
               {t('hero.title', 'The art of negotiation at your service, for a fair deal')}
