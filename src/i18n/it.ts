@@ -19,7 +19,7 @@ const it = {
 
   // Hero
   'hero.title': 'L\'arte della negoziazione al tuo servizio, per un accordo equo',
-  'hero.subtitle': 'Affidati alla nostra esperienza — siamo pagati solo con una percentuale dei risparmi ottenuti.',
+  'hero.subtitle': 'Affidati alla nostra esperienza — il nostro compenso è solo una percentuale dei risparmi che ottieni.',
   'hero.cta': 'Consulenza Gratuita',
   'hero.secondary': 'Scopri i Servizi',
   'hero.scroll': 'Scorri',
@@ -41,11 +41,11 @@ const it = {
   'choose.title': 'Perché Sceglierci',
   'choose.subtitle': 'Uniamo competenza, trasparenza e un approccio senza rischi per offrirti valore eccezionale',
   'choose.feature1.title': 'Modello 100% senza rischi',
-  'choose.feature1.desc': 'Riusciamo solo quando riesci tu. Paghi solo se riduciamo i costi (guadagniamo il 50% dei risparmi).',
+  'choose.feature1.desc': 'Abbiamo successo solo quando lo hai anche tu. Paghi soltanto se riduciamo i costi (tratteniamo il 50% dei risparmi).',
   'choose.feature2.title': 'Fiducia e Trasparenza',
-  'choose.feature2.desc': 'Costruiamo fiducia con processi chiari ed etici. Saprai sempre come e perché prendiamo le decisioni.',
+  'choose.feature2.desc': 'Creiamo fiducia con processi chiari ed etici. Saprai sempre come e perché vengono prese le decisioni.',
   'choose.feature3.title': 'Strategie Personalizzate',
-  'choose.feature3.desc': 'Ogni negoziazione è unica. Progettiamo piani su misura basati sui tuoi obiettivi e su metodologie collaudate.',
+  'choose.feature3.desc': 'Ogni negoziazione è unica. Creiamo piani su misura, basati sui tuoi obiettivi e su metodologie comprovate.',
 
   // How It Works
   'how.title': 'Come Funziona',
