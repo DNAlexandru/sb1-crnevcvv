@@ -10,12 +10,11 @@ const Hero: React.FC = () => {
       className="relative bg-cover bg-center bg-no-repeat h-screen flex items-center"
       style={{ backgroundImage: "url('/hero.jpg')" }}
     >
-      {/* Overlay gradient meno sfumato */}
+      {/* Overlay per migliorare la leggibilità del testo */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-y-0 left-0 w-1/2 pointer-events-none"
         style={{
-          background:
-            'linear-gradient(to right, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.6) 25%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.05) 75%, rgba(255,255,255,0) 100%)',
+          background: 'linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0))',
         }}
       />
 
