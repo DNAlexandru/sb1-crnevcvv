@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
     >
       {/* Overlay per migliorare la leggibilità del testo */}
       <div
-        className="absolute inset-y-0 left-0 w-2/3 pointer-events-none bg-gradient-to-r from-white/95 via-white/10 to-transparent"
+        className="absolute inset-0 pointer-events-none bg-gradient-to-r from-white/70 via-white/20 to-transparent"
       />
 
       {/* Contenuto centrato verticalmente */}
@@ -30,7 +30,11 @@ const Hero: React.FC = () => {
 
           <ScrollAnimation animation="slide-up" delay={300}>
             <p className="text-sm md:text-base text-black mb-8">
-              {t('hero.subtitle', 'Our compensation is solely a share of the savings we deliver')}
+              {t('hero.subtitle.part1', 'Our compensation is solely a share of the savings we ')}
+              <span className="bg-black/40 text-white px-1 rounded">
+                {t('hero.subtitle.highlight', 'deliver')}
+              </span>
+              {t('hero.subtitle.part2', '')}
             </p>
           </ScrollAnimation>
 
