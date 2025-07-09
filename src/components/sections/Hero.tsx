@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
         <div className="max-w-lg text-shadow">
           <ScrollAnimation animation="fade-in">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-4">
-              <span className="bg-blue-900/40 px-2 py-1 rounded leading-relaxed" style={{
+              <span className="bg-blue-900/40 px-1 py-0.5 rounded leading-relaxed" style={{
                 boxDecorationBreak: 'clone',
                 WebkitBoxDecorationBreak: 'clone'
               }}>
@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
 
           <ScrollAnimation animation="slide-up" delay={300}>
             <p className="text-sm md:text-base text-white mb-8">
-              <span className="bg-blue-900/40 px-2 py-1 rounded leading-relaxed" style={{
+              <span className="bg-blue-900/40 px-1 py-0.5 rounded leading-relaxed" style={{
                 boxDecorationBreak: 'clone',
                 WebkitBoxDecorationBreak: 'clone'
               }}>
