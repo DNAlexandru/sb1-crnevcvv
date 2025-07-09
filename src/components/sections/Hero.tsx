@@ -18,7 +18,10 @@ const Hero: React.FC = () => {
         <div className="max-w-lg text-shadow">
           <ScrollAnimation animation="fade-in">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-4">
-              <span className="bg-blue-900/40 px-2 py-1 rounded inline-block leading-relaxed">
+              <span className="bg-blue-900/40 px-2 py-1 rounded leading-relaxed" style={{
+                boxDecorationBreak: 'clone',
+                WebkitBoxDecorationBreak: 'clone'
+              }}>
                 {t('hero.title', 'The art of negotiation at your service, for a fair deal')}
               </span>
             </h1>
@@ -30,7 +33,10 @@ const Hero: React.FC = () => {
 
           <ScrollAnimation animation="slide-up" delay={300}>
             <p className="text-sm md:text-base text-white mb-8">
-              <span className="bg-blue-900/40 px-2 py-1 rounded inline-block leading-relaxed">
+              <span className="bg-blue-900/40 px-2 py-1 rounded leading-relaxed" style={{
+                boxDecorationBreak: 'clone',
+                WebkitBoxDecorationBreak: 'clone'
+              }}>
                 {t('hero.subtitle', 'Our compensation is solely a share of the savings we deliver')}
               </span>
             </p>
