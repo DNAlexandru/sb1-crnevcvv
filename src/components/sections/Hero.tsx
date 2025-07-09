@@ -17,10 +17,8 @@ const Hero: React.FC = () => {
       <div className="relative container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center">
         <div className="max-w-lg text-shadow">
           <ScrollAnimation animation="fade-in">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-4">
-              <span className="hero-title-bg">
-                {t('hero.title', 'The art of negotiation at your service, for a fair deal')}
-              </span>
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-4 bg-blue-900/40 p-2 rounded">
+              {t('hero.title', 'The art of negotiation at your service, for a fair deal')}
             </h1>
           </ScrollAnimation>
 
@@ -29,10 +27,8 @@ const Hero: React.FC = () => {
           </ScrollAnimation>
 
           <ScrollAnimation animation="slide-up" delay={300}>
-            <p className="text-sm md:text-base text-white mb-8">
-              <span className="hero-subtitle-bg">
-                {t('hero.subtitle', 'Our compensation is solely a share of the savings we deliver')}
-              </span>
+            <p className="text-sm md:text-base text-white mb-8 bg-blue-900/40 p-2 rounded">
+              {t('hero.subtitle', 'Our compensation is solely a share of the savings we deliver')}
             </p>
           </ScrollAnimation>
 
