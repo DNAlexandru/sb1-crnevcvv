@@ -63,10 +63,10 @@ const it = {
   'founder.section': 'Il Fondatore',
   'founder.about': 'Riguardo al Fondatore',
   'founder.tagline': 'Alexandru Buruiana, Fondatore',
-  'founder.bio1': 'Alexandru Buruiana ha oltre cinque anni di esperienza internazionale nella negoziazione. Ha iniziato la sua carriera nel reparto acquisti di una grande multinazionale italiana guidando negoziazioni cruciali con i fornitori e iniziative di riduzione dei costi.',
-  'founder.bio2': 'Dopo una brillante carriera aziendale ha fondato la propria consulenza per aiutare i clienti a ottenere condizioni migliori e risparmi tangibili. Unisce conoscenze specialistiche e rigore analitico a un tocco personale per accompagnare i clienti al successo.',
-  'founder.bio3': "DNego è nata dall'idea che le competenze di negoziazione professionale debbano essere accessibili a tutti. Poiché la maggior parte delle persone affronta poche trattative di alto valore nella vita, gli errori possono risultare molto costosi. Affidarsi a un professionista – senza costi iniziali – tutela i tuoi interessi quando conta di più.",
-  'founder.bio4': "Il suo impegno per l'integrità e il successo dei clienti assicura sempre consigli diretti e negoziazioni oneste.",
+  'founder.bio1': 'Sono un Ingegnere Meccanico specializzato in energia, e da sempre credo nell’importanza di riconoscere e difendere il giusto valore delle cose. Ho scoperto che la negoziazione è la mia vera passione grazie all’energia e all’entusiasmo che sento ogni volta che mi trovo a pattuire, cercare un accordo, trovare un punto d’incontro.'
+  'founder.bio2': 'Negli anni ho affinato questa attitudine lavorando negli uffici acquisti di diverse aziende, trattando materie prime e servizi, ma presto ho capito che per me non era solo un lavoro: era un modo di vivere, guidato da principi come l’equità, il rispetto reciproco e la ricerca di soluzioni che creano valore per tutti.'
+  'founder.bio3': 'Con il tempo, questo desiderio di giustizia e di equilibrio mi ha portato oltre l’ambito aziendale, ad aiutare anche persone estranee al mio lavoro: amici, familiari, conoscenti e chiunque avesse bisogno di un supporto in una trattativa importante.'
+  'founder.bio4': 'Amo trovare il giusto equilibrio tra qualità e prezzo, perché credo che ogni accordo debba rispecchiare non solo un buon risultato economico, ma anche i valori di chi lo stipula: trasparenza, integrità e rispetto. Sono convinto che una buona negoziazione non sia mai una vittoria di uno sull’altro, ma la costruzione di un accordo che faccia sentire entrambe le parti riconosciute e soddisfatte.'
   'founder.experienceLabel': 'Esperienza',
   'founder.experienceValue': '5+ Anni',
   'founder.specializationLabel': 'Specializzazione',
@@ -112,9 +112,9 @@ const it = {
   'about.heroSubtitle': 'Siamo negoziatori esperti con la missione di aiutare i clienti a ottenere accordi migliori e risparmi significativi senza alcun rischio.',
   'about.heroCta': 'Inizia Ora',
   'about.storyTitle': 'La Nostra Storia',
-  'about.storyP1': 'DNego è stata fondata nel 2020 da Alexandru Buruiana dopo un decennio di esperienza negli acquisti aziendali. Dopo aver visto molte aziende pagare troppo per mancanza di competenze, Alexandru ha deciso di aiutare.',
-  'about.storyP2': 'Quella che era una consulenza individuale è cresciuta rapidamente grazie ai risultati. Oggi DNego collabora con organizzazioni di diversi settori offrendo risparmi misurabili con il nostro modello a performance.',
-  'about.storyP3': 'Abbiamo aiutato i clienti a risparmiare milioni tramite negoziazioni migliori, guadagnando solo dai risultati. Il nostro team unisce esperienza aziendale e competenze specialistiche per risultati eccezionali.',
+  'about.storyP1': 'Siamo nati con il desiderio di accompagnare le persone nelle negoziazioni più importanti della loro vita, quei momenti rari, carichi di significato, in cui è fondamentale sentirsi preparati e supportati. Crediamo che ogni trattativa sia un’occasione unica per affermare il proprio valore e costruire un accordo giusto ed equilibrato.'
+  'about.storyP2': 'Per questo ci impegniamo a offrire un approccio strategico e consapevole, fondato su un’attenta analisi e su un piano chiaro, che permetta ai nostri clienti di affrontare ogni sfida con serenità e determinazione. Alla base del nostro lavoro ci sono principi solidi: trasparenza, integrità, rispetto reciproco e la convinzione che una buona negoziazione sia quella in cui entrambe le parti si sentono riconosciute e soddisfatte.'
+  'about.storyP3': 'Guidiamo ogni cliente con competenza e passione, mettendo sempre i suoi interessi al centro. E per dimostrare quanto crediamo in ciò che facciamo, il nostro compenso è legato esclusivamente ai risultati che otteniamo insieme: un impegno concreto per portare benefici reali e tangibili a chi sceglie di affidarsi a noi.'
   'about.missionTitle': 'La Nostra Missione',
   'about.missionSubtitle': "Democratizzare l'accesso alla negoziazione professionale eliminando il rischio finanziario",
   'about.mission1Title': 'Rendere Accessibile la Negoziazione Esperta',

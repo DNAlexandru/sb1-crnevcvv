@@ -30,26 +30,22 @@ const Founder = () => {
               <h3 className="text-2xl font-bold mb-4 text-navy-950">Alexandru Buruiana</h3>
               <p className="text-gray-600 mb-6">
                 {t(
-                  'founder.bio1',
-                  'Alexandru Buruiana has over five years of international negotiation experience. He began his career in the procurement department of a major Italian multinational, where he led critical supplier negotiations and cost-saving initiatives.'
+                  'founder.bio1', 'I am a Mechanical Engineer specialized in energy, and I have always believed in the importance of recognizing and defending the true value of things. I discovered that negotiation is my real passion thanks to the energy and enthusiasm I feel every time I sit down to bargain, seek an agreement, and find common ground.'
                 )}
               </p>
               <p className="text-gray-600 mb-6">
                 {t(
-                  'founder.bio2',
-                  'After a successful corporate tenure, he founded his own consulting practice to help clients secure better deals and meaningful savings. Alexandru applies his specialized knowledge to craft tailored strategies and blends analytical rigor with a personal touch to guide clients to success.'
+                  'founder.bio2', 'Over the years, I refined this skill while working in the purchasing departments of various companies, handling raw materials and services. But I soon realized that for me it was more than just a job: it was a way of living, guided by principles such as fairness, mutual respect, and the pursuit of solutions that create value for everyone.'
                 )}
               </p>
               <p className="text-gray-600 mb-6">
                 {t(
-                  'founder.bio3',
-                  'DNego was born from the idea that expert negotiation skills should be available to everyone. Most people negotiate only a handful of high-value agreements in their lifetime, so mistakes can be costly. By leaving those negotiations to a professional—with no upfront cost—you safeguard your interests when it matters most.'
+                  'founder.bio3', 'With time, this desire for justice and balance took me beyond the corporate world, leading me to help people outside of my professional circle as well: friends, family, acquaintances, and anyone in need of support in an important negotiation.'
                 )}
               </p>
               <p className="text-gray-700 font-medium">
                 {t(
-                  'founder.bio4',
-                  'His commitment to integrity and client success means you always get straightforward advice and honest negotiations.'
+                  'founder.bio4', 'I love finding the right balance between quality and price, because I believe that every agreement should reflect not just a good economic outcome, but also the values of those who sign it: transparency, integrity, and respect. I’m convinced that a good negotiation is never about one side winning over the other, but about building an agreement where both parties feel acknowledged and fulfilled.'
                 )}
               </p>
 
