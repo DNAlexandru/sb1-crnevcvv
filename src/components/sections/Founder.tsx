@@ -49,7 +49,7 @@ const Founder = () => {
         
         {/* Bio4 paragraph - full width below the image and text */}
         <ScrollAnimation animation="slide-up" delay={200}>
-          <div className="mt-8">
+          <div className="mt-6">
             <p className="text-gray-700 font-medium">
               {t(
                 'founder.bio4', 'I love finding the right balance between quality and price, because I believe that every agreement should reflect not just a good economic outcome, but also the values of those who sign it: transparency, integrity, and respect. I\'m convinced that a good negotiation is never about one side winning over the other, but about building an agreement where both parties feel acknowledged and fulfilled.'
