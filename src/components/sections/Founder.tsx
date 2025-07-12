@@ -60,7 +60,7 @@ const Founder = () => {
 
         {/* Stats blocks - left aligned below bio4 */}
         <ScrollAnimation animation="slide-up" delay={300}>
-          <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <div className="bg-gray-100 px-4 py-2 rounded-lg">
               <span className="text-sm text-gray-500">{t('founder.experienceLabel', 'Experience')}</span>
               <p className="text-navy-900 font-bold">{t('founder.experienceValue', '5+ Years')}</p>
