@@ -12,7 +12,7 @@ const Founder = () => {
           centered={false}
         />
 
-        <div className="flex flex-col items-start gap-8">
+        <div className="flex flex-col md:flex-row items-start gap-8">
           <ScrollAnimation animation="fade-in" className="md:flex-none flex justify-center">
             <div className="relative flex justify-center">
               <img
@@ -25,8 +25,8 @@ const Founder = () => {
             </div>
           </ScrollAnimation>
 
-          <ScrollAnimation animation="slide-up" className="flex-1 w-full">
-            <div className="flex flex-col items-start w-full">
+          <ScrollAnimation animation="slide-up" className="flex-1 flex items-start">
+            <div className="flex flex-col items-start">
               <h3 className="text-2xl font-bold mb-4 text-navy-950">Alexandru Buruiana</h3>
               <p className="text-gray-600 mb-6">
                 {t(
@@ -49,7 +49,7 @@ const Founder = () => {
                 )}
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-4 w-full justify-start">
+              <div className="mt-8 flex flex-wrap gap-4">
                 <div className="bg-gray-100 px-4 py-2 rounded-lg">
                   <span className="text-sm text-gray-500">{t('founder.experienceLabel', 'Experience')}</span>
                   <p className="text-navy-900 font-bold">{t('founder.experienceValue', '5+ Years')}</p>
