@@ -32,7 +32,7 @@ const About = () => {
       {/* Our Story */}
       <section className="section bg-white">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <ScrollAnimation animation="fade-in">
               <img 
                 src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
