@@ -70,7 +70,7 @@ const it = {
   'founder.experienceLabel': 'Esperienza',
   'founder.experienceValue': '5+ Anni',
   'founder.specializationLabel': 'Specializzazione',
-  'founder.specializationValue': 'Negoziazione aziendale',
+  'founder.specializationValue': 'Negoziazione di beni e servizi',
   'founder.languagesLabel': 'Lingue',
   'founder.languagesValue': 'Inglese, Italiano',
   'founder.industriesLabel': 'Settori',
