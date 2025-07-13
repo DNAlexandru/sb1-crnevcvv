@@ -219,6 +219,19 @@ const About = () => {
               </Button>
           </ScrollAnimation>
           </div>
+        
+        {/* Third paragraph - full width below image and text */}
+        <ScrollAnimation animation="slide-up" delay={200}>
+          <div className="mt-6">
+            <p className="text-gray-700 font-medium leading-relaxed">
+                {t(
+                  'about.storyP3',
+                  `We guide every client with competence and passion, always keeping their interests at the center. And to demonstrate how much we believe in what we do, our compensation is tied exclusively to the results we achieve together, a concrete commitment to delivering real and tangible benefits to those who choose to trust us.`
+                )}
+              </p>
+            </div>
+          </ScrollAnimation>
+        </div>
         </div>
       </section>
     </div>
