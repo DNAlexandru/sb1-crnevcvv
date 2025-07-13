@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
           </ScrollAnimation>
 
           <ScrollAnimation animation="slide-up" delay={300}>
-            <p className="text-sm md:text-base text-white mb-8">
+            <p className="text-sm md:text-base text-white mb-4">
               <span className="bg-blue-900/50 rounded leading-relaxed" style={{
                 boxDecorationBreak: 'clone',
                 WebkitBoxDecorationBreak: 'clone'
