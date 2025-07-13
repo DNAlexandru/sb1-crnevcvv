@@ -49,7 +49,7 @@ const posts: Post[] = [
       'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1245&h=541',
     excerpt: `Discover the top mistakes—like poor preparation or overconfidence—and learn simple tactics to sidestep them.`,
     content: `
-<h2>Introduction</h2>
+<h3 class="text-xl font-semibold">Introduction</h3>
 <p>Even the most seasoned negotiators can stumble into traps that derail promising deals. From walking in unprepared to letting emotions run the show, these pitfalls sap your leverage and undermine outcomes. By understanding why they occur, and how to guard against them, you can navigate conversations with confidence and precision. In this article, we\u2019ll delve deeply into five common negotiation mistakes, illustrating each with real-world examples and offering concrete strategies to help you sidestep them. Read on to turn potential missteps into opportunities for stronger, more sustainable agreements.</p>
 
 <h3 class="text-xl font-semibold">1. Lack of Preparation</h3>
