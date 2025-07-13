@@ -60,9 +60,9 @@ const HowItWorks = () => {
                   </div>
                   
                   {/* Content */}
-                  <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pl-12' : 'md:pr-12 md:text-right'}`}>
+                  <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pl-12' : 'md:pr-12 text-right'}`}>
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border">
-                      <div className={`flex items-center mb-4 md:${index % 2 === 1 ? 'justify-end' : ''}`}>
+                      <div className={`flex items-center mb-4 ${index % 2 === 1 ? 'md:justify-end' : ''}`}>
                         <step.icon className={`h-8 w-8 text-blue-700 ${index % 2 === 0 ? 'mr-4' : 'md:order-2 md:ml-4'}`} />
                         <h3 className="text-xl font-bold text-navy-950">{t(`how.step${index+1}.title`, step.title)}</h3>
                       </div>
