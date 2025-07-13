@@ -32,17 +32,20 @@ const About = () => {
       {/* Our Story */}
       <section className="section bg-white">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            <ScrollAnimation animation="fade-in">
+          <div className="flex flex-col md:flex-row items-start gap-8">
+            <ScrollAnimation
+              animation="fade-in"
+              className="md:flex-none flex justify-center"
+            >
               <img
                 src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
                 alt="DNego team discussing strategy"
-                className="rounded-lg shadow-xl"
+                className="rounded-lg shadow-xl md:max-h-[20rem] w-full h-auto object-cover"
               />
             </ScrollAnimation>
 
-            <ScrollAnimation animation="slide-up">
-              <div className="w-full">
+            <ScrollAnimation animation="slide-up" className="flex-1">
+              <div className="w-full text-left">
                 <h2 className="text-3xl font-bold mb-6 text-navy-950">
                   {t('about.storyTitle', 'Our Story')}
                 </h2>
@@ -58,7 +61,7 @@ const About = () => {
                     `That's why we are committed to offering a strategic and mindful approach, based on careful analysis and a clear plan, enabling our clients to face each challenge with confidence and determination. At the core of our work are strong principles: transparency, integrity, mutual respect, and the belief that a good negotiation is one where both parties feel recognized and satisfied.`
                   )}
                 </p>
-                <p className="text-gray-700 font-medium text-left leading-relaxed mb-0">
+                <p className="text-gray-700 font-medium leading-relaxed mb-0">
                   {t(
                     'about.storyP3',
                     `We guide every client with competence and passion, always keeping their interests at the center. And to demonstrate how much we believe in what we do, our compensation is tied exclusively to the results we achieve together, a concrete commitment to delivering real and tangible benefits to those who choose to trust us.`
