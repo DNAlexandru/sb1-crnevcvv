@@ -54,7 +54,7 @@ const it = {
   'how.step1.desc': 'Discutiamo delle tue esigenze e analizziamo i contratti senza alcun costo.',
   'how.step2.title': 'Analisi e Strategia',
   'how.step2.desc': 'Verifichiamo accordi e mercato per sviluppare un piano di negoziazione.',
-  'how.step3.title': 'Negoziazione Esperta',
+  'how.step3.title': 'Negoziazione Professionale',
   'how.step3.desc': 'I nostri negoziatori conducono le trattative seguendo una strategia basata sui dati.',
   'how.step4.title': 'Risultati e Pagamento',
   'how.step4.desc': 'Concludiamo l\'accordo migliorato e condividiamo i risparmi al 50%.',
