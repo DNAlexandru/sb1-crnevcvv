@@ -20,22 +20,22 @@ const posts: Post[] = [
     category: 'Strategy',
     author: 'Alexandru Buruiana',
     image:
-      'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1245&h=541',
+      'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1245&h=300',
     excerpt: `Learn how understanding cognitive biases and human behavior can give you an edge at the bargaining table.`,
     content: `
 <h3 class="text-xl font-semibold">Introduction</h3>
-<p>Negotiation is as much a psychological game as it is a tactical one. Behind every offer, counteroffer, and moment of silence lies a complex web of cognitive biases, emotional triggers, and unconscious patterns. Recognizing these hidden forces can transform you from a reactive participant into a proactive strategist. In this article, we’ll explore five key psychological principles—anchoring bias, the reciprocity principle, framing effects, emotional intelligence, and rapport building—unpacking each with real-world examples and concrete techniques. By the end, you’ll have a richer toolbox for guiding conversations toward favorable, sustainable agreements.</p>
+<p>Negotiation is as much a psychological game as it is a tactical one. Behind every offer, counteroffer, and moment of silence lies a complex web of cognitive biases, emotional triggers, and unconscious patterns. Recognizing these hidden forces can transform you from a reactive participant into a proactive strategist. In this article, we’ll explore five key psychological principles,anchoring bias, the reciprocity principle, framing effects, emotional intelligence, and rapport building,unpacking each with real-world examples and concrete techniques. By the end, you’ll have a richer toolbox for guiding conversations toward favorable, sustainable agreements.</p>
 
 <h3 class="text-xl font-semibold">1. Anchoring Bias</h3>
-<p><strong>The Core Idea:</strong> People heavily rely on the first number or piece of information presented—the “anchor”—when making decisions.</p>
+<p><strong>The Core Idea:</strong> People heavily rely on the first number or piece of information presented,the “anchor”,when making decisions.</p>
 <p><strong>Why It Matters in Negotiation:</strong></p>
 <p>First impressions stick. If you kick off with an aggressive asking price, the other party’s counteroffers tend to hover around it.</p>
 <p>Defensive anchoring. If you’re responding to an anchor you didn’t set, you can feel pushed into a range you hadn’t intended.</p>
 <p><strong>Tactics to Leverage Anchors:</strong></p>
-<p>Be the anchor—when appropriate. When you have superior information or strong BATNA, opening the dialogue with a confident, well-justified figure can tilt the entire negotiation in your favor.</p>
-<p>Neutralize hostile anchors. If the other side drops an extreme anchor (“We’ll pay only $50 per unit”), resist reacting emotionally. Pause, then present data or context that reframes the anchor (“Our market research shows $75–$85 aligns with comparable contracts”).</p>
+<p>Be the anchor,when appropriate. When you have superior information or strong BATNA, opening the dialogue with a confident, well-justified figure can tilt the entire negotiation in your favor.</p>
+<p>Neutralize hostile anchors. If the other side drops an extreme anchor (“We’ll pay only $50 per unit”), resist reacting emotionally. Pause, then present data or context that reframes the anchor (“Our market research shows $75,$85 aligns with comparable contracts”).</p>
 <p>Use multiple, smaller anchors. Rather than a single large number, introduce a series of reference points: “Last quarter, clients paid $80 on average; larger orders hit $70; and with our new packaging, we’ve seen $65.” Layered anchors can broaden your control over expectations.</p>
-<p><strong>Example in Practice:</strong> A software vendor quotes $120,000 for an annual license. The buyer balks, offering $60,000. Instead of descending quickly, the vendor counters with detailed cost breakdowns—R&D, support, feature set—anchoring again at $110,000. The buyer, having processed both anchors, often lands closer to $100,000 than their original $60,000.</p>
+<p><strong>Example in Practice:</strong> A software vendor quotes $120,000 for an annual license. The buyer balks, offering $60,000. Instead of descending quickly, the vendor counters with detailed cost breakdowns,R&D, support, feature set,anchoring again at $110,000. The buyer, having processed both anchors, often lands closer to $100,000 than their original $60,000.</p>
 
 <h3 class="text-xl font-semibold">2. Reciprocity Principle</h3>
 <p><strong>The Core Idea:</strong> Humans are wired to return favors. A concession today often leads to a concession tomorrow.</p>
@@ -49,10 +49,10 @@ const posts: Post[] = [
 <p><strong>Pitfalls to Avoid:</strong></p>
 <p>Over-giving. If you give too much upfront, you lose bargaining power.</p>
 <p>Insincere gestures. Empty concessions erode trust if found out.</p>
-<p><strong>Example in Practice:</strong> During a service contract renewal, a consulting firm offers a free strategic workshop (worth $5K) before any negotiation. The client, feeling indebted, agrees to the firm’s preferred three-year term at a slightly higher rate—an outcome they might otherwise have resisted.</p>
+<p><strong>Example in Practice:</strong> During a service contract renewal, a consulting firm offers a free strategic workshop (worth $5K) before any negotiation. The client, feeling indebted, agrees to the firm’s preferred three-year term at a slightly higher rate,an outcome they might otherwise have resisted.</p>
 
 <h3 class="text-xl font-semibold">3. Framing Effects</h3>
-<p><strong>The Core Idea:</strong> How information is presented—framed as gains or losses—can significantly shift perceptions and choices.</p>
+<p><strong>The Core Idea:</strong> How information is presented,framed as gains or losses,can significantly shift perceptions and choices.</p>
 <p><strong>Why It Matters in Negotiation:</strong></p>
 <p>Loss aversion. People feel losses about twice as intensely as gains. “You’ll lose $5,000” carries more emotional weight than “You’ll gain $5,000.”</p>
 <p>Positive vs. negative framing. A proposal framed in terms of what the other party stands to gain often meets less resistance.</p>
@@ -60,33 +60,33 @@ const posts: Post[] = [
 <p>Highlight gains first. Lead with benefits: “By selecting our premium support, you’ll reduce your system downtime by 30%.”</p>
 <p>Reframe negatives into positives. Instead of “You can’t change the timeline,” say “Here’s how we can ensure on-time delivery.”</p>
 <p>Use contrast framing. Show alternatives side by side: “Compared with a 12-month term at $100K, our 24-month option at $180K saves you $10K per year.”</p>
-<p><strong>Example in Practice:</strong> A landlord wants a 5% rent increase. Tenants balk. The landlord rephrases: “With this adjustment, you’ll still be paying 20% below market average for units like yours—ensuring you keep quality space at a competitive rate.” Tenants perceive a gain (relative value) rather than a loss (higher rent).</p>
+<p><strong>Example in Practice:</strong> A landlord wants a 5% rent increase. Tenants balk. The landlord rephrases: “With this adjustment, you’ll still be paying 20% below market average for units like yours,ensuring you keep quality space at a competitive rate.” Tenants perceive a gain (relative value) rather than a loss (higher rent).</p>
 
 <h3 class="text-xl font-semibold">4. Emotional Intelligence</h3>
-<p><strong>The Core Idea:</strong> Emotional intelligence (EQ)—the ability to recognize, understand, and manage emotions—shapes the negotiation climate.</p>
+<p><strong>The Core Idea:</strong> Emotional intelligence (EQ),the ability to recognize, understand, and manage emotions,shapes the negotiation climate.</p>
 <p><strong>Why It Matters:</strong></p>
 <p>Read the room. Spot micro-expressions and tone shifts that signal hesitation, frustration, or eagerness.</p>
 <p>Self-regulation. Keeping your own emotions in check prevents impulsive concessions or reactive standoffs.</p>
 <p><strong>Tactics to Develop EQ:</strong></p>
-<p>Mirror and match. Subtly reflect body language (posture, gestures) to build subconscious rapport—but keep it natural to avoid mimicry suspicion.</p>
-<p>Label emotions. Verbally acknowledge what you see: “I sense some concern about the timeline—let’s explore that.” Naming emotions defuses tension.</p>
+<p>Mirror and match. Subtly reflect body language (posture, gestures) to build subconscious rapport,but keep it natural to avoid mimicry suspicion.</p>
+<p>Label emotions. Verbally acknowledge what you see: “I sense some concern about the timeline,let’s explore that.” Naming emotions defuses tension.</p>
 <p>Manage your physiology. Slow your breathing, lower your voice, and maintain an open posture to project calm authority.</p>
 <p><strong>Example in Practice:</strong> In a high-stakes negotiation, one party notices the other’s crossed arms and tense jaw when discussing penalties. Instead of immediately pushing forward, they pause and say, “It seems the penalty clause is a sticking point. Can we unpack what specifically worries you?” This empathetic move shifts the dynamic from adversarial to collaborative.</p>
 
 <h3 class="text-xl font-semibold">5. Building Rapport</h3>
-<p><strong>The Core Idea:</strong> Genuine rapport—grounded in trust and mutual understanding—creates a foundation for lasting agreements.</p>
+<p><strong>The Core Idea:</strong> Genuine rapport,grounded in trust and mutual understanding,creates a foundation for lasting agreements.</p>
 <p><strong>Why It Matters:</strong></p>
 <p>Increased information sharing. People are more open when they feel understood and respected.</p>
 <p>Easier tradeoffs. When trust exists, concessions on one issue are viewed as fair, making balanced tradeoffs smoother.</p>
 <p><strong>Tactics to Foster Rapport:</strong></p>
 <p>Find common ground. Early in the conversation, identify shared interests (industry challenges, alma mater, mutual contacts).</p>
 <p>Use the person’s name. Sprinkling someone’s name into dialogue (appropriately) heightens connection.</p>
-<p>Demonstrate active listening. Paraphrase their points: “So your main priority is minimizing downtime—did I get that right?”</p>
-<p>Balance professional and personal. A brief, sincere personal anecdote can humanize the interaction—just don’t stray into oversharing.</p>
+<p>Demonstrate active listening. Paraphrase their points: “So your main priority is minimizing downtime,did I get that right?”</p>
+<p>Balance professional and personal. A brief, sincere personal anecdote can humanize the interaction,just don’t stray into oversharing.</p>
 <p><strong>Example in Practice:</strong> A medical-device salesperson discovers the hospital administrator played collegiate basketball at the same university. A brief segue into shared experiences builds warmth. Later, when discussing contract flexibility, that interpersonal goodwill makes requests feel less self-serving.</p>
 
 <h2>Conclusion</h2>
-<p>Mastering negotiation psychology means marrying tactical rigor with human insight. Anchoring bias teaches you the power of first impressions; reciprocity harnesses the give-and-take of social obligation; framing effects show how language shapes choice; emotional intelligence unlocks unspoken currents; and rapport building cements trust for the long haul. By practicing these principles—backed by data, tempered by empathy, and guided by self-awareness—you’ll not only close better deals but also nurture the relationships that make future collaborations possible. Over time, these skills compound, transforming every negotiation into a strategic opportunity rather than a gamble.</p>
+<p>Mastering negotiation psychology means marrying tactical rigor with human insight. Anchoring bias teaches you the power of first impressions; reciprocity harnesses the give-and-take of social obligation; framing effects show how language shapes choice; emotional intelligence unlocks unspoken currents; and rapport building cements trust for the long haul. By practicing these principles,backed by data, tempered by empathy, and guided by self-awareness,you’ll not only close better deals but also nurture the relationships that make future collaborations possible. Over time, these skills compound, transforming every negotiation into a strategic opportunity rather than a gamble.</p>
 `,
   },
   {
