@@ -51,13 +51,13 @@ const it = {
   'how.title': 'Come Funziona',
   'how.subtitle': 'Il nostro processo in quattro step garantisce risultati misurabili senza costi iniziali',
   'how.step1.title': 'Consulenza Gratuita',
-  'how.step1.desc': 'Discutiamo delle tue esigenze e analizziamo i contratti senza alcun costo.',
+  'how.step1.desc': 'Discutiamo le tue esigenze e rivediamo i eventuali contratti e accordi in corso senza alcun costo. Poniamo domande e ascoltiamo con attenzione per comprendere i tuoi obiettivi e i tuoi punti critici.',
   'how.step2.title': 'Analisi e Strategia',
-  'how.step2.desc': 'Verifichiamo accordi e mercato per sviluppare un piano di negoziazione.',
-  'how.step3.title': 'Negoziazione Professionale',
-  'how.step3.desc': 'I nostri negoziatori conducono le trattative seguendo una strategia basata sui dati e tecniche consolidate.',
+  'how.step2.desc': 'Analizziamo i tuoi desideri e le condizioni di mercato, quindi sviluppiamo un piano di negoziazione. Questo comporta una ricerca approfondita, benchmarking e definizione di obiettivi chiari di miglioramento.',
+  'how.step3.title': 'Negoziazione Esperta',
+  'how.step3.desc': 'I nostri negoziatori interagiscono con la controparte, armati di una strategia basata sui dati. Applichiamo tattiche collaudate e manteniamo una comunicazione chiara per guidare le trattative verso il miglior risultato.',
   'how.step4.title': 'Risultati e Pagamento',
-  'how.step4.desc': 'Concludiamo l\'accordo migliorato e condividiamo i risparmi al 50%.',
+  'how.step4.desc': 'Finalizziamo l\'accordo migliorato e quantifichiamo i risparmi. Tu mantieni metà dei guadagni e ci paghi l\'altra metà. Se non si ottengono risparmi, non ci devi nulla.',
 
   // Founder
   'founder.section': 'Il Fondatore',
