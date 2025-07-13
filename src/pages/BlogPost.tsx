@@ -25,7 +25,13 @@ const BlogPost: React.FC = () => {
       <img
         src={post.image}
         alt={post.title}
-        className="w-full md:w-[1245px] md:h-[541px] object-cover rounded-lg mb-4 md:float-right md:ml-6"
+        className={
+          post.slug === 'avoiding-common-pitfalls'
+            ?
+              'w-full h-auto md:max-h-[20rem] object-cover rounded-lg mb-4 md:float-right md:ml-6'
+            :
+              'w-full md:w-[1245px] md:h-[541px] object-cover rounded-lg mb-4 md:float-right md:ml-6'
+        }
       />
       <div
         className="prose prose-lg text-gray-800"
