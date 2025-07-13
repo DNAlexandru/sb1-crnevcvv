@@ -45,23 +45,55 @@ const posts: Post[] = [
     readTime: '5 min read',
     category: 'Tactics',
     author: 'Alexandru Buruiana',
-    image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg',
+    image:
+      'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1245&h=541',
     excerpt: `Discover the top mistakes—like poor preparation or overconfidence—and learn simple tactics to sidestep them.`,
     content: `
 <h2>Introduction</h2>
-<p>Even skilled negotiators can fall into common traps that derail otherwise promising deals. Recognizing these pitfalls early allows you to sidestep them and maintain control of the negotiation process.</p>
+<p>Even the most seasoned negotiators can stumble into traps that derail promising deals. From walking in unprepared to letting emotions run the show, these pitfalls sap your leverage and undermine outcomes. By understanding why they occur, and how to guard against them, you can navigate conversations with confidence and precision. In this article, we\u2019ll delve deeply into five common negotiation mistakes, illustrating each with real-world examples and offering concrete strategies to help you sidestep them. Read on to turn potential missteps into opportunities for stronger, more sustainable agreements.</p>
+
 <h3>1. Lack of Preparation</h3>
-<p>Walking into a negotiation unprepared is one of the biggest mistakes you can make. Without knowing your objectives, limits, and alternatives, you risk accepting poor terms. Prepare by researching the other party, defining your BATNA, and outlining your ideal outcome.</p>
+<p>Walking into a negotiation without a clear game plan is like embarking on a journey without a map. You must know your objectives, constraints, and alternatives before you sit down at the table.</p>
+<p><strong>Define Your Goals.</strong> List your must-haves (e.g., price thresholds, delivery dates, service levels) and your nice-to-haves. Rank them by importance so you can trade lower-priority items for higher-priority ones.</p>
+<p><strong>Research the Other Party.</strong> Understand their needs, pressures, and history. Have they shown flexibility in similar deals? What public statements or annual reports reveal about their objectives?</p>
+<p><strong>Clarify Your BATNA.</strong> Your Best Alternative to a Negotiated Agreement is your safety net. If you know your BATNA, whether it\u2019s another supplier, an in-house solution, or walking away, you negotiate from strength rather than desperation.</p>
+<p><strong>Prepare Supporting Data.</strong> Charts, benchmarks, case studies, testimonials: credible evidence bolsters your position and discourages lowball offers.</p>
+<p>By investing time in pre-negotiation work, you turn surprises into expected variables and build a foundation for controlled, purposeful dialogue.</p>
+
 <h3>2. Overconfidence</h3>
-<p>Confidence is an asset—until it becomes arrogance. Overestimating your leverage or underestimating the other party can lead to miscalculations. Humility combined with strategic assertiveness yields better results.</p>
+<p>Confidence signals competence, but unchecked, it morphs into arrogance, blinding you to risks and eroding credibility.</p>
+<p><strong>Avoid the \u201cI\u2019ve Got This\u201d Trap.</strong> Overestimating your leverage can lead you to reject reasonable offers or overlook creative solutions. Remain humble: assume your counterpart has done their homework too.</p>
+<p><strong>Test Your Assumptions.</strong> Before asserting a position, run it by a trusted colleague or mentor. They\u2019ll help you spot blind spots and temper overreach.</p>
+<p><strong>Balance Assertiveness with Curiosity.</strong> Use open-ended questions (\u201cHow did you arrive at that figure?\u201d) to gather information rather than bulldoze the discussion. Genuine curiosity fosters rapport and may surface hidden value-creation opportunities.</p>
+<p><strong>Monitor Your Language.</strong> Phrases like \u201cWe don\u2019t need concessions\u201d or \u201cThis is non-negotiable\u201d close off channels. Frame positions as \u201cOur preferred terms are\u2026\u201d to signal room for collaboration.</p>
+<p>Staying grounded helps you adapt mid-stream, respond to new information, and sustain a constructive tone even when stakes run high.</p>
+
 <h3>3. Focusing Only on Price</h3>
-<p>Many negotiators get tunnel vision around price, ignoring other value-adding variables like delivery time, service levels, or payment terms. A broader perspective helps craft more balanced agreements.</p>
+<p>Price is critical, but it\u2019s seldom the only lever for crafting value. Treating cost as the sole battleground leaves gains on the table.</p>
+<p><strong>Identify Multiple Issues.</strong> Beyond price, consider delivery schedules, warranty periods, payment terms, support packages, and exclusivity rights. Each dimension offers tradeable currency.</p>
+<p><strong>Use Logrolling.</strong> When one party values X more than Y (and vice versa), you can trade accordingly: perhaps they lower the price if you extend the contract term, or they agree to faster delivery in exchange for a slightly higher tariff.</p>
+<p><strong>Package Offers.</strong> Instead of haggling line-by-line, present a bundle: \u201cFor $10K more, we\u2019ll include two years of premium support and a dedicated account manager.\u201d Bundling simplifies decisions and highlights overall value.</p>
+<p><strong>Anchor on Total Cost of Ownership.</strong> A lower sticker price can hide high maintenance fees or inefficiencies. Calculate lifecycle costs, training, downtime, upgrades, to shift focus toward long-term benefits.</p>
+<p>By broadening the discussion, you open doors to creative solutions, stronger relationships, and deals that satisfy both sides\u2019 underlying interests.</p>
+
 <h3>4. Talking Too Much</h3>
-<p>Silence is a powerful tool. Talking excessively, especially to fill awkward pauses, may lead to revealing information that weakens your position. Ask open-ended questions and listen actively.</p>
+<p>Silence is underappreciated. Over-talking, especially during pauses, often leads negotiators to leak information or concede prematurely.</p>
+<p><strong>Embrace Strategic Silence.</strong> After making an offer or asking a question, pause. Let the quiet do the heavy lifting: discomfort often prompts the other side to fill the gap, revealing priorities or weaknesses.</p>
+<p><strong>Ask Open-Ended Questions.</strong> Rather than \u201cIs that okay?\u201d, try \u201cWhat concerns do you have about this proposal?\u201d You draw out substantive feedback instead of yes/no answers.</p>
+<p><strong>Practice Active Listening.</strong> Show you\u2019re engaged with nods, paraphrasing (\u201cSo you\u2019re saying your main hurdle is the delivery timeline\u2026\u201d), and follow-ups. This builds trust and gives you deeper insight.</p>
+<p><strong>Avoid Monologues.</strong> Resist the urge to rehearse your entire pitch at once. Break information into digestible chunks and check for understanding at each step.</p>
+<p>When you master the rhythm of speak\u2013pause\u2013listen, you control the exchange, gather vital intelligence, and leave space for mutually beneficial ideas to surface.</p>
+
 <h3>5. Reacting Emotionally</h3>
-<p>Negotiations can be tense. Emotional responses—whether anger, frustration, or excitement—can cloud judgment. Stay calm, take breaks if needed, and focus on facts over feelings.</p>
+<p>Emotions\u2014anger, frustration, even excitement\u2014are powerful but unpredictable. Left unchecked, they cloud judgment and sabotage rational analysis.</p>
+<p><strong>Recognize Your Triggers.</strong> What comments or tactics make you defensive? By anticipating emotional flash points, you can prepare calming strategies.</p>
+<p><strong>Use Time-Outs.</strong> If tensions spike, suggest a short break. Stretch, get a glass of water, or shift to a less charged topic. A few minutes can reset everyone\u2019s composure.</p>
+<p><strong>Frame Feedback Constructively.</strong> Instead of \u201cThat offer is insulting,\u201d say \u201cI\u2019m concerned this figure doesn\u2019t reflect the full scope of work.\u201d You focus on the issue, not the person.</p>
+<p><strong>Practice Mindfulness.</strong> Deep breathing or short mental resets between agenda points help you maintain equanimity. Small habits, like consciously lowering your speaking volume, can also defuse tension.</p>
+<p>Emotional discipline isn\u2019t about suppressing feelings; it\u2019s about acknowledging them without letting them hijack the process. The result is clearer thinking and more sustainable agreements.</p>
+
 <h2>Conclusion</h2>
-<p>Avoiding these pitfalls won't guarantee success, but it significantly improves your odds. With awareness, preparation, and emotional discipline, you stay sharp and ahead of the curve.</p>
+<p>No negotiation is immune to these common pitfalls, but awareness is half the battle. By preparing meticulously, tempering overconfidence, expanding discussions beyond price, listening more than talking, and managing emotions deliberately, you transform potential missteps into strategic advantages. Each interaction becomes not just a quest for terms, but an opportunity to build trust, uncover hidden value, and create solutions that endure. Practice these principles consistently, and you\u2019ll find yourself closing deals with both finesse and confidence, time after time.</p>
 `,
   },
   {
