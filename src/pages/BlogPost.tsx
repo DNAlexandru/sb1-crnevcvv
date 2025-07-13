@@ -26,11 +26,12 @@ const BlogPost: React.FC = () => {
         src={post.image}
         alt={post.title}
         className={
-          post.slug === 'avoiding-common-pitfalls'
+          post.slug === 'avoiding-common-pitfalls' ||
+          post.slug === 'psychology-of-negotiation'
             ?
-              'w-full h-auto md:max-h-[20rem] object-cover rounded-lg mb-4 md:float-right md:ml-6'
+                'w-full h-auto md:max-h-[20rem] object-cover rounded-lg mb-4 md:float-right md:ml-6'
             :
-              'w-full md:w-[1245px] md:h-[541px] object-cover rounded-lg mb-4 md:float-right md:ml-6'
+                'w-full md:w-[1245px] md:h-[541px] object-cover rounded-lg mb-4 md:float-right md:ml-6'
         }
       />
       <div

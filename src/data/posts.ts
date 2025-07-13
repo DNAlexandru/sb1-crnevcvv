@@ -85,7 +85,7 @@ const posts: Post[] = [
 <p>Balance professional and personal. A brief, sincere personal anecdote can humanize the interaction,just don’t stray into oversharing.</p>
 <p><strong>Example in Practice:</strong> A medical-device salesperson discovers the hospital administrator played collegiate basketball at the same university. A brief segue into shared experiences builds warmth. Later, when discussing contract flexibility, that interpersonal goodwill makes requests feel less self-serving.</p>
 
-<h2>Conclusion</h2>
+<h2 class="text-3xl">Conclusion</h2>
 <p>Mastering negotiation psychology means marrying tactical rigor with human insight. Anchoring bias teaches you the power of first impressions; reciprocity harnesses the give-and-take of social obligation; framing effects show how language shapes choice; emotional intelligence unlocks unspoken currents; and rapport building cements trust for the long haul. By practicing these principles,backed by data, tempered by empathy, and guided by self-awareness,you’ll not only close better deals but also nurture the relationships that make future collaborations possible. Over time, these skills compound, transforming every negotiation into a strategic opportunity rather than a gamble.</p>
 `,
   },
@@ -143,7 +143,7 @@ const posts: Post[] = [
 <p><strong>Practice Mindfulness.</strong> Deep breathing or short mental resets between agenda points help you maintain equanimity. Small habits, like consciously lowering your speaking volume, can also defuse tension.</p>
 <p>Emotional discipline isn\u2019t about suppressing feelings; it\u2019s about acknowledging them without letting them hijack the process. The result is clearer thinking and more sustainable agreements.</p>
 
-<h2>Conclusion</h2>
+<h2 class="text-3xl">Conclusion</h2>
 <p>No negotiation is immune to these common pitfalls, but awareness is half the battle. By preparing meticulously, tempering overconfidence, expanding discussions beyond price, listening more than talking, and managing emotions deliberately, you transform potential missteps into strategic advantages. Each interaction becomes not just a quest for terms, but an opportunity to build trust, uncover hidden value, and create solutions that endure. Practice these principles consistently, and you\u2019ll find yourself closing deals with both finesse and confidence, time after time.</p>
 `,
   },
