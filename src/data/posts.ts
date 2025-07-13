@@ -52,7 +52,7 @@ const posts: Post[] = [
 <h2>Introduction</h2>
 <p>Even the most seasoned negotiators can stumble into traps that derail promising deals. From walking in unprepared to letting emotions run the show, these pitfalls sap your leverage and undermine outcomes. By understanding why they occur, and how to guard against them, you can navigate conversations with confidence and precision. In this article, we\u2019ll delve deeply into five common negotiation mistakes, illustrating each with real-world examples and offering concrete strategies to help you sidestep them. Read on to turn potential missteps into opportunities for stronger, more sustainable agreements.</p>
 
-<h3>1. Lack of Preparation</h3>
+<h3 class="text-xl font-semibold">1. Lack of Preparation</h3>
 <p>Walking into a negotiation without a clear game plan is like embarking on a journey without a map. You must know your objectives, constraints, and alternatives before you sit down at the table.</p>
 <p><strong>Define Your Goals.</strong> List your must-haves (e.g., price thresholds, delivery dates, service levels) and your nice-to-haves. Rank them by importance so you can trade lower-priority items for higher-priority ones.</p>
 <p><strong>Research the Other Party.</strong> Understand their needs, pressures, and history. Have they shown flexibility in similar deals? What public statements or annual reports reveal about their objectives?</p>
@@ -60,7 +60,7 @@ const posts: Post[] = [
 <p><strong>Prepare Supporting Data.</strong> Charts, benchmarks, case studies, testimonials: credible evidence bolsters your position and discourages lowball offers.</p>
 <p>By investing time in pre-negotiation work, you turn surprises into expected variables and build a foundation for controlled, purposeful dialogue.</p>
 
-<h3>2. Overconfidence</h3>
+<h3 class="text-xl font-semibold">2. Overconfidence</h3>
 <p>Confidence signals competence, but unchecked, it morphs into arrogance, blinding you to risks and eroding credibility.</p>
 <p><strong>Avoid the \u201cI\u2019ve Got This\u201d Trap.</strong> Overestimating your leverage can lead you to reject reasonable offers or overlook creative solutions. Remain humble: assume your counterpart has done their homework too.</p>
 <p><strong>Test Your Assumptions.</strong> Before asserting a position, run it by a trusted colleague or mentor. They\u2019ll help you spot blind spots and temper overreach.</p>
@@ -68,7 +68,7 @@ const posts: Post[] = [
 <p><strong>Monitor Your Language.</strong> Phrases like \u201cWe don\u2019t need concessions\u201d or \u201cThis is non-negotiable\u201d close off channels. Frame positions as \u201cOur preferred terms are\u2026\u201d to signal room for collaboration.</p>
 <p>Staying grounded helps you adapt mid-stream, respond to new information, and sustain a constructive tone even when stakes run high.</p>
 
-<h3>3. Focusing Only on Price</h3>
+<h3 class="text-xl font-semibold">3. Focusing Only on Price</h3>
 <p>Price is critical, but it\u2019s seldom the only lever for crafting value. Treating cost as the sole battleground leaves gains on the table.</p>
 <p><strong>Identify Multiple Issues.</strong> Beyond price, consider delivery schedules, warranty periods, payment terms, support packages, and exclusivity rights. Each dimension offers tradeable currency.</p>
 <p><strong>Use Logrolling.</strong> When one party values X more than Y (and vice versa), you can trade accordingly: perhaps they lower the price if you extend the contract term, or they agree to faster delivery in exchange for a slightly higher tariff.</p>
@@ -76,7 +76,7 @@ const posts: Post[] = [
 <p><strong>Anchor on Total Cost of Ownership.</strong> A lower sticker price can hide high maintenance fees or inefficiencies. Calculate lifecycle costs, training, downtime, upgrades, to shift focus toward long-term benefits.</p>
 <p>By broadening the discussion, you open doors to creative solutions, stronger relationships, and deals that satisfy both sides\u2019 underlying interests.</p>
 
-<h3>4. Talking Too Much</h3>
+<h3 class="text-xl font-semibold">4. Talking Too Much</h3>
 <p>Silence is underappreciated. Over-talking, especially during pauses, often leads negotiators to leak information or concede prematurely.</p>
 <p><strong>Embrace Strategic Silence.</strong> After making an offer or asking a question, pause. Let the quiet do the heavy lifting: discomfort often prompts the other side to fill the gap, revealing priorities or weaknesses.</p>
 <p><strong>Ask Open-Ended Questions.</strong> Rather than \u201cIs that okay?\u201d, try \u201cWhat concerns do you have about this proposal?\u201d You draw out substantive feedback instead of yes/no answers.</p>
@@ -84,7 +84,7 @@ const posts: Post[] = [
 <p><strong>Avoid Monologues.</strong> Resist the urge to rehearse your entire pitch at once. Break information into digestible chunks and check for understanding at each step.</p>
 <p>When you master the rhythm of speak\u2013pause\u2013listen, you control the exchange, gather vital intelligence, and leave space for mutually beneficial ideas to surface.</p>
 
-<h3>5. Reacting Emotionally</h3>
+<h3 class="text-xl font-semibold">5. Reacting Emotionally</h3>
 <p>Emotions\u2014anger, frustration, even excitement\u2014are powerful but unpredictable. Left unchecked, they cloud judgment and sabotage rational analysis.</p>
 <p><strong>Recognize Your Triggers.</strong> What comments or tactics make you defensive? By anticipating emotional flash points, you can prepare calming strategies.</p>
 <p><strong>Use Time-Outs.</strong> If tensions spike, suggest a short break. Stretch, get a glass of water, or shift to a less charged topic. A few minutes can reset everyone\u2019s composure.</p>
