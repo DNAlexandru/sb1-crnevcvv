@@ -55,7 +55,7 @@ const it = {
   'how.step2.title': 'Analisi e Strategia',
   'how.step2.desc': 'Verifichiamo accordi e mercato per sviluppare un piano di negoziazione.',
   'how.step3.title': 'Negoziazione Professionale',
-  'how.step3.desc': 'I nostri negoziatori conducono le trattative seguendo una strategia basata sui dati.',
+  'how.step3.desc': 'I nostri negoziatori conducono le trattative seguendo una strategia basata sui dati e tecniche consolidate.',
   'how.step4.title': 'Risultati e Pagamento',
   'how.step4.desc': 'Concludiamo l\'accordo migliorato e condividiamo i risparmi al 50%.',
 
