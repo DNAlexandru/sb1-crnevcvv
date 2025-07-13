@@ -28,7 +28,10 @@ const BlogPost: React.FC = () => {
         className={
           post.slug === 'avoiding-common-pitfalls' ||
           post.slug === 'psychology-of-negotiation' ||
-          post.slug === 'cross-cultural-strategies'
+          post.slug === 'cross-cultural-strategies' ||
+          post.slug === 'data-driven-negotiation' ||
+          post.slug === 'win-win-partnerships' ||
+          post.slug === 'salary-negotiation-mastery'
             ?
                 'w-full h-auto md:max-h-[20rem] object-cover rounded-lg mb-4 md:float-right md:ml-6'
             :
