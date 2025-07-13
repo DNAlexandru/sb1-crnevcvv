@@ -48,7 +48,7 @@ const ServicesPreview = () => {
                   <service.icon className="h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-navy-950">{t(`servicesPreview.${service.key}.title`, service.title)}</h3>
-                <p className="text-gray-600 mb-6 flex-grow">{t(`servicesPreview.${service.key}.desc`, service.description)}</p>
+                <p className="text-gray-600 mb-3 flex-grow">{t(`servicesPreview.${service.key}.desc`, service.description)}</p>
                 <Button 
                   variant="outline" 
                   href="/services"
@@ -66,7 +66,7 @@ const ServicesPreview = () => {
         
         <div className="mt-12 text-center">
           <ScrollAnimation animation="fade-in" delay={400}>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-3">
               {t('servicesPreview.ready', 'Ready to start saving? We only get paid when you save money.')}
             </p>
             <Button

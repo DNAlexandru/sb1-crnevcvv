@@ -15,7 +15,7 @@ const About = () => {
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
                 {t('about.heroTitle', 'About DNego')}
               </h1>
-              <p className="text-xl text-gray-300 mb-6">
+              <p className="text-xl text-gray-300 mb-3">
                 {t(
                   'about.heroSubtitle',
                   'We are expert negotiators with a mission to help clients achieve better deals and significant savings with absolutely no risk.'
@@ -49,13 +49,13 @@ const About = () => {
                 <h2 className="text-3xl font-bold mb-6 text-navy-950">
                   {t('about.storyTitle', 'Our Story')}
                 </h2>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-600 mb-2">
                   {t(
                     'about.storyP1',
                     `We were born out of a desire to stand alongside people during the most important negotiations of their lives, those rare, meaningful moments when it's essential to feel prepared and supported. We believe that every negotiation is a unique opportunity to assert one's value and build a fair and balanced agreement.`
                   )}
                 </p>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-600 mb-2">
                   {t(
                     'about.storyP2',
                     `That's why we are committed to offering a strategic and mindful approach, based on careful analysis and a clear plan, enabling our clients to face each challenge with confidence and determination. At the core of our work are strong principles: transparency, integrity, mutual respect, and the belief that a good negotiation is one where both parties feel recognized and satisfied.`
@@ -207,7 +207,7 @@ const About = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                 {t('about.ctaTitle', 'Ready to Start Saving?')}
               </h2>
-              <p className="text-xl text-gray-300 mb-8">
+              <p className="text-xl text-gray-300 mb-4">
                 {t(
                   'about.ctaSubtitle',
                   `We guide every client with competence and passion, always keeping their interests at the center. And to demonstrate how much we believe in what we do, our compensation is tied exclusively to the results we achieve together: a concrete commitment to delivering real and tangible benefits to those who choose to trust us.`

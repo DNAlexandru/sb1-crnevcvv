@@ -134,7 +134,7 @@ const Contact = () => {
                 <h4 className="text-xl font-bold mb-4 text-white">
                   {t('contact.upcoming', 'Upcoming Courses')}
                 </h4>
-                <p className="text-gray-300 mb-4">
+                <p className="text-gray-300 mb-2">
                   {t(
                     'contact.upcomingDesc',
                     'DNego is developing online courses to train you in negotiation excellence. Enter your email in the form to receive updates and early access.'

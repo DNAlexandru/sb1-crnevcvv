@@ -28,17 +28,17 @@ const Founder = () => {
           <ScrollAnimation animation="slide-up" className="flex-1">
             <div className="w-full">
               <h3 className="text-2xl font-bold mb-4 text-navy-950">Alexandru Buruiana</h3>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-3">
                 {t(
                   'founder.bio1', 'I am a Mechanical Engineer specialized in energy, and I have always believed in the importance of recognizing and defending the true value of things. I discovered that negotiation is my real passion thanks to the energy and enthusiasm I feel every time I sit down to bargain, seek an agreement, and find common ground.'
                 )}
               </p>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-3">
                 {t(
                   'founder.bio2', 'Over the years, I refined this skill while working in the purchasing departments of various companies, handling raw materials and services. But I soon realized that for me it was more than just a job: it was a way of living, guided by principles such as fairness, mutual respect, and the pursuit of solutions that create value for everyone.'
                 )}
               </p>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-3">
                 {t(
                   'founder.bio3', 'With time, this desire for justice and balance took me beyond the corporate world, leading me to help people outside of my professional circle as well: friends, family, acquaintances, and anyone in need of support in an important negotiation.'
                 )}

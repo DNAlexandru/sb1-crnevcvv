@@ -43,7 +43,7 @@ const BlogSection: React.FC = () => {
                       <span>{post.readTime}</span>
                     </div>
                     <h3 className="text-xl font-bold mb-2 text-navy-950">{post.title}</h3>
-                    <p className="text-gray-600 mb-4">{post.excerpt}</p>
+                    <p className="text-gray-600 mb-2">{post.excerpt}</p>
                   </div>
                   <div className="mt-auto">
                     <Button
