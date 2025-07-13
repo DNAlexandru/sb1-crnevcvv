@@ -22,7 +22,11 @@ const BlogPost: React.FC = () => {
         <span className="flex items-center"><Clock className="w-5 h-5 mr-1" />{post.readTime}</span>
         <span className="flex items-center"><Tag className="w-5 h-5 mr-1" />{post.category}</span>
       </div>
-      <img src={post.image} alt={post.title} className="w-full rounded-lg mb-8" />
+      <img
+        src={post.image}
+        alt={post.title}
+        className="w-full md:w-[1245px] md:h-[541px] object-cover rounded-lg mb-4 md:float-right md:ml-6"
+      />
       <div
         className="prose prose-lg text-gray-800"
         dangerouslySetInnerHTML={{ __html: post.content }}
