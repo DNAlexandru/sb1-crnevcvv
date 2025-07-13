@@ -61,7 +61,14 @@ const About = () => {
                     `That's why we are committed to offering a strategic and mindful approach, based on careful analysis and a clear plan, enabling our clients to face each challenge with confidence and determination. At the core of our work are strong principles: transparency, integrity, mutual respect, and the belief that a good negotiation is one where both parties feel recognized and satisfied.`
                   )}
                 </p>
-                <p className="text-gray-700 font-medium leading-relaxed mb-0">
+              </div>
+            </ScrollAnimation>
+          </div>
+          
+          {/* Third paragraph - full width below image and text */}
+          <ScrollAnimation animation="slide-up" delay={200}>
+            <div className="mt-6">
+              <p className="text-gray-700 font-medium leading-relaxed">
                   {t(
                     'about.storyP3',
                     `We guide every client with competence and passion, always keeping their interests at the center. And to demonstrate how much we believe in what we do, our compensation is tied exclusively to the results we achieve together, a concrete commitment to delivering real and tangible benefits to those who choose to trust us.`
@@ -204,13 +211,13 @@ const About = () => {
               <p className="text-xl text-gray-300 mb-8">
                 {t(
                   'about.ctaSubtitle',
-                  'Contact us today for your free consultation and see how much we can save you.'
+                  `We guide every client with competence and passion, always keeping their interests at the center. And to demonstrate how much we believe in what we do, our compensation is tied exclusively to the results we achieve together: a concrete commitment to delivering real and tangible benefits to those who choose to trust us.`
                 )}
               </p>
               <Button variant="primary" size="lg" href="/contact">
                 {t('about.ctaButton', 'Schedule Your Free Consultation')}
               </Button>
-            </ScrollAnimation>
+          </ScrollAnimation>
           </div>
         </div>
       </section>
