@@ -98,12 +98,12 @@ const About = () => {
                     <span className="text-2xl font-bold">1</span>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-navy-950">
-                    {t('about.mission1Title', 'Make Expert Negotiation Accessible')}
+                    {t('about.mission1Title', 'Make professional negotiation accessible')}
                   </h3>
                   <p className="text-gray-600">
                     {t(
                       'about.mission1Desc',
-                      'We believe everyone deserves access to professional negotiation support, regardless of size or budget.'
+                      'We believe every organization, regardless of size or budget, deserves expert support in their negotiations.'
                     )}
                   </p>
                 </div>
@@ -113,12 +113,12 @@ const About = () => {
                     <span className="text-2xl font-bold">2</span>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-navy-950">
-                    {t('about.mission2Title', 'Align Incentives Perfectly')}
+                    {t('about.mission2Title', 'Align incentives with your goals')}
                   </h3>
                   <p className="text-gray-600">
                     {t(
                       'about.mission2Desc',
-                      'Our success is directly tied to yours. We only win when you save money, creating perfect alignment.'
+                      'Your savings and our fees are aligned: we benefit only when you generate tangible savings.'
                     )}
                   </p>
                 </div>
@@ -128,12 +128,12 @@ const About = () => {
                     <span className="text-2xl font-bold">3</span>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-navy-950">
-                    {t('about.mission3Title', 'Maintain Highest Ethics')}
+                    {t('about.mission3Title', 'Uphold the highest ethical standards')}
                   </h3>
                   <p className="text-gray-600">
                     {t(
                       'about.mission3Desc',
-                      'We negotiate hard but ethically, building relationships rather than burning bridges.'
+                      'We negotiate with integrity and determination, building lasting relationships rather than burning bridges.'
                     )}
                   </p>
                 </div>
