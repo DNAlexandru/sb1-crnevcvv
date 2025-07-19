@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useLanguage } from '../../contexts/LanguageContext';
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const { t } = useLanguage();
@@ -14,6 +16,10 @@ const Navbar: React.FC = () => {
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
 
   const handleNavClick = (path: string) => {
     if (location.pathname === path) {
@@ -71,9 +77,36 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile: language and menu toggle */}
-        <div className="flex items-center space-x-4 md:hidden">
+        <div className="relative flex items-center space-x-4 md:hidden">
           <LanguageSwitcher />
-          <div>{/* ...burger menu... */}</div>
+          <button
+            onClick={() => setMenuOpen((o) => !o)}
+            aria-label="Menu"
+            className="p-1"
+          >
+            {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+          {menuOpen && (
+            <div className="absolute right-0 top-full mt-2 w-48 bg-white border rounded shadow-lg py-2">
+              {['home', 'about', 'services', 'blog', 'contact'].map((key) => {
+                const path = key === 'home' ? '/' : `/${key}`;
+                return (
+                  <NavLink
+                    key={key}
+                    to={path}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavClick(path);
+                      setMenuOpen(false);
+                    }}
+                    className="block px-4 py-2 text-navy-950 hover:bg-gray-100"
+                  >
+                    {t(`nav.${key}`, key.charAt(0).toUpperCase() + key.slice(1))}
+                  </NavLink>
+                );
+              })}
+            </div>
+          )}
         </div>
       </div>
     </header>
