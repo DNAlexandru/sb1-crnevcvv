@@ -36,17 +36,19 @@ const ServicesPreview = () => {
         />
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <ScrollAnimation
-              key={index}
-              animation="slide-up"
-              delay={index * 100}
-              className="h-full"
-            >
-              <div className="bg-white rounded-lg shadow-md p-8 h-full border-t-4 border-blue-700 hover:shadow-lg transition-all duration-300 group">
-                <div className="flex items-center justify-center w-16 h-16 bg-blue-100 text-blue-700 rounded-full mb-6 group-hover:bg-blue-700 group-hover:text-white transition-colors duration-300">
-                  <service.icon className="h-8 w-8" />
-                </div>
+          {services.map((service, index) => {
+            const Icon = service.icon;
+            return (
+              <ScrollAnimation
+                key={index}
+                animation="slide-up"
+                delay={index * 100}
+                className="h-full"
+              >
+                <div className="bg-white rounded-lg shadow-md p-8 h-full border-t-4 border-blue-700 hover:shadow-lg transition-all duration-300 group">
+                  <div className="flex items-center justify-center w-16 h-16 bg-blue-100 text-blue-700 rounded-full mb-6 group-hover:bg-blue-700 group-hover:text-white transition-colors duration-300">
+                    <Icon className="h-8 w-8" />
+                  </div>
                 <h3 className="text-xl font-bold mb-4 text-navy-950">{t(`servicesPreview.${service.key}.title`, service.title)}</h3>
                 <p className="text-gray-600 mb-3 flex-grow">{t(`servicesPreview.${service.key}.desc`, service.description)}</p>
                 <Button 
@@ -61,7 +63,8 @@ const ServicesPreview = () => {
                 </Button>
               </div>
             </ScrollAnimation>
-          ))}
+          );
+          })}
         </div>
         
         <div className="mt-12 text-center">

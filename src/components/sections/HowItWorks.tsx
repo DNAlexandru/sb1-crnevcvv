@@ -42,15 +42,17 @@ const HowItWorks = () => {
           
           {/* Steps */}
           <div className="space-y-12 md:space-y-0">
-            {steps.map((step, index) => (
-              <ScrollAnimation
-                key={index}
-                animation="fade-in"
-                delay={index * 200}
-              >
-                <div className={`md:flex ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
-                  {/* Spacer for alternating sides */}
-                  <div className="hidden md:block md:w-1/2"></div>
+            {steps.map((step, index) => {
+              const Icon = step.icon;
+              return (
+                <ScrollAnimation
+                  key={index}
+                  animation="fade-in"
+                  delay={index * 200}
+                >
+                  <div className={`md:flex ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+                    {/* Spacer for alternating sides */}
+                    <div className="hidden md:block md:w-1/2"></div>
 
                   {/* Timeline dot */}
                   <div className="flex items-center justify-center md:absolute md:left-1/2 md:-translate-x-1/2 z-10 mb-6 md:mb-0">
@@ -63,7 +65,7 @@ const HowItWorks = () => {
                   <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pl-12' : 'md:pr-12'}`}>
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border">
                       <div className="flex items-center mb-4">
-                        <step.icon className="h-8 w-8 text-blue-700 mr-4" />
+                        <Icon className="h-8 w-8 text-blue-700 mr-4" />
                         <h3 className="text-xl font-bold text-navy-950">{t(`how.step${index+1}.title`, step.title)}</h3>
                       </div>
                       <p className="text-gray-600">{t(`how.step${index+1}.desc`, step.description)}</p>
@@ -71,7 +73,8 @@ const HowItWorks = () => {
                   </div>
                 </div>
               </ScrollAnimation>
-            ))}
+            );
+            })}
           </div>
         </div>
       </div>
