@@ -146,7 +146,10 @@ const Services = () => {
                   <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                     <div className="flex items-center mb-6">
                       <div className="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-700 mr-4">
-                        <service.icon className="h-8 w-8" />
+                        {(() => {
+                          const Icon = service.icon;
+                          return <Icon className="h-8 w-8" />;
+                        })()}
                       </div>
                       <h2 className="text-2xl md:text-3xl font-bold text-navy-950">
                         {t(`services.${service.id}.title`, service.title)}
