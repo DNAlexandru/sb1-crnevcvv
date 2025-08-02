@@ -1,5 +1,5 @@
 // Hero.tsx
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ArrowDown } from 'lucide-react';
 import Button from '../ui/Button';
 import ScrollAnimation from '../utils/ScrollAnimation';
 import { useLanguage } from '../../contexts/LanguageContext';
@@ -7,13 +7,14 @@ import { useLanguage } from '../../contexts/LanguageContext';
 const Hero: React.FC = () => {
   const { t } = useLanguage();
   return (
-    <section className="pt-32 pb-16 bg-white">
+    <section className="relative pt-32 pb-16 bg-white">
       <div className="container mx-auto px-6 flex flex-col items-center text-center">
-        <div className="relative w-32 h-32 md:w-48 md:h-48 mb-8 hero-smoke">
+        <div className="relative w-28 h-28 md:w-44 md:h-44 mb-8 hero-smoke">
+          <div className="hexagon"></div>
           <img
             src="/hero.jpg"
-            alt="DNego hexagon"
-            className="w-full h-full hero-logo"
+            alt="DNego logo"
+            className="w-full h-full object-contain"
           />
         </div>
         <ScrollAnimation animation="fade-in">
@@ -48,6 +49,10 @@ const Hero: React.FC = () => {
             </Button>
           </div>
         </ScrollAnimation>
+      </div>
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center text-navy-950">
+        <ArrowDown className="w-6 h-6 animate-bounce" />
+        <span className="mt-1 text-sm">{t('hero.scroll', 'Scroll')}</span>
       </div>
     </section>
   );
