@@ -24,6 +24,12 @@ const it = {
   'hero.secondary': 'Scopri i Servizi',
   'hero.scroll': 'Scorri',
 
+  // Valuation Chat
+  'valuation.promptPlaceholder': 'Descrivi il bene o servizio da valutare',
+  'valuation.button': 'Valuta',
+  'valuation.loading': 'Valutazione...',
+  'valuation.system': 'Sei un assistente esperto in valutazioni. Chiedi dati integrativi se necessario e poi genera un report sul valore intrinseco del bene o servizio indicato, basandoti sul testo e sull’immagine se presente.',
+
   // Services Preview
   'servicesPreview.title': 'I Nostri Servizi Principali',
   'servicesPreview.subtitle': 'Competenza specializzata nelle negoziazioni dove serve di più',
