@@ -104,3 +104,47 @@
     text-shadow: 0 1px 2px rgba(0,0,0,0.1);
   }
 }
+
+@layer components {
+  .hero-logo {
+    animation: spin3d 10s linear infinite;
+    transform-style: preserve-3d;
+  }
+
+  .hero-smoke::before,
+  .hero-smoke::after {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    width: 140%;
+    height: 140%;
+    background: radial-gradient(circle, rgba(0,0,0,0.15), transparent 70%);
+    filter: blur(12px);
+    opacity: 0.4;
+    animation: smoke 6s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  .hero-smoke::after {
+    animation-delay: -3s;
+  }
+}
+
+@keyframes spin3d {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes smoke {
+  0%, 100% {
+    transform: translate(-10%, -10%);
+  }
+  50% {
+    transform: translate(10%, 10%);
+  }
+}
