@@ -106,9 +106,19 @@
 }
 
 @layer components {
-  .hero-logo {
-    animation: spin3d 10s linear infinite;
+  .hexagon {
+    position: absolute;
+    inset: 0;
     transform-style: preserve-3d;
+    animation: spin3d 10s linear infinite;
+  }
+
+  .hexagon::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 3px solid #0A2342;
+    clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
   }
 
   .hero-smoke::before,
