@@ -146,7 +146,7 @@ const Contact = () => {
                     {t('contact.ourPromiseTitle', 'Our Promise')}
                   </h3>
                   <p className="text-gray-300">
-                    {t('contact.ourPromiseText', 'Remember, our consultation is completely free with no obligation. We only get paid if we save you money, charging 50% of the verified savings.')}
+                    {t('contact.ourPromiseText', 'Remember, our consultation is completely free with no obligation. We only get paid if we save you money, charging 40% of the verified savings.')}
                   </p>
                 </div>
               </div>

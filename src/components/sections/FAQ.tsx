@@ -5,10 +5,10 @@ import ScrollAnimation from '../utils/ScrollAnimation';
 import { useLanguage } from '../../contexts/LanguageContext';
 
 const faqItems = [
-  { q: ['faq.q1', 'What does "no risk, pay from results" mean?'], a: ['faq.a1', 'It means you never pay upfront fees. We only charge 50% of the money we actually save you on your deals. If we find no savings, you owe us nothing.'] },
+  { q: ['faq.q1', 'What does "no risk, pay from results" mean?'], a: ['faq.a1', 'It means you never pay upfront fees. We only charge 40% of the money we actually save you on your deals. If we find no savings, you owe us nothing.'] },
   { q: ['faq.q2', 'What happens during the free consultation?'], a: ['faq.a2', "We'll have a detailed discussion about your needs and review relevant contracts or issues. We identify opportunities and outline a strategy – all at no cost. You'll get a clear picture of how much you could save before deciding to move forward."] },
   { q: ['faq.q3', 'Which industries do you serve?'], a: ['faq.a3', 'We serve organizations and individuals across all sectors, from manufacturing and tech to healthcare and real estate. Any scenario where negotiation can improve outcomes is in scope.'] },
-  { q: ['faq.q4', 'How are savings calculated?'], a: ['faq.a4', 'We compare the costs or terms before and after our negotiation. Your share of savings is straightforward – exactly 50% of the improvement we secure.'] },
+  { q: ['faq.q4', 'How are savings calculated?'], a: ['faq.a4', 'We compare the costs or terms before and after our negotiation. You keep 60% of the improvement we secure, and we earn the remaining 40%.'] },
   { q: ['faq.q5', 'What if a negotiation fails or takes too long?'], a: ['faq.a5', "We set clear timelines and metrics. If we can't achieve better terms or if talks stall, you still pay nothing – our fee is entirely performance-based. We focus on realistic goals from the start."] },
   { q: ['faq.q6', 'How do I get started?'], a: ['faq.a6', "It's easy: fill out the contact form below or book a time on our Calendly page. We'll schedule your free consultation and get the process going."] },
 ];

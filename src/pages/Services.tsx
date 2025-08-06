@@ -252,7 +252,7 @@ const Services = () => {
                         <p className="text-sm text-blue-800 font-medium">
                           {t(
                             'services.remember',
-                            '💡 Remember: We only get paid 50% of your verified savings. No savings = no fee.'
+                            '💡 Remember: We only get paid 40% of your verified savings. No savings = no fee.'
                           )}
                         </p>
                       </div>
