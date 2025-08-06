@@ -2,7 +2,7 @@
 import { ArrowRight, ArrowDown } from 'lucide-react';
 import Button from '../ui/Button';
 import ScrollAnimation from '../utils/ScrollAnimation';
-import ValuationChat from './ValuationChat';
+// import ValuationChat from './ValuationChat';
 import { useLanguage } from '../../contexts/LanguageContext';
 
 const Hero: React.FC = () => {
@@ -50,9 +50,9 @@ const Hero: React.FC = () => {
             </Button>
           </div>
         </ScrollAnimation>
-        <ValuationChat />
+        {/* <ValuationChat /> */}
       </div>
-      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex flex-col items-center text-navy-950">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-navy-950">
         <ArrowDown className="w-6 h-6 animate-bounce" />
         <span className="mt-1 text-sm">{t('hero.scroll', 'Scroll')}</span>
       </div>
