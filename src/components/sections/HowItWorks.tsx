@@ -22,7 +22,7 @@ const steps = [
   {
     icon: CheckCircle,
     title: 'Results & Payment',
-    description: 'We finalize the improved deal and quantify the savings. You keep half of the gains and pay us the other half. If no savings are achieved, you owe us nothing.',
+    description: 'We finalize the improved deal and quantify the savings. You keep 60% of the gains and pay us the remaining 40%. If no savings are achieved, you owe us nothing.',
   },
 ];
 

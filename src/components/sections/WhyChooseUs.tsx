@@ -7,7 +7,7 @@ const features = [
   {
     icon: CreditCard,
     title: '100% No-Risk Model',
-    description: 'We only succeed when you succeed. You pay nothing unless we reduce your costs (we earn 50% of the savings we negotiate).',
+    description: 'We only succeed when you succeed. You pay nothing unless we reduce your costs (we earn 40% of the savings we negotiate).',
   },
   {
     icon: Shield,
