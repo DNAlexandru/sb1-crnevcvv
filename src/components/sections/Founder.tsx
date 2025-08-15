@@ -19,7 +19,7 @@ const Founder = () => {
                 src="/Profile_Photo.jpg"
                 alt="Alexandru Buruiana, Founder of DNego"
                 className="max-w-md w-full h-auto object-cover md:max-h-[20rem]" />
-              <div className="absolute -bottom-6 -right-6 bg-blue-700 text-white py-2 px-4 rounded-lg shadow-md font-medium">
+              <div className="absolute -bottom-3 -right-6 bg-blue-700 text-white py-2 px-4 rounded-lg shadow-md font-medium">
                 {t('founder.tagline', 'Alexandru Buruiana, Founder')}
               </div>
             </div>
