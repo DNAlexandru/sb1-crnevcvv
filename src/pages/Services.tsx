@@ -105,19 +105,31 @@ const Services = () => {
   return (
     <div className="pt-24 bg-white">
       {/* Hero */}
-      <section className="py-16 bg-navy-950 text-white">
+      <section className="py-16 bg-gradient-modern">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <ScrollAnimation animation="slide-up">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            <ScrollAnimation animation="fade-in">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
+                <CheckCircle className="w-8 h-8 text-blue-600" />
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation animation="slide-up" delay={100}>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-navy-950">
                 {t('services.heroTitle', 'Our Services')}
               </h1>
-              <p className="text-xl text-gray-300 mb-6">
+            </ScrollAnimation>
+            <ScrollAnimation animation="slide-up" delay={200}>
+              <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full mx-auto mb-8" />
+            </ScrollAnimation>
+            <ScrollAnimation animation="slide-up" delay={300}>
+              <p className="text-xl text-gray-600 mb-8">
                 {t(
                   'services.heroSubtitle',
                   'Specialized negotiation expertise across real estate, career advancement, and business consulting. We only succeed when you save money.'
                 )}
               </p>
+            </ScrollAnimation>
+            <ScrollAnimation animation="slide-up" delay={400}>
               <Button variant="primary" size="lg" href="/contact">
                 {t('services.heroCta', 'Get Your Free Consultation')}
               </Button>

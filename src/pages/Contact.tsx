@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, ArrowRight, CheckCircle } from "lucide-react";
 import SectionHeading from "../components/ui/SectionHeading";
 import Button from "../components/ui/Button";
 import ScrollAnimation from "../components/utils/ScrollAnimation";
@@ -76,14 +76,24 @@ const Contact = () => {
   return (
     <div className="pt-24 bg-white">
       {/* Hero */}
-      <section className="py-16 bg-navy-950 text-white">
+      <section className="py-16 bg-gradient-modern">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <ScrollAnimation animation="slide-up">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            <ScrollAnimation animation="fade-in">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
+                <CheckCircle className="w-8 h-8 text-blue-600" />
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation animation="slide-up" delay={100}>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-navy-950">
                 {t('contact.heroTitle', 'Contact Us')}
               </h1>
-              <p className="text-xl text-gray-300 mb-6">
+            </ScrollAnimation>
+            <ScrollAnimation animation="slide-up" delay={200}>
+              <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full mx-auto mb-8" />
+            </ScrollAnimation>
+            <ScrollAnimation animation="slide-up" delay={300}>
+              <p className="text-xl text-gray-600 mb-6">
                 {t('contact.heroSubtitle', 'Ready to start saving? Get in touch for your free consultation.')}
               </p>
             </ScrollAnimation>
@@ -97,55 +107,61 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Info */}
             <ScrollAnimation animation="slide-up">
-              <div className="bg-navy-950 text-white p-8 lg:p-12 rounded-lg shadow-xl h-full">
-                <h2 className="text-2xl font-bold mb-8 text-white">
+              <div className="card-premium p-8 lg:p-12 h-full">
+                <h2 className="text-2xl font-bold mb-8 text-navy-950">
                   {t('contact.getInTouch', 'Get In Touch')}
                 </h2>
 
                 <div className="space-y-6 mb-12">
-                  <div className="flex items-start">
-                    <Mail className="h-6 w-6 text-blue-400 mr-4 mt-1" />
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center icon-floating">
+                      <Mail className="h-6 w-6 text-white" />
+                    </div>
                     <div>
-                      <h4 className="font-bold mb-1 text-white">{t('contact.email', 'Email')}</h4>
+                      <h4 className="font-bold mb-1 text-navy-950">{t('contact.email', 'Email')}</h4>
                       <a
                         href="mailto:negotiation@dnego.com"
-                        className="text-gray-300 hover:text-blue-400 transition-colors"
+                        className="text-gray-600 hover:text-blue-600 transition-colors"
                       >
                         negotiation@dnego.com
                       </a>
                     </div>
                   </div>
 
-                  <div className="flex items-start">
-                    <Phone className="h-6 w-6 text-blue-400 mr-4 mt-1" />
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center icon-floating">
+                      <Phone className="h-6 w-6 text-white" />
+                    </div>
                     <div>
-                      <h4 className="font-bold mb-1 text-white">{t('contact.phone', 'Phone')}</h4>
+                      <h4 className="font-bold mb-1 text-navy-950">{t('contact.phone', 'Phone')}</h4>
                       <a
                         href="tel:+393275859000"
-                        className="text-gray-300 hover:text-blue-400 transition-colors"
+                        className="text-gray-600 hover:text-green-600 transition-colors"
                       >
                         +39 3275859000
                       </a>
                     </div>
                   </div>
 
-                  <div className="flex items-start">
-                    <MapPin className="h-6 w-6 text-blue-400 mr-4 mt-1" />
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center icon-floating">
+                      <MapPin className="h-6 w-6 text-white" />
+                    </div>
                     <div>
-                      <h4 className="font-bold mb-1 text-white">{t('contact.location', 'Location')}</h4>
-                      <p className="text-gray-300">Parma, Italy</p>
-                      <p className="text-gray-400">
+                      <h4 className="font-bold mb-1 text-navy-950">{t('contact.location', 'Location')}</h4>
+                      <p className="text-gray-600">Parma, Italy</p>
+                      <p className="text-gray-500">
                         {t('contact.locationNote', '(Consultations available globally)')}
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <div className="pt-8 border-t border-gray-800">
-                  <h3 className="text-xl font-bold mb-4 text-white">
+                <div className="pt-8 border-t border-gray-200">
+                  <h3 className="text-xl font-bold mb-4 text-navy-950">
                     {t('contact.ourPromiseTitle', 'Our Promise')}
                   </h3>
-                  <p className="text-gray-300">
+                  <p className="text-gray-600">
                     {t('contact.ourPromiseText', 'Remember, our consultation is completely free with no obligation. We only get paid if we save you money, charging 50% of the verified savings.')}
                   </p>
                 </div>
@@ -154,7 +170,7 @@ const Contact = () => {
 
             {/* Contact Form */}
             <ScrollAnimation animation="slide-up" delay={200}>
-              <div className="bg-white p-8 lg:p-12 rounded-lg shadow-lg border">
+              <div className="card-premium p-8 lg:p-12">
                 <h2 className="text-2xl font-bold mb-6 text-navy-950">
                   {t('contact.formTitle', 'Send us a Message')}
                 </h2>
