@@ -1,5 +1,4 @@
-// Hero.tsx
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 import Button from '../ui/Button';
 import ScrollAnimation from '../utils/ScrollAnimation';
 import { useLanguage } from '../../contexts/LanguageContext';
@@ -8,90 +7,125 @@ const Hero: React.FC = () => {
   const { t } = useLanguage();
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat h-screen flex items-center"
+      className="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center overflow-hidden"
       style={{ backgroundImage: "url('/hero.jpg')" }}
     >
-      {/* Rimosso overlay per rendere visibile l'immagine senza trasparenze */}
+      {/* Modern Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-navy-900/80 via-navy-800/70 to-blue-900/60" />
+      
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl animate-pulse-slow" />
+        <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-navy-600/10 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }} />
+      </div>
 
-      {/* Contenuto centrato verticalmente */}
-      <div className="relative container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center">
-        <div className="max-w-lg text-shadow">
+      {/* Content */}
+      <div className="relative container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+        <div className="max-w-2xl">
           <ScrollAnimation animation="fade-in">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-4">
-              <span className="bg-blue-900/50 rounded leading-relaxed" style={{
-                boxDecorationBreak: 'clone',
-                WebkitBoxDecorationBreak: 'clone'
-              }}>
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-white/20">
+              <CheckCircle className="w-5 h-5 text-green-400" />
+              <span className="text-white text-sm font-medium">
+                {t('hero.badge', '100% Risk-Free Consultation')}
+              </span>
+            </div>
+          </ScrollAnimation>
+
+          <ScrollAnimation animation="slide-up" delay={200}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              <span className="bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
                 {t('hero.title', 'The art of negotiation at your service, for a fair deal')}
               </span>
             </h1>
           </ScrollAnimation>
 
-          <ScrollAnimation animation="slide-up" delay={200}>
-            <hr className="w-16 border-t-2 border-navy-950 mb-6" />
-          </ScrollAnimation>
-
           <ScrollAnimation animation="slide-up" delay={300}>
-            <p className="text-sm md:text-base text-white mb-8">
-              <span className="bg-blue-900/50 rounded leading-relaxed" style={{
-                boxDecorationBreak: 'clone',
-                WebkitBoxDecorationBreak: 'clone'
-              }}>
-                {t('hero.subtitle', 'Our compensation is solely a share of the savings we deliver')}
-              </span>
-            </p>
+            <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full mb-8" />
           </ScrollAnimation>
 
           <ScrollAnimation animation="slide-up" delay={400}>
-            <div className="flex flex-wrap gap-4">
+            <p className="text-xl md:text-2xl text-gray-200 mb-10 leading-relaxed font-light">
+              {t('hero.subtitle', 'Our compensation is solely a share of the savings we deliver')}
+            </p>
+          </ScrollAnimation>
+
+          <ScrollAnimation animation="slide-up" delay={500}>
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button
                 variant="primary"
                 size="lg"
                 href="/contact"
                 icon={ArrowRight}
                 iconPosition="right"
-                className="bg-navy-950 hover:bg-navy-900"
+                className="shadow-2xl hover:shadow-blue-500/25 transform hover:scale-105"
               >
                 {t('hero.cta', 'Free Consultation')}
               </Button>
               <Button
-                variant="primary"
+                variant="ghost"
                 size="lg"
                 href="/services"
-                className="bg-blue-900/50 hover:bg-blue-900/70 border-2 border-white"
+                className="hover:bg-white/20"
               >
                 {t('hero.secondary', 'View Services')}
               </Button>
             </div>
           </ScrollAnimation>
+
+          <ScrollAnimation animation="fade-in" delay={600}>
+            <div className="flex items-center gap-6 text-gray-300">
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400" />
+                <span className="text-sm">{t('hero.feature1', 'No upfront costs')}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400" />
+                <span className="text-sm">{t('hero.feature2', 'Pay only if you save')}</span>
+              </div>
+            </div>
+          </ScrollAnimation>
         </div>
-        <div /> {/* Vuoto per mantenere due colonne */}
+
+        {/* Right side - Stats or additional content */}
+        <div className="hidden lg:block">
+          <ScrollAnimation animation="slide-in-right" delay={700}>
+            <div className="grid grid-cols-2 gap-6">
+              <div className="card-modern p-6 text-center">
+                <div className="text-3xl font-bold text-blue-600 mb-2">50%</div>
+                <div className="text-sm text-gray-600">{t('hero.stat1', 'Your share of savings')}</div>
+              </div>
+              <div className="card-modern p-6 text-center">
+                <div className="text-3xl font-bold text-green-600 mb-2">5+</div>
+                <div className="text-sm text-gray-600">{t('hero.stat2', 'Years experience')}</div>
+              </div>
+              <div className="card-modern p-6 text-center">
+                <div className="text-3xl font-bold text-purple-600 mb-2">100%</div>
+                <div className="text-sm text-gray-600">{t('hero.stat3', 'Risk-free model')}</div>
+              </div>
+              <div className="card-modern p-6 text-center">
+                <div className="text-3xl font-bold text-orange-600 mb-2">2</div>
+                <div className="text-sm text-gray-600">{t('hero.stat4', 'Languages')}</div>
+              </div>
+            </div>
+          </ScrollAnimation>
+        </div>
       </div>
 
-      {/* Scroll indicator sempre visibile in basso */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <a
-          href="#why-choose-us"
-          className="flex flex-col items-center text-white hover:opacity-80 transition-opacity"
-        >
-          <span className="text-sm mb-1 bg-blue-900/50 px-1.5 py-0.5 rounded text-center inline-block" style={{
-            boxDecorationBreak: 'clone',
-            WebkitBoxDecorationBreak: 'clone'
-          }}>
-            {t('hero.scroll', 'Scroll')}
-          </span>
-          <svg
-            className="w-6 h-6 bg-blue-900/50 rounded p-0.5"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <ScrollAnimation animation="fade-in" delay={800}>
+          <a
+            href="#services"
+            className="flex flex-col items-center text-white/80 hover:text-white transition-all duration-300 group animate-bounce"
           >
-            <path d="M12 5v14M5 12l7 7 7-7" />
-          </svg>
-        </a>
+            <span className="text-sm mb-2 font-medium">
+              {t('hero.scroll', 'Discover More')}
+            </span>
+            <div className="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center group-hover:border-white/60 transition-colors duration-300">
+              <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse" />
+            </div>
+          </a>
+        </ScrollAnimation>
       </div>
     </section>
   );
