@@ -83,6 +83,22 @@ const Founder = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Call to Action */}
+              <div className="card-modern p-8 text-center bg-gradient-to-r from-navy-50 to-blue-50">
+                <h4 className="text-2xl font-bold text-navy-950 mb-4">
+                  {t('founder.cta.title', 'Ready to Work Together?')}
+                </h4>
+                <p className="text-gray-600 mb-6">
+                  {t(
+                    'founder.cta.subtitle',
+                    "Let's discuss your negotiation needs and see how I can help you achieve better outcomes."
+                  )}
+                </p>
+                <button className="btn btn-primary shadow-xl hover:shadow-blue-500/25">
+                  {t('founder.cta.button', 'Schedule a Free Consultation')}
+                </button>
+              </div>
             </div>
           </ScrollAnimation>
 
@@ -146,19 +162,6 @@ const Founder = () => {
                   "I love finding the right balance between quality and price, because I believe that every agreement should reflect not just a good economic outcome, but also the values of those who sign it: transparency, integrity, and respect. I'm convinced that a good negotiation is never about one side winning over the other, but about building an agreement where both parties feel acknowledged and fulfilled."
                 )}
               </blockquote>
-            </div>
-
-            {/* Call to Action */}
-            <div className="card-modern p-8 text-center bg-gradient-to-r from-navy-50 to-blue-50">
-              <h4 className="text-2xl font-bold text-navy-950 mb-4">
-                {t('founder.cta.title', 'Ready to Work Together?')}
-              </h4>
-              <p className="text-gray-600 mb-6">
-                {t('founder.cta.subtitle', "Let's discuss your negotiation needs and see how I can help you achieve better outcomes.")}
-              </p>
-              <button className="btn btn-primary shadow-xl hover:shadow-blue-500/25">
-                {t('founder.cta.button', 'Schedule a Free Consultation')}
-              </button>
             </div>
           </ScrollAnimation>
         </div>
