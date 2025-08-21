@@ -96,7 +96,7 @@ const About = () => {
             <ScrollAnimation animation="fade-in">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 text-blue-700 rounded-full mb-4">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-full mb-4 shadow-lg">
                     <span className="text-2xl font-bold">1</span>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-navy-950">
@@ -109,9 +109,9 @@ const About = () => {
                     )}
                   </p>
                 </div>
-                
+
                 <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 text-blue-700 rounded-full mb-4">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-full mb-4 shadow-lg">
                     <span className="text-2xl font-bold">2</span>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-navy-950">
@@ -124,9 +124,9 @@ const About = () => {
                     )}
                   </p>
                 </div>
-                
+
                 <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 text-blue-700 rounded-full mb-4">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-full mb-4 shadow-lg">
                     <span className="text-2xl font-bold">3</span>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-navy-950">
