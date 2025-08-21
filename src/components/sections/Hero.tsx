@@ -7,11 +7,14 @@ const Hero: React.FC = () => {
   const { t } = useLanguage();
   return (
     <section
-      className="relative bg-white min-h-screen flex items-center overflow-hidden"
+      className="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center overflow-hidden"
+      style={{
+        backgroundImage: 'url(/hero.jpg)',
+      }}
     >
-      {/* Background Symbol */}
-      <div className="absolute inset-0 flex items-center justify-end pr-20 opacity-5">
-        <div className="text-[400px] font-serif font-bold text-navy-950 select-none pointer-events-none">
+      {/* Centered Symbol at Top */}
+      <div className="absolute top-20 left-1/2 transform -translate-x-1/2 opacity-10">
+        <div className="text-[200px] font-serif font-bold text-navy-950 select-none pointer-events-none">
           DNego<span className="text-blue-600">●</span>
         </div>
       </div>
@@ -87,13 +90,13 @@ const Hero: React.FC = () => {
         <ScrollAnimation animation="fade-in" delay={800}>
           <a
             href="#services"
-            className="flex flex-col items-center text-navy-700 hover:text-blue-600 transition-all duration-300 group animate-bounce"
+            className="flex flex-col items-center text-navy-950 hover:text-blue-600 transition-all duration-300 group animate-bounce"
           >
             <span className="text-sm mb-2 font-medium">
               {t('hero.scroll', 'Discover More')}
             </span>
-            <div className="w-6 h-10 border-2 border-navy-700/40 rounded-full flex justify-center group-hover:border-blue-600/60 transition-colors duration-300">
-              <div className="w-1 h-3 bg-navy-700/60 rounded-full mt-2 animate-pulse" />
+            <div className="w-6 h-10 border-2 border-navy-950/60 rounded-full flex justify-center group-hover:border-blue-600/60 transition-colors duration-300">
+              <div className="w-1 h-3 bg-navy-950/80 rounded-full mt-2 animate-pulse" />
             </div>
           </a>
         </ScrollAnimation>
