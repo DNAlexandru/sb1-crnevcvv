@@ -7,20 +7,17 @@ const Hero: React.FC = () => {
   const { t } = useLanguage();
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center overflow-hidden"
-      style={{
-        backgroundImage: 'url(/hero.jpg)',
-      }}
+      className="relative bg-gradient-modern min-h-screen flex items-center overflow-hidden"
     >
-      {/* Centered Symbol at Top */}
-      <div className="absolute top-20 left-1/2 transform -translate-x-1/2 opacity-10">
-        <div className="text-[200px] font-serif font-bold text-navy-950 select-none pointer-events-none">
-          DNego<span className="text-blue-600">●</span>
-        </div>
-      </div>
+      {/* Decorative Image */}
+      <img
+        src="/hero.jpg"
+        alt=""
+        className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 max-w-lg pointer-events-none select-none z-0"
+      />
 
       {/* Content */}
-      <div className="relative container mx-auto px-6">
+      <div className="relative container mx-auto px-6 z-10">
         <div className="max-w-4xl">
           <ScrollAnimation animation="fade-in">
             <div className="inline-flex items-center gap-2 bg-blue-50 rounded-full px-4 py-2 mb-8 border border-blue-200">
@@ -86,7 +83,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <ScrollAnimation animation="fade-in" delay={800}>
           <a
             href="#services"
