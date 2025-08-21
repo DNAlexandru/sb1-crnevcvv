@@ -1,6 +1,7 @@
 import SectionHeading from '../components/ui/SectionHeading';
 import ScrollAnimation from '../components/utils/ScrollAnimation';
 import Button from '../components/ui/Button';
+import { CheckCircle } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const About = () => {
@@ -8,19 +9,31 @@ const About = () => {
   return (
     <div className="pt-24 bg-white">
       {/* Hero */}
-      <section className="py-16 bg-navy-950 text-white">
+      <section className="py-16 bg-gradient-modern">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <ScrollAnimation animation="slide-up">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            <ScrollAnimation animation="fade-in">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
+                <CheckCircle className="w-8 h-8 text-blue-600" />
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation animation="slide-up" delay={100}>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-navy-950">
                 {t('about.heroTitle', 'About DNego')}
               </h1>
-              <p className="text-xl text-gray-300 mb-6">
+            </ScrollAnimation>
+            <ScrollAnimation animation="slide-up" delay={200}>
+              <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full mx-auto mb-8" />
+            </ScrollAnimation>
+            <ScrollAnimation animation="slide-up" delay={300}>
+              <p className="text-xl text-gray-600 mb-8">
                 {t(
                   'about.heroSubtitle',
                   'We are expert negotiators with a mission to help clients achieve better deals and significant savings with absolutely no risk.'
                 )}
               </p>
+            </ScrollAnimation>
+            <ScrollAnimation animation="slide-up" delay={400}>
               <Button variant="primary" size="lg" href="/contact">
                 {t('about.heroCta', 'Get Started')}
               </Button>

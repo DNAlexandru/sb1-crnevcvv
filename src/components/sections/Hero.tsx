@@ -9,13 +9,6 @@ const Hero: React.FC = () => {
     <section
       className="relative bg-gradient-modern min-h-screen flex items-center overflow-hidden"
     >
-      {/* Decorative Image */}
-      <img
-        src="/hero.jpg"
-        alt=""
-        className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 max-w-lg pointer-events-none select-none z-0"
-      />
-
       {/* Content */}
       <div className="relative container mx-auto px-6 z-10">
         <div className="max-w-4xl">
