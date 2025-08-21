@@ -219,7 +219,7 @@ const Services = () => {
                       <div className="space-y-6">
                         <div>
                           <h4 className="font-bold text-red-700 mb-2 flex items-center">
-                            <span className="w-6 h-6 bg-red-100 text-red-700 rounded-full flex items-center justify-center text-sm font-bold mr-2">1</span>
+                            <span className="w-8 h-8 bg-gradient-to-br from-red-500 to-red-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-2">1</span>
                             {t('services.challengeLabel', 'Challenge:')}
                           </h4>
                           <p className="text-gray-600 ml-8">
@@ -232,7 +232,7 @@ const Services = () => {
 
                         <div>
                           <h4 className="font-bold text-blue-700 mb-2 flex items-center">
-                            <span className="w-6 h-6 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center text-sm font-bold mr-2">2</span>
+                            <span className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-2">2</span>
                             {t('services.solutionLabel', 'Solution:')}
                           </h4>
                           <p className="text-gray-600 ml-8">
@@ -245,7 +245,7 @@ const Services = () => {
 
                         <div>
                           <h4 className="font-bold text-green-700 mb-2 flex items-center">
-                            <span className="w-6 h-6 bg-green-100 text-green-700 rounded-full flex items-center justify-center text-sm font-bold mr-2">3</span>
+                            <span className="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-2">3</span>
                             {t('services.resultLabel', 'Result:')}
                           </h4>
                           <p className="text-gray-600 ml-8">
