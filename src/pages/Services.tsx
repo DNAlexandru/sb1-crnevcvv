@@ -105,24 +105,31 @@ const Services = () => {
   return (
     <div className="pt-24 bg-white">
       {/* Hero */}
-      <section className="py-16 bg-gradient-modern">
+      <section className="py-20 bg-gradient-modern relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl" />
+        </div>
+        
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center relative z-10">
             <ScrollAnimation animation="fade-in">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
-                <CheckCircle className="w-8 h-8 text-blue-600" />
+              <div className="inline-flex items-center gap-2 bg-blue-50 rounded-full px-4 py-2 mb-8 border border-blue-200">
+                <CheckCircle className="w-5 h-5 text-green-500" />
+                <span className="text-navy-950 text-sm font-medium">I Nostri Servizi</span>
               </div>
             </ScrollAnimation>
             <ScrollAnimation animation="slide-up" delay={100}>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-navy-950">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-navy-950 leading-tight">
                 {t('services.heroTitle', 'Our Services')}
               </h1>
             </ScrollAnimation>
             <ScrollAnimation animation="slide-up" delay={200}>
-              <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full mx-auto mb-8" />
+              <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mx-auto mb-8" />
             </ScrollAnimation>
             <ScrollAnimation animation="slide-up" delay={300}>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-xl md:text-2xl text-navy-950 mb-10 leading-relaxed font-light max-w-3xl mx-auto">
                 {t(
                   'services.heroSubtitle',
                   'Specialized negotiation expertise across real estate, career advancement, and business consulting. We only succeed when you save money.'
@@ -130,7 +137,7 @@ const Services = () => {
               </p>
             </ScrollAnimation>
             <ScrollAnimation animation="slide-up" delay={400}>
-              <Button variant="primary" size="lg" href="/contact">
+              <Button variant="primary" size="lg" href="/contact" className="shadow-2xl hover:shadow-blue-500/25 transform hover:scale-105">
                 {t('services.heroCta', 'Get Your Free Consultation')}
               </Button>
             </ScrollAnimation>
@@ -139,9 +146,15 @@ const Services = () => {
       </section>
 
       {/* Services Detail */}
-      <section className="section">
+      <section className="section bg-white relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 left-0 w-96 h-96 bg-blue-100/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-purple-100/20 rounded-full blur-3xl" />
+        </div>
+        
         <div className="container">
-          <div className="space-y-20">
+          <div className="space-y-20 relative z-10">
             {services.map((service, index) => (
               <ScrollAnimation
                 key={index}
@@ -156,16 +169,19 @@ const Services = () => {
                 >
                   {/* Content */}
                   <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
-                    <div className="flex items-center mb-6">
-                      <div className="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-700 mr-4">
+                    <div className="flex items-center mb-8">
+                      <div className="w-16 h-16 flex items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white mr-4 shadow-lg icon-floating">
                         <service.icon className="h-8 w-8" />
                       </div>
-                      <h2 className="text-2xl md:text-3xl font-bold text-navy-950">
-                        {t(`services.${service.id}.title`, service.title)}
-                      </h2>
+                      <div>
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-navy-950 leading-tight">
+                          {t(`services.${service.id}.title`, service.title)}
+                        </h2>
+                        <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mt-2" />
+                      </div>
                     </div>
 
-                    <p className="text-lg text-gray-600 mb-8">
+                    <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
                       {t(`services.${service.id}.desc`, service.description)}
                     </p>
 
@@ -175,17 +191,19 @@ const Services = () => {
                       </h3>
                       <div className="space-y-4">
                         {service.detailedServices.map((detailService, serviceIndex) => (
-                          <div key={serviceIndex} className="bg-gray-50 rounded-lg p-4">
+                          <div key={serviceIndex} className="card-modern p-6 group hover:shadow-modern transition-all duration-300">
                             <div className="flex items-start">
-                              <CheckCircle className="h-5 w-5 text-blue-700 mr-3 mt-0.5 flex-shrink-0" />
+                              <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mr-4 flex-shrink-0 icon-floating">
+                                <CheckCircle className="h-5 w-5 text-white" />
+                              </div>
                               <div>
-                                <h4 className="font-bold text-navy-950 mb-1">
+                                <h4 className="font-bold text-navy-950 mb-2 group-hover:text-blue-700 transition-colors duration-300">
                                   {t(
                                     `services.${service.id}.detailed.${serviceIndex}.title`,
                                     detailService.title
                                   )}
                                 </h4>
-                                <p className="text-gray-600">
+                                <p className="text-gray-600 leading-relaxed">
                                   {t(
                                     `services.${service.id}.detailed.${serviceIndex}.desc`,
                                     detailService.description
@@ -211,9 +229,16 @@ const Services = () => {
 
                   {/* Case Study */}
                   <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
-                    <div className="bg-white rounded-lg shadow-lg border p-8 sticky top-8">
-                      <h3 className="text-xl font-bold mb-6 text-navy-950">
+                    <div className="card-premium p-8 sticky top-8 group hover:shadow-floating transition-all duration-500">
+                      <div className="flex items-center gap-3 mb-6">
+                        <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center icon-floating">
+                          <CheckCircle className="h-6 w-6 text-white" />
+                        </div>
+                        <h3 className="text-xl font-bold text-navy-950 group-hover:text-green-700 transition-colors duration-300">
                         {t('services.successStory', 'Success Story')}
+                        </h3>
+                      </div>
+                      <div className="w-16 h-1 bg-gradient-to-r from-green-500 to-green-600 rounded-full mb-6" />
                       </h3>
 
                       <div className="space-y-6">
@@ -257,8 +282,8 @@ const Services = () => {
                         </div>
                       </div>
 
-                      <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-                        <p className="text-sm text-blue-800 font-medium">
+                      <div className="mt-6 p-6 bg-gradient-to-r from-blue-50 to-green-50 rounded-xl border border-blue-200/50">
+                        <p className="text-sm text-blue-800 font-medium leading-relaxed">
                           {t(
                             'services.remember',
                             '💡 Remember: We only get paid 50% of your verified savings. No savings = no fee.'
@@ -282,14 +307,21 @@ const Services = () => {
       <HowItWorks />
 
       {/* CTA */}
-      <section className="py-16 bg-navy-950 text-white">
+      <section className="py-20 bg-gradient-premium text-white relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-navy-500/10 rounded-full blur-3xl" />
+        </div>
+        
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center relative z-10">
             <ScrollAnimation animation="fade-in">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white leading-tight">
                 {t('services.ctaTitle', 'Ready to Start Saving?')}
               </h2>
-              <p className="text-xl text-gray-300 mb-8">
+              <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-blue-300 rounded-full mx-auto mb-8" />
+              <p className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed font-light">
                 {t(
                   'services.ctaSubtitle',
                   'Contact us today for your free consultation. We only get paid when you save money.'
@@ -300,6 +332,7 @@ const Services = () => {
                   variant="primary" 
                   size="lg" 
                   href="/contact"
+                  className="shadow-2xl hover:shadow-blue-500/25 transform hover:scale-105"
                 >
                   {t(
                     'services.ctaSchedule',
@@ -310,7 +343,7 @@ const Services = () => {
                   variant="outline" 
                   size="lg" 
                   href="/"
-                  className="border-white text-white hover:bg-white hover:text-navy-950"
+                  className="border-white text-white hover:bg-white hover:text-navy-950 shadow-lg hover:shadow-white/25"
                 >
                   {t('services.backHome', 'Back to Home')}
                 </Button>

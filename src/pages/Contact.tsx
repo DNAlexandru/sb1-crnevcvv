@@ -76,24 +76,31 @@ const Contact = () => {
   return (
     <div className="pt-24 bg-white">
       {/* Hero */}
-      <section className="py-16 bg-gradient-modern">
+      <section className="py-20 bg-gradient-modern relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl" />
+        </div>
+        
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center relative z-10">
             <ScrollAnimation animation="fade-in">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
-                <CheckCircle className="w-8 h-8 text-blue-600" />
+              <div className="inline-flex items-center gap-2 bg-blue-50 rounded-full px-4 py-2 mb-8 border border-blue-200">
+                <CheckCircle className="w-5 h-5 text-green-500" />
+                <span className="text-navy-950 text-sm font-medium">Contattaci</span>
               </div>
             </ScrollAnimation>
             <ScrollAnimation animation="slide-up" delay={100}>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-navy-950">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-navy-950 leading-tight">
                 {t('contact.heroTitle', 'Contact Us')}
               </h1>
             </ScrollAnimation>
             <ScrollAnimation animation="slide-up" delay={200}>
-              <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full mx-auto mb-8" />
+              <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mx-auto mb-8" />
             </ScrollAnimation>
             <ScrollAnimation animation="slide-up" delay={300}>
-              <p className="text-xl text-gray-600 mb-6">
+              <p className="text-xl md:text-2xl text-navy-950 mb-10 leading-relaxed font-light max-w-3xl mx-auto">
                 {t('contact.heroSubtitle', 'Ready to start saving? Get in touch for your free consultation.')}
               </p>
             </ScrollAnimation>
@@ -102,26 +109,39 @@ const Contact = () => {
       </section>
 
       {/* Contact & Booking */}
-      <section className="section bg-white">
+      <section className="section bg-white relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 left-0 w-96 h-96 bg-blue-100/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-purple-100/20 rounded-full blur-3xl" />
+        </div>
+        
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
             {/* Contact Info */}
             <ScrollAnimation animation="slide-up">
-              <div className="card-premium p-8 lg:p-12 h-full">
-                <h2 className="text-2xl font-bold mb-8 text-navy-950">
+              <div className="card-premium p-8 lg:p-12 h-full group hover:shadow-floating transition-all duration-500">
+                <div className="flex items-center gap-3 mb-8">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center icon-floating">
+                    <Mail className="h-6 w-6 text-white" />
+                  </div>
+                  <h2 className="text-2xl font-bold text-navy-950 group-hover:text-blue-700 transition-colors duration-300">
                   {t('contact.getInTouch', 'Get In Touch')}
+                  </h2>
+                </div>
+                <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mb-8" />
                 </h2>
 
                 <div className="space-y-6 mb-12">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center icon-floating">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center icon-floating shadow-lg">
                       <Mail className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-bold mb-1 text-navy-950">{t('contact.email', 'Email')}</h4>
+                      <h4 className="font-bold mb-2 text-navy-950">{t('contact.email', 'Email')}</h4>
                       <a
                         href="mailto:negotiation@dnego.com"
-                        className="text-gray-600 hover:text-blue-600 transition-colors"
+                        className="text-gray-600 hover:text-blue-600 transition-colors text-lg"
                       >
                         negotiation@dnego.com
                       </a>
@@ -129,14 +149,14 @@ const Contact = () => {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center icon-floating">
+                    <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center icon-floating shadow-lg">
                       <Phone className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-bold mb-1 text-navy-950">{t('contact.phone', 'Phone')}</h4>
+                      <h4 className="font-bold mb-2 text-navy-950">{t('contact.phone', 'Phone')}</h4>
                       <a
                         href="tel:+393275859000"
-                        className="text-gray-600 hover:text-green-600 transition-colors"
+                        className="text-gray-600 hover:text-green-600 transition-colors text-lg"
                       >
                         +39 3275859000
                       </a>
@@ -144,12 +164,12 @@ const Contact = () => {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center icon-floating">
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center icon-floating shadow-lg">
                       <MapPin className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-bold mb-1 text-navy-950">{t('contact.location', 'Location')}</h4>
-                      <p className="text-gray-600">Parma, Italy</p>
+                      <h4 className="font-bold mb-2 text-navy-950">{t('contact.location', 'Location')}</h4>
+                      <p className="text-gray-600 text-lg">Parma, Italy</p>
                       <p className="text-gray-500">
                         {t('contact.locationNote', '(Consultations available globally)')}
                       </p>
@@ -158,10 +178,16 @@ const Contact = () => {
                 </div>
 
                 <div className="pt-8 border-t border-gray-200">
-                  <h3 className="text-xl font-bold mb-4 text-navy-950">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center">
+                      <CheckCircle className="h-5 w-5 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-navy-950">
                     {t('contact.ourPromiseTitle', 'Our Promise')}
+                    </h3>
+                  </div>
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 leading-relaxed">
                     {t('contact.ourPromiseText', 'Remember, our consultation is completely free with no obligation. We only get paid if we save you money, charging 50% of the verified savings.')}
                   </p>
                 </div>
@@ -170,14 +196,24 @@ const Contact = () => {
 
             {/* Contact Form */}
             <ScrollAnimation animation="slide-up" delay={200}>
-              <div className="card-premium p-8 lg:p-12">
-                <h2 className="text-2xl font-bold mb-6 text-navy-950">
+              <div className="card-premium p-8 lg:p-12 group hover:shadow-floating transition-all duration-500">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center icon-floating">
+                    <ArrowRight className="h-6 w-6 text-white" />
+                  </div>
+                  <h2 className="text-2xl font-bold text-navy-950 group-hover:text-purple-700 transition-colors duration-300">
                   {t('contact.formTitle', 'Send us a Message')}
+                  </h2>
+                </div>
+                <div className="w-16 h-1 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full mb-6" />
                 </h2>
 
                 {submitted ? (
-                  <div className="bg-green-100 border border-green-500 text-green-700 p-4 rounded-lg mb-6">
+                  <div className="bg-gradient-to-r from-green-50 to-green-100 border border-green-200 text-green-700 p-6 rounded-xl mb-6 shadow-lg">
+                    <div className="flex items-center gap-3">
+                      <CheckCircle className="h-6 w-6 text-green-600" />
                     {t('contact.success', "Thank you for reaching out! We'll be in touch shortly.")}
+                    </div>
                   </div>
                 ) : null}
 
@@ -203,6 +239,7 @@ const Contact = () => {
                         }
                         onInput={(e) => e.currentTarget.setCustomValidity("")}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
+                        className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white hover:border-gray-300 shadow-sm"
                         placeholder={t('contact.namePlaceholder', 'Your name')}
                         required
                       />
@@ -228,6 +265,7 @@ const Contact = () => {
                         }
                         onInput={(e) => e.currentTarget.setCustomValidity("")}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
+                        className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white hover:border-gray-300 shadow-sm"
                         placeholder={t('contact.emailPlaceholder', 'your.email@example.com')}
                         required
                       />
@@ -253,7 +291,7 @@ const Contact = () => {
                       }
                       onInput={(e) => e.currentTarget.setCustomValidity("")}
                       rows={5}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-blue-700 text-gray-900"
+                      className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white hover:border-gray-300 resize-vertical shadow-sm"
                       placeholder={t('contact.messagePlaceholder', "Tell us about your negotiation needs or any specific contracts you'd like us to review.")}
                       required
                     />
@@ -287,7 +325,7 @@ const Contact = () => {
                   <Button
                     variant="primary"
                     size="lg"
-                    className="w-full"
+                    className="w-full shadow-xl hover:shadow-blue-500/25 transform hover:scale-105"
                     type="submit"
                     disabled={isSubmitting}
                     icon={isSubmitting ? undefined : ArrowRight}
@@ -303,21 +341,34 @@ const Contact = () => {
       </section>
 
       {/* FAQ */}
-      <section className="section bg-gray-50">
+      <section className="section bg-gradient-modern relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl" />
+        </div>
+        
         <div className="container">
           <SectionHeading
             title={t('contactFaq.title', 'Contact FAQs')}
             subtitle={t('contactFaq.subtitle', 'Common questions about getting in touch and scheduling consultations')}
           />
 
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-4xl mx-auto relative z-10">
             {contactFaqItems.map((faq, index) => (
               <ScrollAnimation key={index} animation="fade-in" delay={index * 100}>
-                <div className="bg-white p-6 rounded-lg shadow-md mb-6">
-                  <h3 className="text-lg font-bold mb-2 text-navy-950">
+                <div className="card-premium p-8 mb-6 group hover:shadow-floating transition-all duration-500">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0 icon-floating">
+                      <CheckCircle className="h-5 w-5 text-white" />
+                    </div>
+                    <h3 className="text-lg font-bold text-navy-950 group-hover:text-blue-700 transition-colors duration-300 leading-tight">
                     {t(faq.q[0], faq.q[1])}
+                    </h3>
+                  </div>
                   </h3>
-                  <p className="text-gray-600">{t(faq.a[0], faq.a[1])}</p>
+                  <div className="w-12 h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mb-4 ml-14 group-hover:w-20 transition-all duration-500" />
+                  <p className="text-gray-600 leading-relaxed ml-14">{t(faq.a[0], faq.a[1])}</p>
                 </div>
               </ScrollAnimation>
             ))}

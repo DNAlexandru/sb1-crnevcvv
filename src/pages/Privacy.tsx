@@ -6,14 +6,25 @@ const Privacy = () => {
   return (
     <div className="pt-24 bg-white">
       {/* Hero */}
-      <section className="py-16 bg-navy-950 text-white">
+      <section className="py-20 bg-gradient-premium text-white relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-navy-500/10 rounded-full blur-3xl" />
+        </div>
+        
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center relative z-10">
             <ScrollAnimation animation="slide-up">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 mb-8 border border-white/20">
+                <CheckCircle className="w-5 h-5 text-green-400" />
+                <span className="text-white text-sm font-medium">Privacy Policy</span>
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
                 {t('privacy.title', 'Privacy Policy')}
               </h1>
-              <p className="text-xl text-gray-300 mb-6">
+              <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-blue-300 rounded-full mx-auto mb-8" />
+              <p className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed font-light">
                 {t('privacy.subtitle', 'Effective Date: 3 luglio 2025')}
               </p>
             </ScrollAnimation>
@@ -22,10 +33,17 @@ const Privacy = () => {
       </section>
 
       {/* Content */}
-      <section className="section">
+      <section className="section bg-white relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 left-0 w-96 h-96 bg-blue-100/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-purple-100/20 rounded-full blur-3xl" />
+        </div>
+        
         <div className="container max-w-3xl">
           <ScrollAnimation animation="fade-in">
-            <article className="prose lg:prose-lg text-gray-700">
+            <div className="card-premium p-8 md:p-12 relative z-10">
+              <article className="prose lg:prose-lg text-gray-700 max-w-none">
               <p>
                 At DNego, we respect your privacy and are committed to protecting
                 your personal data. This Privacy Policy explains how we collect,
@@ -122,6 +140,7 @@ const Privacy = () => {
               </p>
               <p>📧 Email: negotiation@dnego.com</p>
             </article>
+            </div>
           </ScrollAnimation>
         </div>
       </section>
