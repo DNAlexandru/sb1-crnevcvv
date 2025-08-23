@@ -130,7 +130,6 @@ const Contact = () => {
                   </h2>
                 </div>
                 <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mb-8" />
-                </h2>
 
                 <div className="space-y-6 mb-12">
                   <div className="flex items-start gap-4">
@@ -185,9 +184,8 @@ const Contact = () => {
                     <h3 className="text-xl font-bold text-navy-950">
                     {t('contact.ourPromiseTitle', 'Our Promise')}
                     </h3>
-                  </div>
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                    </div>
+                    <p className="text-gray-600 leading-relaxed">
                     {t('contact.ourPromiseText', 'Remember, our consultation is completely free with no obligation. We only get paid if we save you money, charging 50% of the verified savings.')}
                   </p>
                 </div>
@@ -206,7 +204,6 @@ const Contact = () => {
                   </h2>
                 </div>
                 <div className="w-16 h-1 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full mb-6" />
-                </h2>
 
                 {submitted ? (
                   <div className="bg-gradient-to-r from-green-50 to-green-100 border border-green-200 text-green-700 p-6 rounded-xl mb-6 shadow-lg">
@@ -365,9 +362,8 @@ const Contact = () => {
                     <h3 className="text-lg font-bold text-navy-950 group-hover:text-blue-700 transition-colors duration-300 leading-tight">
                     {t(faq.q[0], faq.q[1])}
                     </h3>
-                  </div>
-                  </h3>
-                  <div className="w-12 h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mb-4 ml-14 group-hover:w-20 transition-all duration-500" />
+                    </div>
+                    <div className="w-12 h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mb-4 ml-14 group-hover:w-20 transition-all duration-500" />
                   <p className="text-gray-600 leading-relaxed ml-14">{t(faq.a[0], faq.a[1])}</p>
                 </div>
               </ScrollAnimation>
