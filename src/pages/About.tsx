@@ -85,13 +85,13 @@ const About = () => {
                   <p className="text-gray-600 leading-relaxed text-lg">
                     {t(
                       'about.storyP1',
-                      'We were born out of a desire to stand alongside people during the most important negotiations of their lives, those rare, meaningful moments when it's essential to feel prepared and supported. We believe that every negotiation is a unique opportunity to assert one's value and build a fair and balanced agreement.'
+                      'We were born out of a desire to stand alongside people during the most important negotiations of their lives, those rare, meaningful moments when it\'s essential to feel prepared and supported. We believe that every negotiation is a unique opportunity to assert one's value and build a fair and balanced agreement.'
                     )}
                   </p>
                   <p className="text-gray-600 leading-relaxed text-lg">
                     {t(
                       'about.storyP2',
-                      'That's why we are committed to offering a strategic and mindful approach, based on careful analysis and a clear plan, enabling our clients to face each challenge with confidence and determination. At the core of our work are strong principles: transparency, integrity, mutual respect, and the belief that a good negotiation is one where both parties feel recognized and satisfied.'
+                      'That\'s why we are committed to offering a strategic and mindful approach, based on careful analysis and a clear plan, enabling our clients to face each challenge with confidence and determination. At the core of our work are strong principles: transparency, integrity, mutual respect, and the belief that a good negotiation is one where both parties feel recognized and satisfied.'
                     )}
                   </p>
                   <div className="card-modern p-6 bg-gradient-to-r from-blue-50 to-purple-50">
