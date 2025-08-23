@@ -98,9 +98,10 @@ const Contact = () => {
             {/* Contact Info */}
             <ScrollAnimation animation="slide-up">
               <div className="bg-navy-950 text-white p-8 lg:p-12 rounded-lg shadow-xl h-full">
-                <h2 className="text-2xl font-bold mb-8 text-white">
+                <h2 className="text-2xl font-bold text-white">
                   {t('contact.getInTouch', 'Get In Touch')}
                 </h2>
+                <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mb-8" />
 
                 <div className="space-y-6 mb-12">
                   <div className="flex items-start">
