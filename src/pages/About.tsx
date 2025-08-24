@@ -44,7 +44,7 @@ const About = () => {
               />
             </ScrollAnimation>
 
-            <ScrollAnimation animation="slide-up" className="flex-1">
+            <ScrollAnimation animation="slide-up" className="flex-1 self-start">
               <div className="w-full text-left">
                 <h2 className="text-3xl font-bold mb-6 text-navy-950">
                   {t('about.storyTitle', 'Our Story')}
@@ -64,19 +64,19 @@ const About = () => {
               </div>
             </ScrollAnimation>
           </div>
-          
-          {/* Third paragraph - full width below image and text */}
-          <ScrollAnimation animation="slide-up" delay={200}>
-            <div className="mt-6">
-              <p className="text-gray-700 font-medium leading-relaxed">
-                  {t(
-                    'about.storyP3',
-                    `We guide every client with competence and passion, always keeping their interests at the center. And to demonstrate how much we believe in what we do, our compensation is tied exclusively to the results we achieve together, a concrete commitment to delivering real and tangible benefits to those who choose to trust us.`
-                  )}
-                </p>
-              </div>
-            </ScrollAnimation>
+        </div>
+
+        {/* Third paragraph - full width below image and text */}
+        <ScrollAnimation animation="slide-up" delay={200}>
+          <div className="w-full mt-6 px-4">
+            <p className="text-gray-700 font-medium leading-relaxed">
+              {t(
+                'about.storyP3',
+                `We guide every client with competence and passion, always keeping their interests at the center. And to demonstrate how much we believe in what we do, our compensation is tied exclusively to the results we achieve together, a concrete commitment to delivering real and tangible benefits to those who choose to trust us.`
+              )}
+            </p>
           </div>
+        </ScrollAnimation>
       </section>
       
       {/* Our Mission */}
