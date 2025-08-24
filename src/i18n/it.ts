@@ -19,10 +19,12 @@ const it = {
 
   // Hero
   'hero.title': 'L\'arte della negoziazione al tuo servizio, per un accordo equo',
-  'hero.subtitle': 'Il nostro compenso è una percentuale dei risparmi che ti facciamo guadagnare',
   'hero.cta': 'Consulenza Gratuita',
   'hero.secondary': 'Scopri i Servizi',
   'hero.scroll': 'Scorri',
+  'hero.badge': 'Consulenza 100% senza rischi',
+  'hero.feature1': 'Nessun costo iniziale',
+  'hero.feature2': 'Paghi solo se risparmi',
 
   // Services Preview
   'servicesPreview.title': 'I Nostri Servizi Principali',
