@@ -247,24 +247,36 @@ const About = () => {
             </ScrollAnimation>
             
             <ScrollAnimation animation="slide-up" delay={100}>
-              <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 h-full border">
-                <h3 className="text-xl font-bold mb-3 text-navy-950">
-                  {t('about.value2Title', 'Results-Focus')}
-                </h3>
-                <p className="text-gray-600">
-                  {t('about.value2Desc', "We're obsessed with achieving measurable results. Everything we do is designed to maximize your savings and improve your deal terms.")}
-                </p>
+              <div className="card-premium p-8 h-full group hover:shadow-floating transition-all duration-500 relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-600 opacity-0 group-hover:opacity-5 transition-opacity duration-500" />
+                <div className="relative z-10">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-xl mb-4 icon-floating">
+                    <Target className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3 text-navy-950 group-hover:text-green-700 transition-colors duration-300">
+                    {t('about.value2Title', 'Results-Focus')}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {t('about.value2Desc', "We're obsessed with achieving measurable results. Everything we do is designed to maximize your savings and improve your deal terms.")}
+                  </p>
+                  <div className="w-12 h-1 bg-gradient-to-r from-green-500 to-green-600 rounded-full mt-4 group-hover:w-20 transition-all duration-500" />
+                </div>
               </div>
             </ScrollAnimation>
             
             <ScrollAnimation animation="slide-up" delay={200}>
-              <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 h-full border">
-                <h3 className="text-xl font-bold mb-3 text-navy-950">
-                  {t('about.value3Title', 'Integrity')}
-                </h3>
+              <div className="card-premium p-8 h-full group hover:shadow-floating transition-all duration-500 relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-600 opacity-0 group-hover:opacity-5 transition-opacity duration-500" />
+                <div className="relative z-10">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-xl mb-4 icon-floating">
+                    <Award className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3 text-navy-950 group-hover:text-purple-700 transition-colors duration-300">
+                    {t('about.value3Title', 'Integrity')}
+                  </h3>
                   <p className="text-gray-600 leading-relaxed">
-                  {t('about.value3Desc', 'We maintain the highest ethical standards in all negotiations. Our reputation and yours are equally important to us.')}
-                </p>
+                    {t('about.value3Desc', 'We maintain the highest ethical standards in all negotiations. Our reputation and yours are equally important to us.')}
+                  </p>
                   <div className="w-12 h-1 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full mt-4 group-hover:w-20 transition-all duration-500" />
                 </div>
               </div>
