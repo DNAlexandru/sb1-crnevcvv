@@ -87,11 +87,9 @@ const BlogPost: React.FC = () => {
             </Button>
           </div>
         </div>
+      </section>
     </div>
   )
 }
 
 export default BlogPost
-
-  )
-}
