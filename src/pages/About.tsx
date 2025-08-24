@@ -85,7 +85,7 @@ const About = () => {
                   <p className="text-gray-600 leading-relaxed text-lg">
                     {t(
                       'about.storyP1',
-                      'We were born out of a desire to stand alongside people during the most important negotiations of their lives, those rare, meaningful moments when it\'s essential to feel prepared and supported. We believe that every negotiation is a unique opportunity to assert one's value and build a fair and balanced agreement.'
+                      'We were born out of a desire to stand alongside people during the most important negotiations of their lives, those rare, meaningful moments when it\'s essential to feel prepared and supported. We believe that every negotiation is a unique opportunity to assert one\'s value and build a fair and balanced agreement.'
                     )}
                   </p>
                   <p className="text-gray-600 leading-relaxed text-lg">

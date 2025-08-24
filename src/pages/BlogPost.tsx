@@ -88,7 +88,6 @@ const BlogPost: React.FC = () => {
           </div>
         </div>
       </section>
-      </div>
     </div>
   )
 }

@@ -239,7 +239,6 @@ const Services = () => {
                         </h3>
                       </div>
                       <div className="w-16 h-1 bg-gradient-to-r from-green-500 to-green-600 rounded-full mb-6" />
-                      </h3>
 
                       <div className="space-y-6">
                         <div>
