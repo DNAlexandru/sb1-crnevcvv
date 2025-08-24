@@ -176,7 +176,6 @@ const About = () => {
               </div>
             </ScrollAnimation>
           </div>
-          </div>
         </div>
       </section>
       
