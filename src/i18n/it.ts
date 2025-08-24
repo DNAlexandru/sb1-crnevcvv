@@ -19,7 +19,9 @@ const it = {
 
   // Hero
   'hero.title': 'L\'arte della negoziazione al tuo servizio, per un accordo equo',
-  'hero.subtitle': 'Il nostro compenso è una percentuale dei risparmi che ti facciamo guadagnare',
+  'hero.badge': 'Consulenza senza rischi al 100%',
+  'hero.feature1': 'Nessun costo iniziale',
+  'hero.feature2': 'Paghi solo se risparmi',
   'hero.cta': 'Consulenza Gratuita',
   'hero.secondary': 'Scopri i Servizi',
   'hero.scroll': 'Scorri',
@@ -89,6 +91,11 @@ const it = {
   'contact.course1': 'Tecniche Avanzate di Negoziazione',
   'contact.course2': 'Negoziare per Project Manager',
   'contact.course3': 'Gestione e Strategia dei Fornitori',
+  'contact.why.title': 'Perché iniziare con noi?',
+  'contact.why.free': 'Consulenza 100% gratuita',
+  'contact.why.risk': 'Nessun costo o rischio iniziale',
+  'contact.why.expert': 'Analisi di negoziazione da esperti',
+  'contact.why.results': 'Paghi solo per i risultati',
   'contact.formTitle': 'Invia un Messaggio',
   'contact.success': 'Grazie per il messaggio! Ti ricontatteremo a breve.',
   'contact.nameLabel': 'Nome Completo',

@@ -31,12 +31,6 @@ const Hero: React.FC = () => {
             <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full mb-8" />
           </ScrollAnimation>
 
-          <ScrollAnimation animation="slide-up" delay={400}>
-            <p className="text-xl md:text-2xl text-navy-950 mb-10 leading-relaxed font-light">
-              {t('hero.subtitle', 'Our compensation is solely a share of the savings we deliver')}
-            </p>
-          </ScrollAnimation>
-
           <ScrollAnimation animation="slide-up" delay={500}>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button
