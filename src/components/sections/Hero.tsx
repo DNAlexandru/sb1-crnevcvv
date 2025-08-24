@@ -32,12 +32,6 @@ const Hero: React.FC = () => {
           </ScrollAnimation>
 
           <ScrollAnimation animation="slide-up" delay={400}>
-            <p className="text-xl md:text-2xl text-navy-950 mb-10 leading-relaxed font-light">
-              {t('hero.subtitle', 'Our compensation is solely a share of the savings we deliver')}
-            </p>
-          </ScrollAnimation>
-
-          <ScrollAnimation animation="slide-up" delay={500}>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button
                 variant="primary"
@@ -60,7 +54,7 @@ const Hero: React.FC = () => {
             </div>
           </ScrollAnimation>
 
-          <ScrollAnimation animation="fade-in" delay={600}>
+          <ScrollAnimation animation="fade-in" delay={500}>
             <div className="flex items-center gap-6 text-navy-700">
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-green-500" />
