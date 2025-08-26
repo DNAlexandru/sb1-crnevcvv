@@ -60,16 +60,17 @@ const Footer = () => {
               {/* Social Links */}
               <div className="flex space-x-4">
                 {[
-                  { icon: Facebook, href: '#', label: 'Facebook' },
-                  { icon: Twitter, href: '#', label: 'Twitter' },
-                  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-                  { icon: Instagram, href: '#', label: 'Instagram' },
+                  { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61579383682460&locale=it_IT', label: 'Facebook' },
+                  { icon: Linkedin, href: 'https://www.linkedin.com/in/alexandru-buruiana-b8689723a', label: 'LinkedIn' },
+                  { icon: Instagram, href: 'https://www.instagram.com/dnalexburu/', label: 'Instagram' },
                 ].map(({ icon: Icon, href, label }) => (
                   <a
                     key={label}
                     href={href}
                     aria-label={label}
                     className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-gray-300 hover:text-white hover:bg-blue-600 transition-all duration-300 transform hover:scale-110"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Icon className="h-5 w-5" />
                   </a>
