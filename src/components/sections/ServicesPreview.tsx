@@ -12,6 +12,7 @@ const services = [
     description: 'Expert support for property purchases, mortgage optimization, and rental agreements to secure the best terms and pricing.',
     gradient: 'from-blue-500 to-blue-600',
     hoverGradient: 'hover:from-blue-600 hover:to-blue-700',
+    link: '/services#real-estate',
   },
   {
     key: "salary",
@@ -20,6 +21,7 @@ const services = [
     description: 'Maximize your earning potential through strategic compensation negotiations and comprehensive benefits package optimization.',
     gradient: 'from-green-500 to-green-600',
     hoverGradient: 'hover:from-green-600 hover:to-green-700',
+    link: '/services#salary-benefits',
   },
   {
     key: "consulting",
@@ -28,6 +30,7 @@ const services = [
     description: 'Strategic negotiation consulting and training to enhance your business deals and commercial agreements.',
     gradient: 'from-purple-500 to-purple-600',
     hoverGradient: 'hover:from-purple-600 hover:to-purple-700',
+    link: '/services#consultation',
   },
 ];
 
@@ -69,7 +72,7 @@ const ServicesPreview = () => {
                   <div className="flex items-center justify-between">
                     <Button 
                       variant="outline" 
-                      href="/services"
+                     href={service.link}
                       size="sm"
                       icon={ArrowRight}
                       iconPosition="right"
