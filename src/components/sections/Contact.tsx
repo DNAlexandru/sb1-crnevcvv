@@ -1,3 +1,5 @@
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
 import SectionHeading from '../ui/SectionHeading';
 import ScrollAnimation from '../utils/ScrollAnimation';
@@ -6,6 +8,67 @@ import { useLanguage } from '../../contexts/LanguageContext';
 
 const Contact = () => {
   const { t } = useLanguage();
+
+  // Stato per il form e invio
+  const [formData, setFormData] = useState({
+    first_name: "",
+    last_name: "",
+    user_email: "",
+    user_message: "",
+    user_phone: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitted(false);
+
+    try {
+      if (!formRef.current) throw new Error("Form reference missing");
+
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error("EmailJS env vars are missing (VITE_*).");
+      }
+
+      // Invia l’intero form: EmailJS leggerà solo le variabili mappate nel template
+      await emailjs.sendForm(serviceId, templateId, formRef.current, publicKey);
+
+      setSubmitted(true);
+      setFormData({
+        first_name: "",
+        last_name: "",
+        user_email: "",
+        user_message: "",
+        user_phone: "",
+      });
+
+      // Nasconde il messaggio dopo 5s
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch (err) {
+      console.error("EmailJS error:", err);
+      alert(t('contact.error', 'Failed to send message. Please try again later.'));
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  // Costruisco user_name per il campo nascosto richiesto dal template esistente
+  const combinedUserName = `${formData.first_name} ${formData.last_name}`.trim();
 
   return (
     <section className="section bg-gradient-modern relative overflow-hidden">
@@ -116,12 +179,22 @@ const Contact = () => {
                       {t('contact.form.title', 'Schedule Your Free Consultation')}
                     </h3>
                     <p className="text-gray-600">
-                      {t('contact.form.subtitle', 'Tell us about your situation and we\'ll get back to you within 24 hours')}
+                      {t('contact.form.subtitle', "Tell us about your situation and we'll get back to you within 24 hours")}
                     </p>
                   </div>
                 </div>
 
-                <form className="space-y-6">
+                {/* Messaggio di successo */}
+                {submitted ? (
+                  <div className="bg-green-100 border border-green-500 text-green-700 p-4 rounded-lg mb-6">
+                    {t('contact.success', "Thank you for your message! We'll be in touch shortly.")}
+                  </div>
+                ) : null}
+
+                <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+                  {/* hidden field richiesto dal template funzionante */}
+                  <input type="hidden" name="user_name" value={combinedUserName} />
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-semibold text-navy-950 mb-2">
@@ -129,6 +202,9 @@ const Contact = () => {
                       </label>
                       <input
                         type="text"
+                        name="first_name"
+                        value={formData.first_name}
+                        onChange={handleChange}
                         required
                         className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white hover:border-gray-300"
                         placeholder={t('contact.form.firstNamePlaceholder', 'Your first name')}
@@ -140,6 +216,9 @@ const Contact = () => {
                       </label>
                       <input
                         type="text"
+                        name="last_name"
+                        value={formData.last_name}
+                        onChange={handleChange}
                         required
                         className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white hover:border-gray-300"
                         placeholder={t('contact.form.lastNamePlaceholder', 'Your last name')}
@@ -154,6 +233,9 @@ const Contact = () => {
                       </label>
                       <input
                         type="email"
+                        name="user_email"  // <-- variabile del template funzionante
+                        value={formData.user_email}
+                        onChange={handleChange}
                         required
                         className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white hover:border-gray-300"
                         placeholder={t('contact.form.emailPlaceholder', 'your.email@example.com')}
@@ -165,8 +247,11 @@ const Contact = () => {
                       </label>
                       <input
                         type="tel"
+                        name="user_phone"
+                        value={formData.user_phone}
+                        onChange={handleChange}
                         className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white hover:border-gray-300"
-                        placeholder={t('contact.form.phonePlaceholder', '+1 (555) 123-4567')}
+                        placeholder={t('contact.form.phonePlaceholder', '+39 327 585 9000')}
                       />
                     </div>
                   </div>
@@ -176,12 +261,16 @@ const Contact = () => {
                       {t('contact.form.message', 'Tell us about your situation')} *
                     </label>
                     <textarea
+                      name="user_message"  // <-- variabile del template funzionante
+                      value={formData.user_message}
+                      onChange={handleChange}
                       required
                       rows={6}
                       className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white hover:border-gray-300 resize-vertical"
                       placeholder={t('contact.form.messagePlaceholder', 'Please describe your negotiation situation, goals, and any relevant details...')}
                     />
                   </div>
+
                   <Button
                     type="submit"
                     variant="primary"
@@ -189,9 +278,12 @@ const Contact = () => {
                     icon={Send}
                     iconPosition="right"
                     fullWidth
+                    disabled={isSubmitting}
                     className="shadow-xl hover:shadow-blue-500/25"
                   >
-                    {t('contact.form.submit', 'Send My Request')}
+                    {isSubmitting
+                      ? t('contact.sending', 'Sending...')
+                      : t('contact.form.submit', 'Send My Request')}
                   </Button>
                 </form>
 
