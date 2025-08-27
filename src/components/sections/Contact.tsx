@@ -173,21 +173,6 @@ const Contact = () => {
 
                   <div>
                     <label className="block text-sm font-semibold text-navy-950 mb-2">
-                      {t('contact.form.service', 'Type of Negotiation')}
-                    </label>
-                    <select
-                      className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white hover:border-gray-300"
-                    >
-                      <option value="">{t('contact.form.selectService', 'Select a service...')}</option>
-                      <option value="real-estate">{t('servicesPreview.realEstate.title', 'Real Estate Negotiation')}</option>
-                      <option value="salary">{t('servicesPreview.salary.title', 'Salary & Benefits Negotiation')}</option>
-                      <option value="business">{t('servicesPreview.consulting.title', 'Business Consultation Services')}</option>
-                      <option value="other">{t('contact.form.other', 'Other')}</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-semibold text-navy-950 mb-2">
                       {t('contact.form.message', 'Tell us about your situation')} *
                     </label>
                     <textarea
