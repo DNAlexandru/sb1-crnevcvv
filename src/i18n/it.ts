@@ -102,10 +102,6 @@ const it = {
   'contact.messageLabel': 'Il tuo Messaggio',
   'contact.messageInvalid': 'Inserisci il messaggio',
   'contact.messagePlaceholder': 'Come possiamo aiutarti?',
-  'contact.privacyInvalid': 'Devi accettare la privacy policy',
-  'contact.privacyText': 'Accetto la',
-  'contact.privacyPolicy': 'privacy policy',
-  'contact.privacyContinue': 'e acconsento a essere contattato per la mia richiesta.',
   'contact.submit': 'Invia Messaggio',
   'contact.sending': 'Invio...',
 
