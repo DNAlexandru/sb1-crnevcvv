@@ -293,32 +293,6 @@ const Contact = () => {
                       required
                     />
                   </div>
-
-                  <div className="flex items-center mb-8">
-                    <input
-                      type="checkbox"
-                      id="privacy"
-                      className="h-4 w-4 text-blue-700 border-gray-300 rounded focus:ring-blue-700"
-                      onInvalid={(e) =>
-                        e.currentTarget.setCustomValidity(
-                          t('contact.privacyInvalid', 'You must agree to the privacy policy')
-                        )
-                      }
-                      onInput={(e) => e.currentTarget.setCustomValidity("")}
-                      required
-                    />
-                    <label
-                      htmlFor="privacy"
-                      className="ml-2 block text-sm text-gray-700"
-                    >
-                      {t('contact.privacyText', 'I agree to the ')}{" "}
-                      <a href="/privacy" className="text-blue-700 underline">
-                        {t('contact.privacyPolicy', 'privacy policy')}
-                      </a>{" "}
-                      {t('contact.privacyContinue', 'and consent to being contacted regarding my inquiry.')}
-                    </label>
-                  </div>
-
                   <Button
                     variant="primary"
                     size="lg"

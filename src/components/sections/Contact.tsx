@@ -197,22 +197,6 @@ const Contact = () => {
                       placeholder={t('contact.form.messagePlaceholder', 'Please describe your negotiation situation, goals, and any relevant details...')}
                     />
                   </div>
-
-                  <div className="flex items-center gap-3">
-                    <input
-                      type="checkbox"
-                      id="consent"
-                      required
-                      className="w-5 h-5 text-blue-600 rounded border-gray-300 focus:ring-blue-500"
-                    />
-                    <label htmlFor="consent" className="text-sm text-gray-600">
-                      {t('contact.form.consent', 'I agree to receive communications and understand that my information will be used according to the')}{' '}
-                      <a href="/privacy" className="text-blue-600 hover:text-blue-700 underline">
-                        {t('contact.form.privacy', 'Privacy Policy')}
-                      </a>
-                    </label>
-                  </div>
-
                   <Button
                     type="submit"
                     variant="primary"
