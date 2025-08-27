@@ -69,7 +69,7 @@ const ServicesPreview = () => {
                     {t(`servicesPreview.${service.key}.desc`, service.description)}
                   </p>
                   
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between mt-auto">
                     <Button 
                       variant="outline" 
                      href={service.link}
