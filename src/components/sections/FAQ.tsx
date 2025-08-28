@@ -51,7 +51,9 @@ const FAQ = () => {
                     {t('faq.helpText', "Can't find the answer you're looking for? We're here to help.")}
                   </p>
                   <button className="btn btn-outline w-full">
-                    {t('faq.contact', 'Contact Us Directly')}
+                    <a href="/#contact" className="btn btn-outline w-full">
+                      {t('faq.contact', 'Contact Us Directly')}
+                    </a>
                   </button>
                 </div>
               </ScrollAnimation>
@@ -114,12 +116,12 @@ const FAQ = () => {
                   {t('faq.contactText', "Our team is ready to provide personalized answers and guide you through our process. Let's discuss your specific situation.")}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <button className="btn btn-primary shadow-xl hover:shadow-blue-500/25">
+                  <a href="/#contact" className="btn btn-primary shadow-xl hover:shadow-blue-500/25">
                     {t('faq.freeConsultation', 'Schedule Free Consultation')}
-                  </button>
-                  <button className="btn btn-outline">
-                    {t('faq.emailUs', 'Send Us an Email')}
-                  </button>
+                  </a>
+                  <a href="/#contact" className="btn btn-outline">
+                    {t('faq.emailUs', 'Send Us An Email')}
+                  </a>
                 </div>
               </div>
             </div>
