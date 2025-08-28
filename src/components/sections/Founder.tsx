@@ -96,7 +96,9 @@ const Founder = () => {
                   )}
                 </p>
                 <button className="btn btn-primary shadow-xl hover:shadow-blue-500/25">
-                  {t('founder.cta.button', 'Schedule a Free Consultation')}
+                  <a href="/#contact" className="btn btn-primary shadow-xl hover:shadow-blue-500/25">
+                    {t('founder.cta.button', 'Schedule a Free Consultation')}
+                  </a>
                 </button>
               </div>
             </div>
