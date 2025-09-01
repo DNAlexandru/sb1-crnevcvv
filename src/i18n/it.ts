@@ -18,7 +18,7 @@ const it = {
   'footer.rights': 'Tutti i diritti riservati.',
 
   // Hero
-  'hero.title': 'L\'arte della negoziazione al tuo servizio, per un accordo equo',
+  'hero.title': 'L\'arte della negoziazione al tuo servizio',
   'hero.cta': 'Consulenza Gratuita',
   'hero.secondary': 'Scopri i Servizi',
   'hero.scroll': 'Scorri',
