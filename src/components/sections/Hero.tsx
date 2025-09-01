@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
         <div className="max-w-4xl">
           <ScrollAnimation animation="slide-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy-950 mb-6 leading-tight">
-              {t('hero.title', 'The art of negotiation at your service, for a fair deal')}
+              {t('hero.title', 'The art of negotiation at your service')}
             </h1>
           </ScrollAnimation>
 
