@@ -12,26 +12,17 @@ const Hero: React.FC = () => {
       {/* Content */}
       <div className="relative container mx-auto px-6 z-10">
         <div className="max-w-4xl">
-          <ScrollAnimation animation="fade-in">
-            <div className="inline-flex items-center gap-2 bg-blue-50 rounded-full px-4 py-2 mb-8 border border-blue-200">
-              <CheckCircle className="w-5 h-5 text-green-500" />
-              <span className="text-navy-950 text-sm font-medium">
-                {t('hero.badge', '100% Risk-Free Consultation')}
-              </span>
-            </div>
-          </ScrollAnimation>
-
-          <ScrollAnimation animation="slide-up" delay={200}>
+          <ScrollAnimation animation="slide-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy-950 mb-6 leading-tight">
               {t('hero.title', 'The art of negotiation at your service, for a fair deal')}
             </h1>
           </ScrollAnimation>
 
-          <ScrollAnimation animation="slide-up" delay={300}>
+          <ScrollAnimation animation="slide-up" delay={200}>
             <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full mb-8" />
           </ScrollAnimation>
 
-          <ScrollAnimation animation="slide-up" delay={400}>
+          <ScrollAnimation animation="slide-up" delay={300}>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button
                 variant="primary"
@@ -54,8 +45,8 @@ const Hero: React.FC = () => {
             </div>
           </ScrollAnimation>
 
-          <ScrollAnimation animation="fade-in" delay={500}>
-            <div className="flex items-center gap-6 text-navy-700">
+          <ScrollAnimation animation="fade-in" delay={400}>
+            <div className="flex flex-wrap items-center gap-6 text-navy-700">
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-green-500" />
                 <span className="text-sm">{t('hero.feature1', 'No upfront costs')}</span>
@@ -63,6 +54,10 @@ const Hero: React.FC = () => {
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-green-500" />
                 <span className="text-sm">{t('hero.feature2', 'Pay only if you save')}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-500" />
+                <span className="text-sm">{t('hero.badge', '100% Risk-Free Consultation')}</span>
               </div>
             </div>
           </ScrollAnimation>
