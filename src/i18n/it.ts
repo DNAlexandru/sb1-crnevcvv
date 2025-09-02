@@ -28,7 +28,7 @@ const it = {
 
   // Services Preview
   'servicesPreview.title': 'I Nostri Servizi Principali',
-  'servicesPreview.subtitle': 'Competenza specializzata nelle negoziazioni dove serve di più',
+  'servicesPreview.subtitle': 'Competenza specializzata in negoziazione dove serve di più',
   'servicesPreview.realEstate.title': 'Negoziazione Immobiliare',
   'servicesPreview.realEstate.desc': 'Supporto esperto per acquisti, ottimizzazione mutui e affitti ai migliori termini.',
   'servicesPreview.salary.title': 'Negoziazione Stipendio e Benefici',
