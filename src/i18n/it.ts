@@ -38,6 +38,7 @@ const it = {
   'servicesPreview.more': 'Scopri di più',
   'servicesPreview.ready': 'Pronto a iniziare a risparmiare? Siamo pagati solo quando risparmi.',
   'servicesPreview.contact': 'Prenota la tua consulenza gratuita',
+  'servicesPreview.about': 'Scopri il Nostro Processo',
 
   // Why Choose Us
   'choose.title': 'Perché Sceglierci',
