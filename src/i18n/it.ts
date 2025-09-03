@@ -40,6 +40,9 @@ const it = {
   'servicesPreview.contact': 'Prenota la tua consulenza gratuita',
   'servicesPreview.about': 'Scopri il Nostro Processo',
 
+  // Services Preview Additional
+  'servicesPreview.subtitle2': 'Unisciti ai clienti di successo che hanno risparmiato migliaia di euro grazie ai nostri servizi di negoziazione esperti.',
+
   // Why Choose Us
   'choose.title': 'Perché Sceglierci',
   'choose.subtitle': 'Uniamo competenza, trasparenza e un approccio senza rischi per offrirti valore eccezionale',
@@ -49,6 +52,10 @@ const it = {
   'choose.feature2.desc': 'Creiamo fiducia con processi chiari ed etici. Saprai sempre come e perché vengono prese le decisioni.',
   'choose.feature3.title': 'Strategie Personalizzate',
   'choose.feature3.desc': 'Ogni negoziazione è unica. Creiamo piani su misura, basati sui tuoi obiettivi e su metodologie comprovate.',
+
+  // Choose Us Trust Section
+  'choose.trust.title': 'Scelto da Professionisti in Tutto il Mondo',
+  'choose.trust.subtitle': 'Il nostro approccio etico e i risultati comprovati ci hanno fatto guadagnare la fiducia di clienti in diversi settori e paesi.',
 
   // How It Works
   'how.title': 'Come Funziona',
@@ -61,6 +68,12 @@ const it = {
   'how.step3.desc': 'I nostri negoziatori conducono le trattative seguendo una strategia basata sui dati.',
   'how.step4.title': 'Risultati e Pagamento',
   'how.step4.desc': 'Concludiamo l\'accordo migliorato e condividiamo i risparmi al 50%.',
+
+  // How It Works CTA
+  'how.cta.title': 'Pronto a Sperimentare il Nostro Processo?',
+  'how.cta.subtitle': 'Inizia con una consulenza completamente gratuita. Nessun impegno, nessun costo nascosto – solo consigli esperti su misura per la tua situazione.',
+  'how.cta.button': 'Prenota la Tua Consulenza Gratuita',
+  'how.cta.secondary': 'Scopri di Più sui Nostri Servizi',
 
   // Founder
   'founder.section': 'Il Fondatore',
@@ -78,6 +91,41 @@ const it = {
   'founder.languagesValue': 'Inglese, Italiano',
   'founder.industriesLabel': 'Settori',
   'founder.industriesValue': 'Diversi',
+
+  // Founder CTA
+  'founder.cta.title': 'Pronto a Lavorare Insieme?',
+  'founder.cta.subtitle': 'Discutiamo delle tue esigenze di negoziazione e vediamo come posso aiutarti a ottenere risultati migliori.',
+  'founder.cta.button': 'Prenota una Consulenza Gratuita',
+
+  // Contact Section (Home page)
+  'contact.methods.title': 'Contattaci',
+  'contact.email.label': 'Scrivici',
+  'contact.email.response': 'Risposta entro 24 ore',
+  'contact.phone.label': 'Chiamaci',
+  'contact.phone.hours': 'Lun-Ven 9:00-18:00 CET',
+  'contact.location.label': 'Posizione',
+  'contact.location.note': 'Consulenze globali disponibili',
+  'contact.why.title': 'Perché Iniziare con Noi?',
+  'contact.why.free': 'Consulenza 100% gratuita',
+  'contact.why.risk': 'Nessun costo iniziale o rischio',
+  'contact.why.expert': 'Analisi di negoziazione esperta',
+  'contact.why.results': 'Paghi solo per i risultati',
+  'contact.form.title': 'Prenota la Tua Consulenza Gratuita',
+  'contact.form.subtitle': 'Raccontaci la tua situazione e ti ricontatteremo entro 24 ore',
+  'contact.form.firstName': 'Nome',
+  'contact.form.firstNamePlaceholder': 'Il tuo nome',
+  'contact.form.lastName': 'Cognome',
+  'contact.form.lastNamePlaceholder': 'Il tuo cognome',
+  'contact.form.email': 'Indirizzo Email',
+  'contact.form.emailPlaceholder': 'tuo.email@example.com',
+  'contact.form.phone': 'Numero di Telefono',
+  'contact.form.phonePlaceholder': '+39 327 585 9000',
+  'contact.form.message': 'Raccontaci la tua situazione',
+  'contact.form.messagePlaceholder': 'Descrivi la tua situazione di negoziazione, i tuoi obiettivi e tutti i dettagli rilevanti...',
+  'contact.form.submit': 'Invia la Mia Richiesta',
+  'contact.error': 'Invio fallito. Riprova più tardi.',
+  'contact.guarantee.title': 'La Nostra Garanzia di Risposta',
+  'contact.guarantee.text': 'Rispondiamo a tutte le richieste entro 24 ore nei giorni lavorativi. La tua consulenza è completamente gratuita senza obblighi.',
 
   // Contact
   'contact.title': 'Contatti e Prenotazioni',
@@ -177,6 +225,24 @@ const it = {
   'faq.a5': 'Stabiliamo fin da subito tempistiche e metriche chiare. Se non riusciamo a migliorare i termini o le trattative si bloccano, non paghi nulla: la nostra tariffa è interamente basata sui risultati.',
   'faq.q6': 'Come posso iniziare?',
   'faq.a6': "È semplice: compila il modulo di contatto qui sotto o prenota un incontro sulla nostra pagina Calendly. Fisseremo la consulenza gratuita e daremo il via al processo.",
+
+  // FAQ Additional
+  'faq.helpTitle': 'Hai Bisogno di Aiuto?',
+  'faq.helpText': 'Non riesci a trovare la risposta che cerchi? Siamo qui per aiutarti.',
+  'faq.contact': 'Contattaci Direttamente',
+  'faq.stillQuestions': 'Hai Ancora Domande?',
+  'faq.contactText': 'Il nostro team è pronto a fornire risposte personalizzate e guidarti attraverso il nostro processo. Discutiamo della tua situazione specifica.',
+  'faq.freeConsultation': 'Prenota Consulenza Gratuita',
+  'faq.emailUs': 'Inviaci una Email',
+
+  // Footer Newsletter
+  'footer.newsletter.title': 'Rimani Aggiornato',
+  'footer.newsletter.subtitle': 'Ricevi consigli di negoziazione e approfondimenti direttamente nella tua casella di posta.',
+  'footer.newsletter.placeholder': 'Inserisci la tua email',
+  'footer.newsletter.button': 'Iscriviti',
+  'footer.madeBy': 'per negoziazioni migliori',
+  'footer.professional': 'Servizi di Negoziazione Professionale',
+  'footer.global': 'Consulenze Globali Disponibili',
 
   // Contact Page Extras
   'contact.heroTitle': 'Contattaci',
