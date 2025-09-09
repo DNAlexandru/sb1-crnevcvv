@@ -61,7 +61,7 @@ const services = [
     id: 'consultation',
     icon: Handshake,
     title: 'Business Consultation Services',
-    description: 'Strategic negotiation consulting for businesses and professionals. From commercial agreements to skill development, we provide comprehensive negotiation support for your business success.',
+    description: 'Strategic consultation and negotiation for commercial agreements and business skill development.',
     detailedServices: [
       {
         title: 'Commercial Agreements',
