@@ -29,15 +29,15 @@ const Founder = () => {
                   <div className="relative inline-block">
                     <img
                       src="/Profile_Photo.jpg"
-                      alt="Alexandru Buruiana, Founder of DNego"
+                      alt={t('founder.imageAlt', 'Alexandru Buruiana, Founder of DNego')}
                       className="w-64 h-64 object-cover rounded-2xl shadow-xl mx-auto"
                     />
                     <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 px-6 rounded-xl shadow-lg">
-                      <div className="text-sm font-semibold">Founder & Lead Negotiator</div>
+                      <div className="text-sm font-semibold">{t('founder.role', 'Founder & Lead Negotiator')}</div>
                     </div>
                   </div>
                   <h3 className="text-3xl font-bold text-navy-950 mt-8 mb-2">Alexandru Buruiana</h3>
-                  <p className="text-blue-600 font-semibold text-lg">Mechanical Engineer & Negotiation Expert</p>
+                  <p className="text-blue-600 font-semibold text-lg">{t('founder.titleRole', 'Mechanical Engineer & Negotiation Expert')}</p>
                 </div>
               </div>
 
@@ -113,7 +113,7 @@ const Founder = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-navy-950 mb-2">My Journey in Negotiation</h4>
+                  <h4 className="text-xl font-bold text-navy-950 mb-2">{t('founder.journeyTitle', 'My Journey in Negotiation')}</h4>
                   <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full" />
                 </div>
               </div>
@@ -151,7 +151,7 @@ const Founder = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-navy-950 mb-2">My Philosophy</h4>
+                  <h4 className="text-xl font-bold text-navy-950 mb-2">{t('founder.philosophyTitle', 'My Philosophy')}</h4>
                   <div className="w-16 h-1 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full" />
                 </div>
               </div>
