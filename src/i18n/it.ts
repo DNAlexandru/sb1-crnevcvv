@@ -46,6 +46,9 @@ const it = {
   // Why Choose Us
   'choose.title': 'Perché Sceglierci',
   'choose.subtitle': 'Uniamo competenza, trasparenza e un approccio senza rischi per offrirti valore eccezionale',
+  'choose.stats1': 'La tua quota di risparmi',
+  'choose.stats2': 'Commissioni basate sui risultati',
+  'choose.stats3': 'Anni di esperienza',
   'choose.feature1.title': 'Modello 100% senza rischi',
   'choose.feature1.desc': 'Abbiamo successo solo quando lo hai anche tu. Paghi soltanto se riduciamo i costi (tratteniamo il 50% dei risparmi).',
   'choose.feature2.title': 'Fiducia e Trasparenza',
@@ -78,7 +81,11 @@ const it = {
   // Founder
   'founder.section': 'Il Fondatore',
   'founder.about': 'Riguardo al Fondatore',
-  'founder.tagline': 'Alexandru Buruiana, Fondatore',
+  'founder.imageAlt': 'Alexandru Buruiana, fondatore di DNego',
+  'founder.role': 'Fondatore e Negoziatore Principale',
+  'founder.titleRole': 'Ingegnere Meccanico e Esperto di Negoziazione',
+  'founder.journeyTitle': 'Il Mio Percorso nella Negoziazione',
+  'founder.philosophyTitle': 'La Mia Filosofia',
   'founder.bio1': 'Sono un Ingegnere Meccanico specializzato in energia, e da sempre credo nell\'importanza di riconoscere e difendere il giusto valore delle cose. Ho scoperto che la negoziazione è la mia vera passione grazie all\'energia e all\'entusiasmo che sento ogni volta che mi trovo a pattuire, cercare un accordo, trovare un punto d\'incontro.',
   'founder.bio2': 'Negli anni ho affinato questa attitudine lavorando negli uffici acquisti di diverse aziende, trattando materie prime e servizi, ma presto ho capito che per me non era solo un lavoro: era un modo di vivere, guidato da principi come l\'equità, il rispetto reciproco e la ricerca di soluzioni che creano valore per tutti.',
   'founder.bio3': 'Con il tempo, questo desiderio di giustizia e di equilibrio mi ha portato oltre l\'ambito aziendale, ad aiutare anche persone estranee al mio lavoro: amici, familiari, conoscenti e chiunque avesse bisogno di un supporto in una trattativa importante.',

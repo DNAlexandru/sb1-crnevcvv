@@ -25,9 +25,9 @@ const features = [
 ];
 
 const stats = [
-  { number: '50%', label: 'Your Share of Savings', icon: TrendingUp },
-  { number: '100%', label: 'Success-Based Fees', icon: Award },
-  { number: '5+', label: 'Years Experience', icon: Users2 },
+  { number: '50%', label: ['choose.stats1', 'Your Share of Savings'], icon: TrendingUp },
+  { number: '100%', label: ['choose.stats2', 'Success-Based Fees'], icon: Award },
+  { number: '5+', label: ['choose.stats3', 'Years Experience'], icon: Users2 },
 ];
 
 const WhyChooseUs = () => {
@@ -61,7 +61,7 @@ const WhyChooseUs = () => {
                 <div className="text-4xl md:text-5xl font-bold text-navy-950 mb-2 group-hover:text-blue-700 transition-colors duration-300">
                   {stat.number}
                 </div>
-                <div className="text-gray-600 font-medium">{stat.label}</div>
+                <div className="text-gray-600 font-medium">{t(stat.label[0], stat.label[1])}</div>
               </div>
             </ScrollAnimation>
           ))}
